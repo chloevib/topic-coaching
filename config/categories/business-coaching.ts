@@ -41,6 +41,9 @@ export const businessCoaching: CategoryFile = {
       slug: 'business-scale-readiness',
       order: 10,
       seo: {
+        title: 'Business Scale Readiness Scorecard — Are You Ready to Grow?',
+        description:
+          'A free 12-question scorecard that grades your business across Offer & Market Fit, Marketing, Systems, and Finance — so you know exactly what to fix before you scale.',
         overview:
           'Pouring fuel on a business that is not ready just makes the cracks bigger. This 12-question scorecard grades you across four pillars — Offer & Market Fit, Marketing, Systems, and Finance — and shows exactly where to focus before you scale.',
         whoFor:
@@ -51,6 +54,14 @@ export const businessCoaching: CategoryFile = {
           'The weakest pillar that would crack first under growth',
           'Where to focus before you invest in scaling',
         ],
+        sampleQuestions: [
+          'How clearly defined is your ideal customer — from no definition to a validated, data-backed profile you actively use?',
+          'If your sales doubled next month, could you deliver — or would the business break?',
+          'How dependent is the business on you personally, from "nothing happens without me" to "it runs without my daily involvement"?',
+          'Do you know your customer acquisition cost (CAC) and lifetime value (LTV), and do you use them to make decisions?',
+        ],
+        howItWorks:
+          'You answer 12 quick questions across four pillars of a scalable business — Offer & Market Fit, Marketing & Lead Generation, Systems & Operations, and Finance & Metrics. Each answer scores from 0 to 10, and your results map to an overall readiness level plus a radar chart that highlights your strongest and weakest pillar. It takes about three to four minutes, is free, and needs no signup to start.',
         faq: [
           {
             q: 'What does it mean for a business to be ready to scale?',
@@ -73,6 +84,9 @@ export const businessCoaching: CategoryFile = {
       featured: true,
       order: 11,
       seo: {
+        title: 'Founder Archetype Quiz — Visionary, Builder, Connector, or Strategist?',
+        description:
+          'A free 10-question quiz that reveals your founder archetype — Visionary, Builder, Connector, or Strategist — with your strengths, blind spots, and the one move that unlocks your next stage of growth.',
         overview:
           'Every founder builds differently. Are you the Visionary, the Builder, the Connector, or the Strategist? This 10-question quiz reveals your founder archetype — your natural strengths and the one move that unlocks your next stage of growth.',
         whoFor:
@@ -83,6 +97,14 @@ export const businessCoaching: CategoryFile = {
           'The blind spots to cover or hire around',
           'The one move that unlocks your next stage of growth',
         ],
+        sampleQuestions: [
+          'What energizes you most — dreaming up the next big idea, shipping the product, building relationships, or finding the smartest path in the data?',
+          'Your team would say you most need help with following through on details, stepping back from the weeds, staying focused, or moving without over-analyzing.',
+          'You measure success mostly by impact and vision, what you have shipped, the strength of your network, or clean and efficient growth.',
+          'Your biggest business risk is chasing too many ideas, doing everything yourself, spreading too thin, or overthinking and under-acting.',
+        ],
+        howItWorks:
+          'You answer 10 quick questions about what energizes you, your strengths, how you handle setbacks, and where your risks lie. Your answers are scored across four founder archetypes — Visionary, Builder, Connector, and Strategist — and your result names your dominant type with its superpower, its blind spot, and the next move to make. It takes about three minutes, is free, and needs no signup to start.',
         faq: [
           {
             q: 'What is a founder archetype?',
@@ -104,6 +126,9 @@ export const businessCoaching: CategoryFile = {
       slug: 'selling-style',
       order: 12,
       seo: {
+        title: 'Selling Style Quiz — Find Your Natural Sales Approach',
+        description:
+          'A free 2-minute quiz that reveals your selling style — Relationship Builder, Consultant, Challenger, or Closer — with your strengths, your blind spot, and how to level up without being "salesy".',
         overview:
           'The best sellers do not copy a script — they play to their natural style. This quick quiz reveals your selling style, the strengths it gives you, the blind spot to watch, and how to level up without pretending to be someone you are not.',
         whoFor:
@@ -114,6 +139,14 @@ export const businessCoaching: CategoryFile = {
           'Your biggest blind spot in the sales conversation',
           'How to level up while staying true to your style',
         ],
+        sampleQuestions: [
+          'Your strength in a sales conversation is building rapport, understanding the real problem, reframing how they see it, or creating momentum to decide.',
+          'A prospect is hesitating — do you nurture the relationship, dig into what is holding them back, challenge the assumption, or create urgency and ask for the close?',
+          'Your risk as a seller is being too soft to close, over-analyzing and under-asking, pushing too hard, or rushing the relationship.',
+          'Your natural opening move is to connect personally first, ask diagnostic questions, share a surprising insight, or get them excited fast.',
+        ],
+        howItWorks:
+          'You answer 6 quick questions about how you build rapport, handle hesitation, and win deals. Your answers are scored across four selling styles — Relationship Builder, Consultant, Challenger, and Closer — and your result highlights your dominant style with its strengths, its blind spot, and how to level up. It takes about two minutes, is free, and needs no signup to start.',
         faq: [
           {
             q: 'What is a selling style?',

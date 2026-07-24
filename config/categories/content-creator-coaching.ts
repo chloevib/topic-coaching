@@ -40,7 +40,7 @@ export const contentCreatorCoaching: CategoryFile = {
   },
   quizzes: [
     {
-      publicToken: 'h89a9ku7',
+      publicToken: 'vnfh3666',
       slug: 'content-creator-style',
       featured: true,
       order: 1,
