@@ -13,7 +13,6 @@ export const investmentCoaching: CategoryFile = {
     order: 13,
     parent: 'lifestyle-interests',
     // 已收录 1 道完整 GEO 测评（investing-iq）。沿用作者约定：≥3 道再去 draft 促级开页。
-    draft: true,
     intro: [
       'Investment coaching is about building the knowledge and habits that let your money work over time — understanding risk, diversification, fees, and the power of compounding, rather than chasing hot tips. Confidence comes from fundamentals, not from timing the market.',
       'These free quizzes are a fast, low-pressure way to test and strengthen that foundation. Each question comes with a plain-language explanation, so you learn as you go. This matters because financial literacy remains low: the FINRA Investor Education Foundation has repeatedly found that most U.S. adults answer only about half of a basic five-question financial literacy quiz correctly, and roughly two-thirds of adults worldwide are not financially literate (S&P Global FinLit Survey).',

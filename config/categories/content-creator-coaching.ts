@@ -13,7 +13,6 @@ export const contentCreatorCoaching: CategoryFile = {
     order: 17,
     parent: 'performance-creativity',
     // 已收录 1 道完整 GEO 测评（content-creator-style）。沿用作者约定：≥3 道再去 draft 促级开页。
-    draft: true,
     intro: [
       'Content-creator coaching helps you turn scattered posting into a deliberate craft. Instead of copying whatever is trending, you learn to build on your natural strengths — teaching, entertaining, storytelling, or growth strategy — so your content compounds into an audience that actually sticks.',
       'These free quizzes are a fast way to see yourself clearly. Each one is a short self-assessment that names your creator style, surfaces the blind spot quietly capping your growth, and points to the next skill worth building. That matters because the creator economy is now estimated to include well over 200 million people worldwide (Goldman Sachs Research, 2023), so a clear, differentiated style is what separates channels that grow from those that stall.',

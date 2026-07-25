@@ -39,7 +39,6 @@ export const personalDevelopmentCoaching: CategoryFile = {
         a: 'Yes. Every test on this page is free, takes just a few minutes, and gives you a personalized result with no signup required to start.',
       },
     ],
-    draft: true,
   },
   quizzes: [
     {
