@@ -13,6 +13,7 @@ export const pilatesCoaching: CategoryFile = {
     order: 18,
     parent: 'health-body-fitness',
     // 已收录 1 道完整 GEO 测评（pilates-readiness）。沿用作者约定：≥3 道再去 draft 促级开页。
+    draft: true,
     intro: [
       'Pilates builds strength from the inside out — core control, spinal mobility, balance, and the body awareness that carries into everything else you do. It is low-impact and endlessly scalable, which is why it suits near-beginners and seasoned movers alike.',
       'These free quizzes help you start where you actually are. Rather than guessing whether you are ready, a short readiness assessment scores your core, flexibility, breath, and habits so your first class matches your body instead of frustrating it. Research collected by the American Council on Exercise links consistent Pilates practice to measurable gains in core strength and flexibility, so knowing your baseline makes early progress far easier to see.',
