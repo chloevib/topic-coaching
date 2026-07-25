@@ -89,6 +89,9 @@ export const lifeCoaching: CategoryFile = {
       slug: 'procrastination-type',
       order: 2,
       seo: {
+        title: 'Procrastination Type Quiz — Why You Put Things Off',
+        description:
+          'A free 2-minute procrastination quiz that reveals your type — Perfectionist, Dreamer, Avoider, or Crisis-Maker — what drives it, and the first step to break the cycle.',
         overview:
           'Procrastination is rarely about laziness — it is a coping response to a specific trigger like fear, overwhelm, perfectionism, or low interest. This quick quiz identifies your procrastination type, what is really driving it, and a first step that works with your wiring instead of against it.',
         whoFor:
@@ -99,6 +102,14 @@ export const lifeCoaching: CategoryFile = {
           'Why willpower alone has not fixed it',
           'A first step matched to your type',
         ],
+        sampleQuestions: [
+          'What usually stops you from starting — it has to be perfect first, you are not sure exactly how, you just do not want to face it, or there is still plenty of time?',
+          'You finally get going when the deadline is breathing down your neck, when you feel you can do it flawlessly, when the vision finally feels clear, or when you run out of ways to avoid it?',
+          'The story you tell yourself is closest to "if it is not perfect, why bother?", "I will figure out the details later", "I will deal with it when I am ready", or "I work best under pressure"?',
+          'Deadlines mostly make you anxious it will not be good enough, realize you never made a real plan, want to hide, or finally spring into action?',
+        ],
+        howItWorks:
+          'You answer six quick questions about how you respond to tasks, stories you tell yourself, and deadlines. Your answers map to four procrastination types — Perfectionist, Dreamer, Avoider, and Crisis-Maker — and your result names your dominant type with the driver behind it and a matched first step. It takes about two minutes, is free, and needs no signup to start.',
         faq: [
           {
             q: 'What causes procrastination?',
@@ -120,6 +131,9 @@ export const lifeCoaching: CategoryFile = {
       slug: 'limiting-beliefs',
       order: 3,
       seo: {
+        title: 'Limiting Beliefs Quiz — What Is Really Holding You Back?',
+        description:
+          'A free 2-minute limiting beliefs scorecard that reveals how tightly your beliefs grip your choices across self-worth, fear of failure, fear of judgment, and scarcity.',
         overview:
           'The biggest thing standing in your way is often a belief you do not even notice — an assumption about yourself you treat as fact. This 2-minute scorecard reveals how tight a grip limiting beliefs have on your choices and which kind holds you back most.',
         whoFor:
@@ -130,6 +144,14 @@ export const lifeCoaching: CategoryFile = {
           'Where these beliefs quietly shape your decisions',
           'A starting point for loosening their hold',
         ],
+        sampleQuestions: [
+          'How true is "I am not really good enough for what I want" — strongly agree, agree, sometimes, or not really?',
+          'How true is "I avoid things I might fail at"?',
+          'How true is "I hold back because of what people might think"?',
+          'How true is "when something good happens, I feel I do not deserve it"?',
+        ],
+        howItWorks:
+          'You rate how true eight short statements feel across four belief types — self-worth, fear of failure, fear of judgment, and scarcity and deserving. Your answers combine into a single grip score out of 80 (a higher score means a tighter grip), and a radar shows which type holds you back most, with a starting point to loosen it. It takes about two minutes, is free, and needs no signup to start.',
         faq: [
           {
             q: 'What is a limiting belief?',
@@ -151,6 +173,9 @@ export const lifeCoaching: CategoryFile = {
       slug: 'confidence-scorecard',
       order: 4,
       seo: {
+        title: 'Confidence Scorecard — How Confident Are You Really?',
+        description:
+          'A free 2-minute confidence quiz that scores you across four pillars — self-belief, social confidence, resilience, and self-worth — and shows which one to build next.',
         overview:
           'Confidence is not one thing — it is several. This 2-minute scorecard measures yours across self-belief, social confidence, resilience, and self-worth, then shows where you are already solid and which pillar to build next.',
         whoFor:
@@ -161,6 +186,14 @@ export const lifeCoaching: CategoryFile = {
           'Whether your confidence gap is situational or more general',
           'Where to focus first to build a steadier baseline',
         ],
+        sampleQuestions: [
+          'Facing a hard task, you think "I have got this", "I can probably manage", "I am not sure I can", or "I will fail"?',
+          'How often do you second-guess your decisions — rarely, sometimes, often, or constantly?',
+          'Speaking up in a group, you feel comfortable, okay, anxious, or usually stay silent?',
+          'After criticism or a setback, you bounce back fast, recover in a day or two, dwell on it a while, or spiral?',
+        ],
+        howItWorks:
+          'You answer eight quick questions spread across four pillars — self-belief, social confidence, resilience, and self-worth. Your answers combine into a confidence score out of 80, and a radar breaks it down by pillar so you can see your strongest area and the one to build next. It takes about two minutes, is free, and needs no signup to start.',
         faq: [
           {
             q: 'What does the confidence scorecard measure?',
