@@ -181,6 +181,12 @@ export const businessCoaching: CategoryFile = {
           'The kinds of clients you are naturally positioned to serve',
           'A first step to test and validate your niche',
         ],
+        sampleQuestions: [
+          'What kinds of problems do you most enjoy helping people solve?',
+          'Which past experience gives you the most credibility with clients?',
+          'Who do you find it easiest to have coaching conversations with?',
+          'What results are you most confident you can help someone achieve?',
+        ],
         howItWorks:
           'You answer a short set of questions about your strengths, experience, and the problems you most enjoy helping people solve. Your answers point to a niche direction with a plain-language explanation and a suggested next step. It takes about three minutes, is free, and needs no signup to start.',
         faq: [

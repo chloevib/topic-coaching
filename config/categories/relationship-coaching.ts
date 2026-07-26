@@ -96,6 +96,14 @@ export const relationshipCoaching: CategoryFile = {
           'What tends to trigger you in relationships',
           'What it means for building healthier connection',
         ],
+        sampleQuestions: [
+          'When a partner needs space, how do you usually react?',
+          'How comfortable are you depending on someone else?',
+          'What goes through your mind when a partner does not reply for a while?',
+          'In conflict, do you tend to lean in or shut down?',
+        ],
+        howItWorks:
+          'You answer 12 honest questions about how you bond, communicate, and handle conflict in relationships. Your answers map to one of four attachment styles, along with what it means for closeness and connection. It takes about three to four minutes, is free, and needs no signup to start.',
         faq: [
           {
             q: 'What are the four attachment styles?',
@@ -127,6 +135,14 @@ export const relationshipCoaching: CategoryFile = {
           'What it quietly costs you',
           'A first step to break the cycle',
         ],
+        sampleQuestions: [
+          'What kind of person are you most often drawn to?',
+          'At what point do your relationships tend to run into trouble?',
+          'How do you respond when someone becomes genuinely available?',
+          'What familiar feeling keeps showing up across your relationships?',
+        ],
+        howItWorks:
+          'You answer a short set of questions about who you are drawn to and how your relationships tend to unfold. Your answers surface your recurring dating pattern, where it comes from, and a first step to change it. It takes about two minutes, is free, and needs no signup to start.',
         faq: [
           {
             q: 'What is a dating pattern?',
@@ -158,6 +174,14 @@ export const relationshipCoaching: CategoryFile = {
           'Its blind spots to watch for',
           'One concrete way to grow',
         ],
+        sampleQuestions: [
+          'How do you respond when your child breaks a rule?',
+          'How much do you involve your child in decisions that affect them?',
+          'Day to day, what comes more naturally — warmth or structure?',
+          'How do you handle it when your child pushes back?',
+        ],
+        howItWorks:
+          'You answer a short set of questions about how you set rules, show warmth, and respond when your child pushes back. Your answers reveal your parenting style, its strengths and blind spots, and one concrete way to grow. It takes about two minutes, is free, and needs no signup to start.',
         faq: [
           {
             q: 'What are the main parenting styles?',

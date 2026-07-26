@@ -95,6 +95,14 @@ export const careerCoaching: CategoryFile = {
           'The kinds of roles and environments that fit you best',
           'A suggested next move based on your profile',
         ],
+        sampleQuestions: [
+          'When you join a new project, what do you naturally do first?',
+          'Which kind of work makes you lose track of time?',
+          'What do colleagues most often come to you for?',
+          'When a plan falls apart, what is your first instinct?',
+        ],
+        howItWorks:
+          'You answer a short set of questions about how you approach work, what energizes you, and where you add the most value. Your answers map to a career archetype, along with the strengths and role types that fit it. It takes about two minutes, is free, and needs no signup to start.',
         faq: [
           {
             q: 'What is a career archetype?',
@@ -126,6 +134,14 @@ export const careerCoaching: CategoryFile = {
           'Whether to stay and build, start exploring, or make your move',
           'The gap to close before making a change',
         ],
+        sampleQuestions: [
+          'How clear are you on what you actually want from your next role?',
+          'How much financial runway do you have to make a move?',
+          'How many of your skills transfer to the direction you are considering?',
+          'Do you have a concrete plan for making the change?',
+        ],
+        howItWorks:
+          'You answer questions across four readiness areas — clarity, finances, transferable skills, and planning. Your answers are scored into an overall readiness level with a clear verdict: stay and build, start exploring, or make your move. It takes about two minutes, is free, and needs no signup to start.',
         faq: [
           {
             q: 'How do I know if I am ready for a career change?',
@@ -157,6 +173,14 @@ export const careerCoaching: CategoryFile = {
           'The systems and tools most likely to fit how you work',
           'A first change to try this week',
         ],
+        sampleQuestions: [
+          'When during the day do you do your most focused work?',
+          'How do you feel about detailed to-do lists and rigid schedules?',
+          'What usually derails your focus first?',
+          'Do you work better in short sprints or long, uninterrupted blocks?',
+        ],
+        howItWorks:
+          'You answer a short set of questions about how you focus, plan, and follow through. Your answers identify your productivity style and the systems most likely to fit it, plus one change to try this week. It takes about two minutes, is free, and needs no signup to start.',
         faq: [
           {
             q: 'Why do productivity systems work for some people and not others?',

@@ -51,6 +51,14 @@ export const healthWellnessCoaching: CategoryFile = {
           'The area dragging your wellbeing down most',
           'Where to focus first for the biggest improvement',
         ],
+        sampleQuestions: [
+          'How many days a week do you move enough to break a sweat?',
+          'How would you describe a typical day of eating?',
+          'How rested do you feel when you wake up?',
+          'How well do you manage stress in a busy week?',
+        ],
+        howItWorks:
+          'You answer questions across four pillars — movement, nutrition, sleep, and stress. Your answers are scored into an overall wellness balance, showing the pillar dragging you down most and where to focus first. It takes about two minutes, is free, and needs no signup to start.',
         faq: [
           {
             q: 'What does the wellness scorecard measure?',
@@ -82,6 +90,14 @@ export const healthWellnessCoaching: CategoryFile = {
           'The workouts and habits most likely to stick for you',
           'Why past routines did not last',
         ],
+        sampleQuestions: [
+          'Do you prefer working out alone or with other people?',
+          'What made your last exercise routine fall apart?',
+          'Does competition motivate you or stress you out?',
+          'Would you rather follow a set plan or keep movement flexible?',
+        ],
+        howItWorks:
+          'You answer a short set of questions about what you enjoy, what drains you, and how you stay motivated. Your answers reveal your fitness personality and the movement and habits most likely to stick for you. It takes about two minutes, is free, and needs no signup to start.',
         faq: [
           {
             q: 'What is a fitness personality?',
@@ -113,6 +129,14 @@ export const healthWellnessCoaching: CategoryFile = {
           'Why willpower-based diets have not worked',
           'One realistic shift that fits how you eat',
         ],
+        sampleQuestions: [
+          'When do you most often reach for food you had not planned to eat?',
+          'How do your emotions affect what and when you eat?',
+          'How do strict diets usually end for you?',
+          'Do you eat more when you are around other people?',
+        ],
+        howItWorks:
+          'You answer a short set of questions about when, why, and how you eat. Your answers reveal your eating personality, the triggers behind it, and one realistic shift that fits your patterns. It takes about two minutes, is free, and needs no signup to start.',
         faq: [
           {
             q: 'What is an eating personality?',
