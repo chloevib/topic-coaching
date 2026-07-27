@@ -15,6 +15,29 @@ export const stressManagementCoaching: CategoryFile = {
     heroCopy: 'Stress is not the enemy — how you respond to it is. Start by understanding your pattern.',
     order: 13,
     parent: 'life-mindset-relationships',
+    intro: [
+      'Stress-management coaching starts from a simple idea: stress itself is not the problem — how you respond to it is. Instead of trying to eliminate pressure, you learn to recognize your own pattern, spot the triggers that hit you hardest, and build recovery habits that fit your nervous system rather than generic "just relax" advice.',
+      'These free assessments make that pattern visible. One reveals your stress type and the coping strategies that actually calm it; another scores your burnout risk across energy, motivation, boundaries, and recovery so you can catch the strain early. This matters because chronic, unmanaged stress is now widely recognized as a serious health issue — the World Health Organization classifies burn-out in its ICD-11 as an occupational phenomenon resulting from workplace stress that has not been successfully managed (WHO, 2019).',
+      'Feeling wired or worn down? Start with the stress type quiz to understand how you react under pressure, then use the burnout risk scorecard to see where the strain is greatest right now. Each takes about two minutes, is free, and ends with a personalized result and a practical first step.',
+    ],
+    faq: [
+      {
+        q: 'What is stress-management coaching?',
+        a: 'Stress-management coaching helps you understand and regulate your stress response — identifying your triggers, recognizing your natural reaction to pressure, and building coping and recovery habits that actually fit how you work. It focuses on managing stress well rather than pretending it away.',
+      },
+      {
+        q: 'What can a stress or burnout quiz tell me?',
+        a: 'A good assessment shows you your stress type and what calms it, or measures your burnout risk across energy, motivation, boundaries, and recovery — so you know where the strain is greatest and what to work on first.',
+      },
+      {
+        q: 'Is stress always bad for you?',
+        a: 'No. Short bursts of stress can sharpen focus and performance. The real risk is chronic, unmanaged stress, which is why understanding and regulating your pattern matters more than trying to remove stress entirely.',
+      },
+      {
+        q: 'Are these stress quizzes free, and are they a medical diagnosis?',
+        a: 'Every quiz on this page is free, takes about two minutes, and needs no signup to start. They are self-reflection tools, not medical diagnoses — if stress or burnout is seriously affecting your health, please consult a qualified professional.',
+      },
+    ],
     draft: true,
   },
   quizzes: [

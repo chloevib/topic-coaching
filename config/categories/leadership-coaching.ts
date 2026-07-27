@@ -16,6 +16,29 @@ export const leadershipCoaching: CategoryFile = {
     heroCopy: 'Great leaders are made. See your natural style and where to grow next.',
     order: 3,
     parent: 'career-business-leadership',
+    intro: [
+      'Leadership coaching helps you lead on purpose instead of by default. Rather than copying a template, you get clear on how you naturally set direction, make decisions, and bring people with you — then build the specific habits that turn that natural style into consistent, trusted leadership.',
+      'These free assessments are a fast way to see yourself as your team sees you. One names your leadership archetype and its built-in strengths and blind spots; another scores your day-to-day habits across vision, communication, empowering others, and decision-making. That self-awareness matters because managers account for an estimated 70% of the variance in team engagement (Gallup, State of the American Manager), so small shifts in how you lead ripple across everyone you work with.',
+      'Not sure where to begin? Take the leadership style quiz first to understand your default, then use the leadership scorecard to pinpoint the single pillar worth developing next. Each takes about two minutes, is free, and ends with a personalized result you can act on.',
+    ],
+    faq: [
+      {
+        q: 'What is leadership coaching?',
+        a: 'Leadership coaching is a structured process that helps you lead more effectively — clarifying your natural style, strengthening habits like vision-setting and clear communication, and working through your blind spots. It focuses on how you actually lead day to day rather than abstract theory.',
+      },
+      {
+        q: 'What can a leadership quiz tell me?',
+        a: 'A good leadership assessment shows you two things: your dominant style, with the strengths and blind spots that come with it, and how you rate across the core habits of effective leadership — vision, communication, empowering others, and decision-making — so you know exactly where to grow.',
+      },
+      {
+        q: 'Is there one best leadership style?',
+        a: 'No. No single style wins in every situation; the most effective leaders know their default, understand its blind spots, and flex to fit the moment. Self-awareness is the starting point, which is what these assessments are built to give you.',
+      },
+      {
+        q: 'Are these leadership quizzes free?',
+        a: 'Yes. Every assessment on this page is free and takes about two minutes, with a personalized result and no signup required to start.',
+      },
+    ],
     draft: true,
   },
   quizzes: [
