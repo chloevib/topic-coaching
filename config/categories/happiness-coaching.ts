@@ -9,7 +9,7 @@ export const happinessCoaching: CategoryFile = {
     description: 'Raise life satisfaction with positive psychology. Free coaching quizzes and assessments.',
     emoji: '😊',
     heroCopy: 'Raise life satisfaction with positive psychology.',
-    order: 13,
+    order: 18,
     parent: 'life-mindset-relationships',
     draft: true,
   },
