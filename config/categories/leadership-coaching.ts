@@ -39,7 +39,6 @@ export const leadershipCoaching: CategoryFile = {
         a: 'Yes. Every assessment on this page is free and takes about two minutes, with a personalized result and no signup required to start.',
       },
     ],
-    draft: true,
   },
   quizzes: [
     {

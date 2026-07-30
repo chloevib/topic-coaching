@@ -35,7 +35,6 @@ export const languageCoaching: CategoryFile = {
     ],
     order: 14,
     parent: 'learning-education',
-    draft: true,
   },
   quizzes: [
     {

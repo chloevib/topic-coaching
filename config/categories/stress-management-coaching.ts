@@ -38,7 +38,6 @@ export const stressManagementCoaching: CategoryFile = {
         a: 'Every quiz on this page is free, takes about two minutes, and needs no signup to start. They are self-reflection tools, not medical diagnoses — if stress or burnout is seriously affecting your health, please consult a qualified professional.',
       },
     ],
-    draft: true,
   },
   quizzes: [
     {
