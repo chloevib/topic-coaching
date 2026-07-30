@@ -86,6 +86,9 @@ export const relationshipCoaching: CategoryFile = {
       featured: true,
       order: 18,
       seo: {
+        title: 'Attachment Style Quiz — Discover Your Attachment Style Free',
+        description:
+          'Take this free 12-question attachment style quiz to discover whether you are secure, anxious, avoidant, or disorganized — and what it means for your relationships. No signup.',
         overview:
           'The way you bond, argue, and pull close — or pull away — often traces back to one of four attachment styles formed early in life. This honest 12-question quiz reveals yours and what it means for how you show up in relationships.',
         whoFor:
@@ -125,6 +128,9 @@ export const relationshipCoaching: CategoryFile = {
       slug: 'dating-pattern',
       order: 19,
       seo: {
+        title: 'Dating Pattern Quiz — Why You Keep Repeating the Same Cycle',
+        description:
+          'A free dating pattern quiz that uncovers the relationship cycle you keep repeating, where it comes from, and the first step to break it. Takes 3 minutes, no signup.',
         overview:
           'Why do your relationships keep following the same script? This quick quiz uncovers your dating pattern — where it comes from, what it costs you, and the first step to change it — so you can stop repeating the cycle without realizing it.',
         whoFor:
@@ -164,6 +170,9 @@ export const relationshipCoaching: CategoryFile = {
       slug: 'parenting-style',
       order: 20,
       seo: {
+        title: 'Parenting Style Quiz — What Kind of Parent Are You?',
+        description:
+          'Take this free parenting style quiz to discover your approach, its strengths and blind spots, and one way to grow as a parent. Just 3 minutes, no signup required.',
         overview:
           'There is no perfect parent — just different styles, each with its own strengths and blind spots. This quick quiz reveals your parenting style, what it does well, where it can trip you up, and one way to grow.',
         whoFor:

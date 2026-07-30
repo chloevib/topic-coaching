@@ -85,6 +85,9 @@ export const careerCoaching: CategoryFile = {
       featured: true,
       order: 5,
       seo: {
+        title: 'Career Archetype Quiz — Discover the Work That Fits You',
+        description:
+          'Take this free career archetype quiz to uncover the strengths and motivations behind your best work, the roles that fit you, and a smart next move. 3 minutes, no signup.',
         overview:
           'What kind of worker are you really? This quick quiz identifies your career archetype — the pattern of strengths and motivations that shapes how you do your best work — then points to the roles that fit you and a smart next move.',
         whoFor:
@@ -124,6 +127,9 @@ export const careerCoaching: CategoryFile = {
       slug: 'career-change-readiness',
       order: 6,
       seo: {
+        title: 'Career Change Readiness Quiz — Should You Stay or Go?',
+        description:
+          'A free 2-minute career change readiness scorecard that tells you whether to stay and build, start exploring, or make your move — based on where you actually stand. No signup.',
         overview:
           'Stuck between staying and leaving? This 2-minute scorecard measures your career-change readiness across four areas, then tells you whether to stay and build, start exploring, or make your move — so the decision is based on where you actually stand, not just how you feel on a hard day.',
         whoFor:
@@ -163,6 +169,9 @@ export const careerCoaching: CategoryFile = {
       slug: 'productivity-style',
       order: 7,
       seo: {
+        title: 'Productivity Style Quiz — Find the System That Fits Your Brain',
+        description:
+          'A free productivity style quiz that reveals how you focus, plan, and get things done — plus the systems that actually fit you instead of generic hacks. 3 minutes, no signup.',
         overview:
           'Why do some productivity hacks work for you while others fall flat? Because they were built for a different kind of brain. This quick quiz finds your productivity style and the systems that actually fit how you focus, plan, and get things done.',
         whoFor:

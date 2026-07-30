@@ -47,6 +47,9 @@ export const stressManagementCoaching: CategoryFile = {
       featured: true,
       order: 13,
       seo: {
+        title: 'Stress Type Quiz — What Kind of Stress Do You Have?',
+        description:
+          'A free stress type quiz that reveals how you react under pressure, what is happening beneath the surface, and the strategies that actually help you regulate. No signup.',
         overview:
           'Everyone handles pressure differently, and the tactics that calm one person can wind another up tighter. This quick quiz reveals your stress type, what is happening underneath the surface, and what actually helps you regulate.',
         whoFor:
@@ -86,6 +89,9 @@ export const stressManagementCoaching: CategoryFile = {
       slug: 'burnout-risk',
       order: 14,
       seo: {
+        title: 'Burnout Risk Test — Are You Burning Out? Free 2-Minute Quiz',
+        description:
+          'A free 2-minute burnout risk assessment measuring your energy, motivation, boundaries, and recovery — see where the strain is greatest and what to do about it. No signup.',
         overview:
           'Running on empty? Burnout builds quietly until it is hard to ignore. This 2-minute scorecard measures your burnout risk across energy, motivation, boundaries, and recovery, then shows where the strain is greatest and what to do about it.',
         whoFor:
