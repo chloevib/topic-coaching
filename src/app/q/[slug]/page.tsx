@@ -97,7 +97,7 @@ export default async function QuizPage({ params }: QuizPageProps) {
           ) : null}
         </nav>
 
-        <h1 className="text-3xl font-bold sm:text-4xl">{hydrated.title}</h1>
+        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">{hydrated.title}</h1>
         {hydrated.description ? (
           <p className="mt-4 text-lg text-base-content/70">{hydrated.description}</p>
         ) : null}

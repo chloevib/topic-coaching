@@ -56,7 +56,7 @@ export function MobileNav({ items }: { items: NavItem[] }) {
       </button>
 
       {open ? (
-        <div className="absolute inset-x-0 top-full max-h-[80vh] overflow-y-auto border-b border-base-300 bg-base-100 shadow-sm">
+        <div className="absolute inset-x-0 top-full max-h-[80vh] overflow-y-auto border-b border-base-300 bg-base-100 shadow-lg">
           <nav className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-3">
             {items.map((item) => {
               const hasChildren = item.children.length > 0

@@ -53,3 +53,15 @@ html {
   outline-offset: 2px;
 }
 
+/*
+ * 文本链接 hover 颜色平滑过渡：站内导航/页脚/面包屑等 `hover:text-primary`
+ * 链接原先是瞬切换色，加 0.15s 过渡让 hover 反馈更柔和一致。
+ * 排除 .btn（DaisyUI 按钮自带过渡）；只在未开启「减少动态效果」时启用，
+ * reduce 场景已被上面的全局 !important 规则接管。
+ */
+@media (prefers-reduced-motion: no-preference) {
+  a:not(.btn) {
+    transition: color 0.15s ease;
+  }
+}
+

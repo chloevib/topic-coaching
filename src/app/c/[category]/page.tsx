@@ -97,7 +97,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
             ) : null}
             <span>{category.name}</span>
           </nav>
-          <h1 className="text-3xl font-bold sm:text-4xl">{category.title}</h1>
+          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">{category.title}</h1>
           <p className="mt-4 text-lg text-base-content/70">{category.heroCopy ?? category.description}</p>
         </div>
       </section>
