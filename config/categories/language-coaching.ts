@@ -80,5 +80,48 @@ export const languageCoaching: CategoryFile = {
         ],
       },
     },
+    {
+      publicToken: 'hbhx5f2b',
+      slug: 'language-learning-style-quiz',
+      featured: true,
+      order: 2,
+      seo: {
+        title: 'What’s Your Language-Learning Style? Free Quiz to Find Your Path to Fluency',
+        description:
+          'Why do some methods click while others feel like a slog? Take this free 8-question language-learning style quiz to discover how you learn a language best — immersion, structure, conversation, or visual review — and get a personalized path to fluency.',
+        overview:
+          'This free 8-question quiz reveals how you learn a language best, then hands you a path to fluency built around that style. You are matched to one of four learner types — the Immersion Explorer, the Structured Scholar, the Social Speaker, or the Visual Organizer — each with concrete next steps and a common pitfall to avoid. It takes about two minutes and needs no signup to start.',
+        whoFor:
+          'Anyone learning a new language — beginners choosing where to start and stalled intermediates who suspect they are using the wrong method for how they actually learn.',
+        whatYouLearn: [
+          'Your language-learning style: immersion, structured, social, or visual',
+          'The study methods most likely to click for you — and which to stop forcing',
+          'A tailored path to fluency with a specific next step',
+          'The blind spot your style tends to create, so you can balance it',
+        ],
+        sampleQuestions: [
+          'You have 30 free minutes for a new language — do you reach for a podcast, a grammar chapter, a chat with a partner, or a flashcard deck?',
+          'A new grammar rule confuses you. What helps most: hearing it in real content, a clear table of examples, using it in conversation, or a color-coded diagram?',
+          'How do you most enjoy building vocabulary — picking words up from what you watch, organized themed lists, words you need for real talks, or spaced-repetition cards?',
+          'Your ideal language teacher would fill class with real audio and stories, follow a structured curriculum, keep you talking, or give you great notes and visuals.',
+        ],
+        howItWorks:
+          'You answer 8 quick multiple-choice questions about how you like to study, handle grammar, build vocabulary, and track progress. Each answer maps to one of four learning styles, and your most-chosen style becomes your result — with a tailored path to fluency and a caution to keep your practice balanced. Language research consistently finds that regular speaking and listening practice, not passive review alone, is what drives real fluency, so every result pairs your natural style with the input and output you still need.',
+        faq: [
+          {
+            q: 'Is there a “best” language-learning style?',
+            a: 'No single style is best — the most effective learners blend all four. This quiz shows your natural default so you can lean into what motivates you while deliberately adding the piece your style tends to skip, such as speaking practice for visual learners or structure for immersion learners.',
+          },
+          {
+            q: 'Will this tell me which language to learn?',
+            a: 'No — it focuses on how you learn rather than what to learn. The result works for any language and helps you pick methods, tools, and routines that fit the way you naturally absorb and remember new material.',
+          },
+          {
+            q: 'How long does it take, and is it free?',
+            a: 'About two minutes for the 8 questions. It is completely free and gives you a personalized learning-style result with tailored tips — no signup required to start.',
+          },
+        ],
+      },
+    },
   ],
 }
