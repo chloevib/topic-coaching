@@ -206,42 +206,6 @@ export const businessCoaching: CategoryFile = {
       },
     },
     {
-      publicToken: 'r5espu34',
-      slug: 'coaching-client-discovery',
-      order: 14,
-      seo: {
-        title: 'Coaching Client Discovery Assessment — Know Your Ideal Client',
-        description:
-          'A free discovery assessment that helps coaches get clear on their ideal client, their real problems, and the message that turns strangers into booked calls.',
-        overview:
-          'You cannot sell coaching to a client you have not defined. This discovery assessment helps you get specific about who your ideal client is, the problems keeping them up at night, and the language that makes them feel understood — the foundation of an offer that actually converts.',
-        whoFor:
-          'Coaches building or refining their practice who want a sharper picture of their ideal client and a message that resonates enough to fill discovery calls.',
-        whatYouLearn: [
-          'A clearer profile of your ideal coaching client',
-          'The core problems and goals that drive them to seek a coach',
-          'Where your current positioning is vague or off-target',
-          'How to sharpen your message so the right clients self-select',
-        ],
-        howItWorks:
-          'You work through a structured set of prompts about the clients you serve best, their problems, and your positioning. Your responses surface where your client picture is clear and where it is fuzzy, with pointers to tighten it. It takes about five minutes, is free, and needs no signup to start.',
-        faq: [
-          {
-            q: 'Why is client discovery so important for coaches?',
-            a: 'Clarity on your ideal client shapes everything downstream — your offer, pricing, content, and sales conversations. When you deeply understand a specific client\'s problems, your marketing speaks directly to them and your discovery calls convert far more often.',
-          },
-          {
-            q: 'Is this the same as choosing a niche?',
-            a: 'They are related but distinct. A niche defines the space you work in; client discovery zooms in on the specific person in that space — their problems, language, and goals — so your message lands.',
-          },
-          {
-            q: 'How long does the assessment take, and is it free?',
-            a: 'About five minutes, and it is free with a personalized result — no signup required to start.',
-          },
-        ],
-      },
-    },
-    {
       publicToken: 'd6pqmtwg',
       slug: 'coaching-business-bottleneck',
       featured: true,
