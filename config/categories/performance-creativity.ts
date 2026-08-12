@@ -1,6 +1,6 @@
 import type { CategoryFile } from '../schema'
 
-/** Hub · 表演与创造力（顶层支柱页，draft；旗下有 live niche 后去掉 draft 促级） */
+/** Hub · 表演与创造力（顶层支柱页，已转正：旗下 content-creator / creativity 两个 niche 已 live） */
 export const performanceCreativity: CategoryFile = {
   category: {
     slug: 'performance-creativity',
@@ -11,8 +11,6 @@ export const performanceCreativity: CategoryFile = {
     emoji: '🎭',
     heroCopy: 'Voice, stage, camera, and creative craft. Short assessments to find your style and where to grow.',
     order: 6,
-    // intro/faq 已备好；旗下 content-creator-coaching 等 niche 转正后即可去掉 draft 促级。
-    draft: true,
     intro: [
       'Performance and creativity coaching spans everything you make and share — how you speak and present, how you show up on camera, and how you shape a creative craft into work that connects with an audience. The common thread is turning raw instinct into a repeatable, confident style.',
       'These free quizzes are a fast way to see your creative strengths clearly. Each is a short self-assessment that names your natural style, surfaces the blind spot holding you back, and points to the next skill worth building — whether you are a content creator, performer, or someone finding their voice.',

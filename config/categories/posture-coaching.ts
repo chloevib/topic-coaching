@@ -13,8 +13,6 @@ export const postureCoaching: CategoryFile = {
       'Sit and stand taller — start by scoring your posture habits and finding the first fix to make today.',
     order: 15,
     parent: 'health-body-fitness',
-    // 已收录 1 道完整 GEO 测评（posture-health-scorecard）。沿用作者约定：≥3 道再去 draft 促级开页。
-    draft: true,
     intro: [
       'Posture coaching helps you undo the effects of long hours at a desk and on a phone — rounded shoulders, forward head, and a slumped lower back — and rebuild alignment through better habits, ergonomics, and mobility. It is less about standing rigidly upright and more about moving often and setting your body up to succeed.',
       'A quick self-assessment is an easy way to see where you stand across the areas that matter: sitting habits, standing alignment, desk and screen ergonomics, and mobility. It names your biggest gap and the first small change worth making today.',

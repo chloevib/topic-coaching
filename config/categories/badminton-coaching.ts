@@ -13,8 +13,6 @@ export const badmintonCoaching: CategoryFile = {
       'Raise your game — start by testing how well you know badminton scoring, serving rules, and shots.',
     order: 14,
     parent: 'sports-athletics',
-    // 已收录 1 道完整 GEO 测评（badminton-iq-quiz）。沿用作者约定：≥3 道再去 draft 促级开页。
-    draft: true,
     intro: [
       'Badminton coaching brings together footwork, racquet skills, serving rules, and match strategy. Knowing how the game works — from rally scoring and the underarm serve rule to the difference between a smash, a clear, and a drop shot — gives you a foundation that stroke technique and on-court tactics build on.',
       'A quick knowledge check is an easy way to see where you stand, covering scoring, equipment, rules, and the sport’s all-time greats. Each answer explains the why, so you leave a little sharper than you arrived.',

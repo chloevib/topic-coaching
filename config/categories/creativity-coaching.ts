@@ -13,8 +13,6 @@ export const creativityCoaching: CategoryFile = {
       'Do your best creative work — start by discovering how you naturally generate ideas and where you get stuck.',
     order: 16,
     parent: 'performance-creativity',
-    // 已收录 1 道完整 GEO 测评（creativity-style-quiz）。沿用作者约定：≥3 道再去 draft 促级开页。
-    draft: true,
     intro: [
       'Creativity coaching helps you understand how you create best and remove what gets in the way. Everyone is creative, but no two people generate ideas the same way — some dream big, some build with their hands, some think through story, some solve problems, and some spark off other people. Knowing your pattern is the fastest route to doing more of your best work.',
       'A quick self-assessment is an easy way to name your creative style, see the strengths it gives you, and spot the blind spot that quietly stalls your projects. Each result comes with a concrete way to get unstuck and ship.',
