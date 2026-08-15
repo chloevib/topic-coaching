@@ -26,8 +26,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* 站点级实体图谱：全站注入一次,供 AI 引擎建立品牌/站点实体认知 */}
         <JsonLd data={organizationJsonLd()} />
         <JsonLd data={websiteJsonLd()} />
+        {/*
+         * 跳至正文：键盘/读屏用户不必每页 Tab 穿过整个页头导航。
+         * 平时用 sr-only 收起，获得焦点时才浮出成一颗按钮。
+         */}
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-primary focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-primary-content focus:shadow-lg"
+        >
+          Skip to content
+        </a>
         <SiteHeader />
-        <main className="flex-1">{children}</main>
+        {/* tabIndex=-1：部分浏览器点完 skip link 后不会把焦点真正移进非交互元素，加上才稳 */}
+        <main id="main-content" tabIndex={-1} className="flex-1">
+          {children}
+        </main>
         <SiteFooter />
         <Analytics />
         <SpeedInsights />

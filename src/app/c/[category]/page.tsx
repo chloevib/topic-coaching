@@ -82,20 +82,27 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
 
       <section className="bg-gradient-to-b from-primary/10 to-base-100">
         <div className="mx-auto max-w-6xl px-4 py-16">
-          <nav className="mb-3 text-sm text-base-content/70">
-            <Link href="/" className="hover:text-primary">
-              Home
-            </Link>{' '}
-            /{' '}
-            {parent ? (
-              <>
-                <Link href={`/c/${parent.slug}`} className="hover:text-primary">
-                  {parent.name}
-                </Link>{' '}
-                /{' '}
-              </>
-            ) : null}
-            <span>{category.name}</span>
+          {/* 面包屑：ol 有序列表 + aria-label，与顶部注入的 BreadcrumbList 结构化数据对齐 */}
+          <nav aria-label="Breadcrumb" className="mb-3 text-sm text-base-content/70">
+            <ol className="flex flex-wrap items-center gap-x-2 gap-y-1">
+              <li>
+                <Link href="/" className="hover:text-primary">
+                  Home
+                </Link>
+              </li>
+              {parent ? (
+                <li className="flex items-center gap-x-2">
+                  <span aria-hidden>/</span>
+                  <Link href={`/c/${parent.slug}`} className="hover:text-primary">
+                    {parent.name}
+                  </Link>
+                </li>
+              ) : null}
+              <li className="flex items-center gap-x-2">
+                <span aria-hidden>/</span>
+                <span aria-current="page">{category.name}</span>
+              </li>
+            </ol>
           </nav>
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">{category.title}</h1>
           <p className="mt-4 text-lg text-base-content/70">{category.heroCopy ?? category.description}</p>
@@ -116,22 +123,40 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
       {/* Hub 页：先展示旗下分类，供用户下钻 */}
       {hub && children.length ? (
         <section className="mx-auto max-w-6xl px-4 pt-16">
-          <h2 className="mb-2 text-2xl font-bold">Coaching areas</h2>
+          <h2 className="mb-2 text-2xl font-bold tracking-tight sm:text-3xl">Coaching areas</h2>
           <p className="mb-8 text-base-content/70">Explore a focus within {category.name}.</p>
           <CategoryGrid categories={children} />
         </section>
       ) : null}
 
       <section className="mx-auto max-w-6xl px-4 py-16">
-        {hub && children.length ? <h2 className="mb-8 text-2xl font-bold">Popular quizzes</h2> : null}
+        {/*
+         * 测评列表一律带 h2：原先只有「Hub 且有子分类」时才给标题，
+         * niche 页的测评网格是一段没有标题的裸内容，标题大纲缺一层，
+         * 爬虫/答案引擎也读不出这块在讲什么。
+         */}
+        <h2 className="mb-8 text-2xl font-bold tracking-tight sm:text-3xl">
+          {hub && children.length ? 'Popular quizzes' : `${category.name} quizzes`}
+        </h2>
+        {/* 网格不传 priorityCount：它在 hero + intro 长文之下，基本不在首屏，不抢 eager 带宽 */}
         {quizzes.length ? (
           <QuizGrid items={quizzes} />
         ) : (
-          <div className="rounded-2xl border border-dashed border-base-300 bg-base-100 px-6 py-12 text-center">
-            <div className="mb-2 text-3xl" aria-hidden>
+          <div className="rounded-2xl border border-dashed border-base-300 bg-base-100 px-6 py-14 text-center shadow-sm">
+            <div
+              aria-hidden
+              className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-3xl"
+            >
               🧭
             </div>
-            <p className="text-base-content/70">No quizzes here yet — check back soon.</p>
+            <p className="mb-1 font-medium">No quizzes here yet</p>
+            <p className="mx-auto max-w-md text-sm text-base-content/70">
+              We&rsquo;re still building out this area. In the meantime, browse{' '}
+              <Link href={parent ? `/c/${parent.slug}` : '/'} className="link link-primary">
+                {parent ? parent.name : 'all coaching topics'}
+              </Link>{' '}
+              for something close.
+            </p>
           </div>
         )}
       </section>
@@ -139,7 +164,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
       {/* GEO：分类级 FAQ（FAQPage 结构化数据已在顶部注入） */}
       {catFaq.length ? (
         <section className="mx-auto max-w-6xl px-4 py-16">
-          <h2 className="mb-5 text-2xl font-bold">Frequently asked questions</h2>
+          <h2 className="mb-5 text-2xl font-bold tracking-tight sm:text-3xl">Frequently asked questions</h2>
           <div className="join join-vertical w-full">
             {catFaq.map((entry, index) => (
               <div key={index} className="collapse join-item collapse-arrow border border-base-300 bg-base-100">
@@ -156,7 +181,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
 
       <section className="bg-base-200">
         <div className="mx-auto max-w-6xl px-4 py-16">
-          <h2 className="mb-8 text-2xl font-bold">{relatedHeading}</h2>
+          <h2 className="mb-8 text-2xl font-bold tracking-tight sm:text-3xl">{relatedHeading}</h2>
           <CategoryGrid categories={relatedCategories} />
         </div>
       </section>

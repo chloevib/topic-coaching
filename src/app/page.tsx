@@ -38,17 +38,17 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Featured quizzes */}
+      {/* Featured quizzes —— 首屏下方第一屏，前 3 张封面按 LCP 候选走 eager */}
       <section id="featured" className="mx-auto max-w-6xl px-4 py-16">
-        <h2 className="mb-2 text-2xl font-bold">Popular quizzes</h2>
+        <h2 className="mb-2 text-2xl font-bold tracking-tight sm:text-3xl">Popular quizzes</h2>
         <p className="mb-8 text-base-content/70">Start here — our most-taken coaching assessments.</p>
-        <QuizGrid items={featured} />
+        <QuizGrid items={featured} priorityCount={3} />
       </section>
 
       {/* Categories */}
       <section id="categories" className="bg-base-200">
         <div className="mx-auto max-w-6xl px-4 py-16">
-          <h2 className="mb-2 text-2xl font-bold">Explore by topic</h2>
+          <h2 className="mb-2 text-2xl font-bold tracking-tight sm:text-3xl">Explore by topic</h2>
           <p className="mb-8 text-base-content/70">Find the coaching area that fits where you are right now.</p>
           <CategoryGrid categories={hubs} />
         </div>
@@ -56,7 +56,7 @@ export default async function HomePage() {
 
       {/* How it works */}
       <section className="mx-auto max-w-5xl px-4 py-16">
-        <h2 className="mb-8 text-center text-2xl font-bold">How it works</h2>
+        <h2 className="mb-8 text-center text-2xl font-bold tracking-tight sm:text-3xl">How it works</h2>
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
           {[
             { n: '1', t: 'Pick a quiz', d: 'Choose from coaching assessments grouped by topic.' },

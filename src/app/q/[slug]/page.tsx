@@ -82,19 +82,30 @@ export default async function QuizPage({ params }: QuizPageProps) {
       {faq.length ? <JsonLd data={faqJsonLd(faq)} /> : null}
 
       <div className="mx-auto max-w-3xl px-4 py-10">
-        {/* Breadcrumb */}
-        <nav className="mb-4 text-sm text-base-content/70">
-          <Link href="/" className="hover:text-primary">
-            Home
-          </Link>
-          {primaryCategory ? (
-            <>
-              {' / '}
-              <Link href={`/c/${primaryCategory.slug}`} className="hover:text-primary">
-                {primaryCategory.name}
+        {/* 面包屑：ol 有序列表 + aria-label，与顶部注入的 BreadcrumbList 结构化数据对齐 */}
+        <nav aria-label="Breadcrumb" className="mb-4 text-sm text-base-content/70">
+          <ol className="flex flex-wrap items-center gap-x-2 gap-y-1">
+            <li>
+              <Link href="/" className="hover:text-primary">
+                Home
               </Link>
-            </>
-          ) : null}
+            </li>
+            {primaryCategory ? (
+              <li className="flex items-center gap-x-2">
+                <span aria-hidden>/</span>
+                <Link href={`/c/${primaryCategory.slug}`} className="hover:text-primary">
+                  {primaryCategory.name}
+                </Link>
+              </li>
+            ) : null}
+            {/* 末项补上测评自身：原先可见面包屑只有 2 级，而注入的 BreadcrumbList 是 3 级，两者对不上 */}
+            <li className="flex items-center gap-x-2">
+              <span aria-hidden>/</span>
+              <span aria-current="page" className="line-clamp-1">
+                {hydrated.title}
+              </span>
+            </li>
+          </ol>
         </nav>
 
         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">{hydrated.title}</h1>
@@ -117,7 +128,7 @@ export default async function QuizPage({ params }: QuizPageProps) {
         {/* GEO 正文：把测评实质内容以可抓取文本呈现,供答案引擎摘录 */}
         {whatYouLearn.length ? (
           <section className="mt-14">
-            <h2 className="mb-5 text-2xl font-bold">What you&rsquo;ll learn</h2>
+            <h2 className="mb-5 text-2xl font-bold tracking-tight sm:text-3xl">What you&rsquo;ll learn</h2>
             <ul className="space-y-3">
               {whatYouLearn.map((point, index) => (
                 <li key={index} className="flex gap-3 text-base-content/80">
@@ -133,7 +144,7 @@ export default async function QuizPage({ params }: QuizPageProps) {
 
         {sampleQuestions.length ? (
           <section className="mt-14">
-            <h2 className="mb-2 text-2xl font-bold">Sample questions</h2>
+            <h2 className="mb-2 text-2xl font-bold tracking-tight sm:text-3xl">Sample questions</h2>
             <p className="mb-5 text-base-content/70">
               A few of the questions you&rsquo;ll answer in the {hydrated.title}:
             </p>
@@ -149,14 +160,14 @@ export default async function QuizPage({ params }: QuizPageProps) {
 
         {whoFor ? (
           <section className="mt-14">
-            <h2 className="mb-5 text-2xl font-bold">Who this quiz is for</h2>
+            <h2 className="mb-5 text-2xl font-bold tracking-tight sm:text-3xl">Who this quiz is for</h2>
             <p className="text-base-content/80">{whoFor}</p>
           </section>
         ) : null}
 
         {howItWorks ? (
           <section className="mt-14">
-            <h2 className="mb-5 text-2xl font-bold">How it works</h2>
+            <h2 className="mb-5 text-2xl font-bold tracking-tight sm:text-3xl">How it works</h2>
             <p className="text-base-content/80">{howItWorks}</p>
           </section>
         ) : null}
@@ -164,7 +175,7 @@ export default async function QuizPage({ params }: QuizPageProps) {
         {/* FAQ */}
         {faq.length ? (
           <section className="mt-14">
-            <h2 className="mb-5 text-2xl font-bold">Frequently asked questions</h2>
+            <h2 className="mb-5 text-2xl font-bold tracking-tight sm:text-3xl">Frequently asked questions</h2>
             <div className="join join-vertical w-full">
               {faq.map((entry, index) => (
                 <div key={index} className="collapse join-item collapse-arrow border border-base-300 bg-base-100">
@@ -188,7 +199,7 @@ export default async function QuizPage({ params }: QuizPageProps) {
       {related.length ? (
         <section className="bg-base-200">
           <div className="mx-auto max-w-6xl px-4 py-16">
-            <h2 className="mb-8 text-2xl font-bold">More {primaryCategory?.name ?? 'coaching'} quizzes</h2>
+            <h2 className="mb-8 text-2xl font-bold tracking-tight sm:text-3xl">More {primaryCategory?.name ?? 'coaching'} quizzes</h2>
             <QuizGrid items={related} />
           </div>
         </section>

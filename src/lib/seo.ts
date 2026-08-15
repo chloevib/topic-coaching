@@ -27,7 +27,9 @@ export function organizationJsonLd() {
     logo: absoluteUrl('/opengraph-image'),
     description:
       'RooQuiz is a no-code, AI-assisted quiz and assessment builder. Coaches use it to create quizzes, capture leads, and understand their clients.',
-    sameAs: [ORG_URL],
+    // sameAs 只放「同一实体在别处的权威主页」——原先填的是自己的 url，
+    // 与 url 字段重复且不构成任何实体消歧信号，属于噪声，先留空。
+    // 有 LinkedIn / Crunchbase / X 等第三方主页后再补进来，实体图谱才会真正变强。
   }
 }
 
@@ -147,6 +149,9 @@ export function quizJsonLd(input: {
     educationalUse: 'assessment',
     isAccessibleForFree: true,
     inLanguage: 'en',
+    // 把测评挂回 WebSite 节点，答案引擎能顺着 isPartOf → WebSite → publisher
+    // 走完整条实体链，而不是把每份测评当孤立对象。
+    isPartOf: { '@id': absoluteUrl('/#website') },
     provider: { '@type': 'Organization', '@id': ORG_ID, name: 'RooQuiz', url: ORG_URL },
   }
 }

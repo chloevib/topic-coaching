@@ -56,7 +56,9 @@ export function QuizEmbed({ src, token, allowedOrigin, title, minHeight = 640 }:
       ref={iframeRef}
       src={src}
       title={title}
-      loading="lazy"
+      // 答题器是测评页的主内容且落在首屏内，lazy 会把它排到最后加载，
+      // 既拖慢 LCP 也让用户先看到一大块空白占位 → 改为 eager。
+      loading="eager"
       allow="clipboard-write; fullscreen"
       className="w-full rounded-2xl border border-base-300 bg-base-100 shadow-sm"
       style={{ height, minHeight }}
