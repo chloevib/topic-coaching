@@ -6,7 +6,7 @@ export const sleepCoaching: CategoryFile = {
     slug: 'sleep-coaching',
     name: 'Sleep Coach',
     title: 'Sleep Coach Quizzes & Assessments',
-    description: 'Build better sleep habits. Free sleep coaching quizzes and assessments.',
+    description: 'Build better sleep habits, fix your sleep hygiene, and score your sleep quality. Free sleep coaching quizzes and assessments — no signup needed.',
     emoji: '😴',
     heroCopy: 'Build better sleep habits — start by scoring how well you actually sleep.',
     order: 22,

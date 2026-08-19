@@ -45,7 +45,7 @@ export const languageCoaching: CategoryFile = {
       seo: {
         title: 'Test Your English: Vocabulary & Common Mistakes Quiz (Free)',
         description:
-          'Think your English is on point? Take this free 10-question English test on tricky vocabulary, grammar, and the words even native speakers mix up. Get your score and see how sharp your English really is.',
+          'A free 10-question English test on tricky vocabulary, grammar, and the words even native speakers mix up. Get your score and see how sharp your English is.',
         overview:
           'Think your English is on point? This free 10-question quiz tests the tricky vocabulary, grammar, and confusable words that trip up even native speakers — their vs there, affect vs effect, fewer vs less, and more. Answer, get your score out of 100, and see exactly which common mistakes to fix, with a clear explanation for every question.',
         whoFor:
@@ -86,9 +86,9 @@ export const languageCoaching: CategoryFile = {
       featured: true,
       order: 2,
       seo: {
-        title: 'What’s Your Language-Learning Style? Free Quiz to Find Your Path to Fluency',
+        title: 'What’s Your Language-Learning Style? Free Quiz',
         description:
-          'Why do some methods click while others feel like a slog? Take this free 8-question language-learning style quiz to discover how you learn a language best — immersion, structure, conversation, or visual review — and get a personalized path to fluency.',
+          'A free 8-question quiz that reveals how you learn a language best — immersion, structure, conversation, or visual review — plus your path to fluency.',
         overview:
           'This free 8-question quiz reveals how you learn a language best, then hands you a path to fluency built around that style. You are matched to one of four learner types — the Immersion Explorer, the Structured Scholar, the Social Speaker, or the Visual Organizer — each with concrete next steps and a common pitfall to avoid. It takes about two minutes and needs no signup to start.',
         whoFor:

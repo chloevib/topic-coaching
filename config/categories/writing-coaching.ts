@@ -7,7 +7,7 @@ export const writingCoaching: CategoryFile = {
     name: 'Writing Coach',
     title: 'Writing Coach Quizzes & Assessments',
     description:
-      'Write with clarity, structure, and voice. Free writing coaching quizzes and assessments.',
+      'Write with clarity, structure, and voice. Free writing coaching quizzes and assessments to rate your writing skills and see what to improve first.',
     emoji: '✍️',
     heroCopy:
       'Sharpen your writing — start by pinpointing which skill will improve your writing fastest.',

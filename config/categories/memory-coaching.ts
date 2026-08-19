@@ -44,7 +44,7 @@ export const memoryCoaching: CategoryFile = {
       slug: 'memory-iq-quiz',
       order: 1,
       seo: {
-        title: 'Memory IQ Quiz — Test Your Recall and Retention (Free 10-Question Quiz)',
+        title: 'Memory IQ Quiz — Test Your Recall and Retention',
         description:
           'A free 10-question memory quiz on the forgetting curve, working-memory limits, spaced repetition, chunking, and memory palaces. Every answer comes with a short explanation.',
         overview:

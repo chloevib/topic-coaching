@@ -45,7 +45,7 @@ export const mindsetCoaching: CategoryFile = {
       seo: {
         title: 'Growth vs. Fixed Mindset Quiz — What’s Your Mindset? (Free)',
         description:
-          'Do you have a growth mindset or a fixed mindset? Based on Carol Dweck’s research, this free 2-minute quiz reveals how you handle challenges, effort, feedback, and setbacks — plus one small shift to grow.',
+          'Growth mindset or fixed mindset? Based on Carol Dweck’s research, this free 2-minute quiz reveals how you handle challenges, effort, feedback, and setbacks.',
         overview:
           'This free 10-question quiz reveals whether you lean toward a growth mindset, a fixed mindset, or a mix, based on Carol Dweck’s research on how we interpret challenge, effort, feedback, and failure. Each result explains your pattern, its strengths and costs, and gives you one small shift to practice. It takes about two minutes and needs no signup to start.',
         whoFor:

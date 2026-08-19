@@ -45,9 +45,9 @@ export const petTrainingCoaching: CategoryFile = {
       slug: 'dog-training-style',
       order: 1,
       seo: {
-        title: 'Dog Training Style Quiz — Find Your Dog-Parent Archetype (Free, 2 Minutes)',
+        title: 'Dog Training Style Quiz — Find Your Dog-Parent Type',
         description:
-          'A free 10-question dog training style quiz. Find your dog-parent archetype — Reward Coach, Steady Handler, Soft Heart, or Thoughtful Student — plus your blind spot and one thing to fix this week.',
+          'A free 10-question dog training style quiz. Find your dog-parent archetype — Reward Coach, Steady Handler, Soft Heart, or Thoughtful Student.',
         overview:
           'Every dog owner trains their dog, even the ones who swear they do not. This free 10-question quiz reveals your dog-parent archetype: how you set boundaries, how you reward, how you handle the hard days, and where your instincts quietly hold your dog back. You get your archetype, your strengths, your blind spot, and one concrete thing to work on this week.',
         whoFor:

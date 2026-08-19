@@ -45,7 +45,7 @@ export const boxingCoaching: CategoryFile = {
       seo: {
         title: 'What’s Your Boxing IQ? Free 10-Question Boxing Quiz',
         description:
-          'Think you know boxing? Test your boxing IQ with this free 10-question quiz on the rules, technique, and famous fights of the sweet science. Every answer comes with a short explanation — can you go the distance?',
+          'Test your boxing IQ with this free 10-question quiz on the rules, technique, and famous fights of the sweet science. Every answer comes with an explanation.',
         overview:
           'This free 10-question quiz tests your knowledge of boxing across rules, technique, and history — from the jab and the southpaw stance to the 12-round championship limit and Ali’s rope-a-dope. You score out of 100 and land as a Ringside Rookie, Solid Contender, or Boxing Brainiac, and every question comes with a short explanation so you sharpen up as you go. It takes a few minutes and needs no signup to start.',
         whoFor:

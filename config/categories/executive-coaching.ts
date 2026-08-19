@@ -44,7 +44,7 @@ export const executiveCoaching: CategoryFile = {
       slug: 'executive-coach-readiness',
       order: 1,
       seo: {
-        title: 'Executive Coach Readiness Scorecard — Are You Ready to Coach Senior Leaders?',
+        title: 'Executive Coach Readiness Scorecard — Free Test',
         description:
           'A free 14-question executive coaching readiness assessment. Score your credibility, coaching craft, commercial fluency, and pipeline, and see which dimension is holding you back.',
         overview:

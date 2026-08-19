@@ -218,7 +218,7 @@ export const lifeCoaching: CategoryFile = {
       seo: {
         title: 'Learning Style Quiz (VARK) — Discover How You Learn Best',
         description:
-          'A free 10-question learning style quiz based on the VARK model. Find whether you learn best visually, by listening, by reading and writing, or by doing — with study tips matched to your result.',
+          'A free 10-question VARK learning style quiz. Find whether you learn best visually, by listening, by reading and writing, or by doing — with study tips.',
         overview:
           'Knowing how you learn best turns study from a slog into something that sticks. Based on the VARK model — Visual, Auditory, Reading/Writing, and Kinesthetic — this quiz reads how you naturally take in new information from everyday situations and returns your dominant learning style plus concrete study tips tailored to how your brain absorbs information.',
         whoFor:

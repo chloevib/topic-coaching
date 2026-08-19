@@ -124,10 +124,11 @@ export const healthWellnessCoaching: CategoryFile = {
       publicToken: 'x8xgbenx',
       slug: 'eating-personality',
       order: 17,
+      alsoIn: ['nutrition-coaching'],
       seo: {
         title: 'Eating Personality Quiz — What Kind of Eater Are You?',
         description:
-          'A free eating personality quiz that reveals the patterns driving how you eat and one realistic shift that fits your real life — no willpower or all-or-nothing diet. No signup.',
+          'A free eating personality quiz that reveals the patterns driving how you eat — plus one realistic shift that fits your real life. No willpower, no all-or-nothing diet.',
         overview:
           'Healthy eating is not about willpower — it is about your patterns. This quick quiz reveals your eating personality, what is really driving it, and one realistic shift that fits how you actually eat rather than an all-or-nothing diet.',
         whoFor:

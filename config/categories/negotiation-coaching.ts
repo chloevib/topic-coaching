@@ -6,7 +6,7 @@ export const negotiationCoaching: CategoryFile = {
     slug: 'negotiation-coaching',
     name: 'Negotiation Coach',
     title: 'Negotiation Coach Quizzes & Assessments',
-    description: 'Sharpen your deal-making skills. Free negotiation coaching quizzes and assessments.',
+    description: 'Sharpen your deal-making, persuasion, and negotiation tactics. Free negotiation coaching quizzes and assessments to test where you really stand.',
     emoji: '🤝',
     heroCopy: 'Sharpen your negotiation skills — start by testing what you really know.',
     order: 17,

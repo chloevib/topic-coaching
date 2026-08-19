@@ -39,9 +39,9 @@ export const basketballCoaching: CategoryFile = {
       slug: 'basketball-iq-quiz',
       order: 1,
       seo: {
-        title: 'Basketball IQ Quiz — Test Your Knowledge of the Game (Free 12-Question Quiz)',
+        title: 'Basketball IQ Quiz — Test Your Knowledge of the Game',
         description:
-          'A free 12-question basketball IQ quiz on rules, scoring, positions, and NBA history — from the shot clock and traveling to triple-doubles and the all-time scoring record. Each answer comes with a quick explanation.',
+          'A free 12-question basketball IQ quiz on rules, scoring, positions, and NBA history — from the shot clock to triple-doubles. Every answer explained.',
         overview:
           'Think you know basketball? This free 12-question quiz tests your grasp of rules, scoring, positions, and NBA history — from the 24-second shot clock to double-doubles and the all-time scoring record — and reveals your Basketball IQ in about three minutes. Each answer comes with a quick explanation, so you pick up something new.',
         whoFor:

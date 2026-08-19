@@ -45,7 +45,7 @@ export const swimmingCoaching: CategoryFile = {
       seo: {
         title: 'Are You Open-Water Swim Ready? Free Readiness Scorecard',
         description:
-          'Planning your first lake, sea, or triathlon swim? This free 2-minute open-water readiness scorecard rates your pool fitness, open-water skills, safety know-how, and mindset — and shows exactly what to work on before you dive in.',
+          'A free 2-minute open-water swim readiness scorecard rating your pool fitness, open-water skills, safety know-how, and mindset before your first swim.',
         overview:
           'This free 8-question scorecard rates your open-water swim readiness out of 32 across four areas — pool fitness, open-water skills, safety know-how, and mindset — and returns one clear score plus your strongest and weakest area on a radar chart. You land in one of three bands, Pool-First, Getting Ready, or Open-Water Ready, each with specific next steps. It takes about two minutes and needs no signup to start.',
         whoFor:

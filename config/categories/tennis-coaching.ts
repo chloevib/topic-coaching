@@ -39,7 +39,7 @@ export const tennisCoaching: CategoryFile = {
       slug: 'tennis-iq-quiz',
       order: 1,
       seo: {
-        title: 'Tennis IQ Quiz — Test Your Knowledge of the Game (Free 12-Question Quiz)',
+        title: 'Tennis IQ Quiz — Test Your Knowledge of the Game',
         description:
           'A free 12-question tennis IQ quiz on scoring, the Grand Slams, court surfaces, and shots — from love and deuce to bagels and lets. Each answer comes with a quick explanation.',
         overview:

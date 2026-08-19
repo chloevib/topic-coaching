@@ -39,9 +39,9 @@ export const communicationCoaching: CategoryFile = {
       slug: 'communication-skills-scorecard',
       order: 1,
       seo: {
-        title: 'Communication Skills Scorecard — Rate Your Communication (Free 3-Min Quiz)',
+        title: 'Communication Skills Scorecard — Rate Your Skills',
         description:
-          'A free 3-minute communication skills scorecard that rates you on listening, clarity, empathy, and assertiveness, then shows your strongest and weakest area and one habit to improve next.',
+          'A free 3-minute communication skills scorecard rating your listening, clarity, empathy, and assertiveness — plus the one habit to improve next.',
         overview:
           'How strong are your communication skills, really? This free scorecard rates you across the four skills every great communicator relies on — listening, clarity, empathy, and assertiveness — and gives you one overall score plus a breakdown of where you shine and which area to sharpen next.',
         whoFor:

@@ -39,9 +39,9 @@ export const cookingCoaching: CategoryFile = {
       slug: 'cooking-iq-quiz',
       order: 1,
       seo: {
-        title: 'Cooking IQ Quiz — Test Your Kitchen Smarts (Free 10-Question Quiz)',
+        title: 'Cooking IQ Quiz — Test Your Kitchen Smarts',
         description:
-          'A free 10-question cooking IQ quiz on technique, food science, and kitchen safety. No recipes to memorize — just the fundamentals that make everything you cook taste better, with an explanation for every answer.',
+          'A free 10-question cooking IQ quiz on technique, food science, and kitchen safety — the fundamentals that make everything you cook better. Answers explained.',
         overview:
           'Think you know your way around a kitchen? This free 10-question quiz tests the fundamentals real cooks rely on — technique, food science, and kitchen safety — and scores your Cooking IQ out of 100. Every answer comes with a short explanation, so you learn something new with each question.',
         whoFor:

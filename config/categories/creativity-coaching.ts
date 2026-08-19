@@ -39,9 +39,9 @@ export const creativityCoaching: CategoryFile = {
       slug: 'creativity-style-quiz',
       order: 1,
       seo: {
-        title: 'Creativity Style Quiz — Discover Your Creative Archetype (Free 2-Minute Quiz)',
+        title: 'Creativity Style Quiz — Find Your Creative Archetype',
         description:
-          'A free 2-minute creativity style quiz that reveals your creative archetype — Visionary, Maker, Storyteller, Innovator, or Connector — with your strengths, blind spot, and how to do your best work.',
+          'A free 2-minute creativity style quiz that reveals your creative archetype — Visionary, Maker, Storyteller, Innovator, or Connector — and your blind spot.',
         overview:
           'Everyone is creative, but no two people create the same way. This quick 8-question quiz reveals your creativity style across five archetypes — the Visionary, the Maker, the Storyteller, the Innovator, and the Connector — and shows how you generate ideas, where you get stuck, and how to do your best creative work. It takes about two minutes.',
         whoFor:

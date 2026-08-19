@@ -39,9 +39,9 @@ export const postureCoaching: CategoryFile = {
       slug: 'posture-health-scorecard',
       order: 1,
       seo: {
-        title: 'Posture Health Scorecard — How Good Is Your Posture? (Free 2-Minute Assessment)',
+        title: 'Posture Health Scorecard — How Good Is Your Posture?',
         description:
-          'A free 2-minute posture scorecard that rates you out of 60 across sitting habits, standing alignment, desk ergonomics, and mobility — with your biggest gap and the first fix to make today.',
+          'A free 2-minute posture scorecard rating your sitting habits, standing alignment, desk ergonomics, and mobility — plus the first fix to make today.',
         overview:
           'How good is your posture, really? This free 2-minute scorecard rates you across four areas — sitting posture, standing alignment, desk and screen ergonomics, and mobility and movement — and gives you one clear score out of 60. You will instantly see your strongest area, your biggest gap, and the first small fix to make today.',
         whoFor:

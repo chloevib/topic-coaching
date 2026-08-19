@@ -39,7 +39,7 @@ export const badmintonCoaching: CategoryFile = {
       slug: 'badminton-iq-quiz',
       order: 1,
       seo: {
-        title: 'Badminton IQ Quiz — Test Your Knowledge of the Fastest Racquet Sport (Free 12-Question Quiz)',
+        title: 'Badminton IQ Quiz — Test Your Badminton Knowledge',
         description:
           'A free 12-question badminton IQ quiz on rally scoring, serving rules, the shuttlecock, shots, and legends like Lin Dan. Each answer comes with a quick explanation.',
         overview:

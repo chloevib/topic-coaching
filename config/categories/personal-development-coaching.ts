@@ -49,7 +49,7 @@ export const personalDevelopmentCoaching: CategoryFile = {
       seo: {
         title: 'Big Five Personality Test (OCEAN) — Free 30-Question Assessment',
         description:
-          'Take a free Big Five (OCEAN) personality test. 30 quick statements score you on Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism, with a radar chart and a trait-by-trait breakdown.',
+          'A free Big Five (OCEAN) personality test. 30 quick statements score you on Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism.',
         overview:
           'Who are you, really? The Big Five Personality Test measures the five core traits psychologists use to describe personality — Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism (the OCEAN model). In about five minutes you get a personalized profile with a radar chart and a card for each trait, showing where you land on every spectrum and what it means for how you think, work, and connect.',
         whoFor:
@@ -96,7 +96,7 @@ export const personalDevelopmentCoaching: CategoryFile = {
       seo: {
         title: 'Free MBTI Personality Test — Which of the 16 Types Are You?',
         description:
-          'A free 16-type personality test based on the Myers-Briggs dimensions. Answer 22 quick questions to discover your four-letter type, your strengths, your growth edge, and where you shine.',
+          'A free 16-type personality test based on the Myers-Briggs dimensions. Answer 22 quick questions to find your four-letter type and your strengths.',
         overview:
           'Discover which of the 16 personality types you are. Built on the classic Myers-Briggs framework — Extraversion vs Introversion, Sensing vs Intuition, Thinking vs Feeling, and Judging vs Perceiving — this quick test reads your natural preferences across four dimensions and returns your four-letter type with a rich profile: your core strengths, your growth edge, and the roles where you tend to shine.',
         whoFor:

@@ -84,9 +84,9 @@ export const businessCoaching: CategoryFile = {
       featured: true,
       order: 11,
       seo: {
-        title: 'Founder Archetype Quiz — Visionary, Builder, Connector, or Strategist?',
+        title: 'Founder Archetype Quiz — Which Founder Type Are You?',
         description:
-          'A free 10-question quiz that reveals your founder archetype — Visionary, Builder, Connector, or Strategist — with your strengths, blind spots, and the one move that unlocks your next stage of growth.',
+          'A free 10-question quiz that reveals your founder archetype — Visionary, Builder, Connector, or Strategist — plus your strengths and biggest blind spot.',
         overview:
           'Every founder builds differently. Are you the Visionary, the Builder, the Connector, or the Strategist? This 10-question quiz reveals your founder archetype — your natural strengths and the one move that unlocks your next stage of growth.',
         whoFor:
@@ -128,7 +128,7 @@ export const businessCoaching: CategoryFile = {
       seo: {
         title: 'Selling Style Quiz — Find Your Natural Sales Approach',
         description:
-          'A free 2-minute quiz that reveals your selling style — Relationship Builder, Consultant, Challenger, or Closer — with your strengths, your blind spot, and how to level up without being "salesy".',
+          'A free 2-minute quiz that reveals your selling style — Relationship Builder, Consultant, Challenger, or Closer — plus your strengths and blind spot.',
         overview:
           'The best sellers do not copy a script — they play to their natural style. This quick quiz reveals your selling style, the strengths it gives you, the blind spot to watch, and how to level up without pretending to be someone you are not.',
         whoFor:
@@ -211,9 +211,9 @@ export const businessCoaching: CategoryFile = {
       featured: true,
       order: 15,
       seo: {
-        title: 'Coaching Business Bottleneck Quiz — What Is Holding Your Growth Back?',
+        title: 'Coaching Business Bottleneck Quiz — Free Diagnostic',
         description:
-          'A free 8-question quiz for coaches that pinpoints the #1 bottleneck capping your growth — visibility, conversion, offer, or delivery — with a clear direction to break through.',
+          'A free 8-question quiz for coaches pinpointing the #1 bottleneck capping your growth — visibility, conversion, offer, or delivery — and how to break it.',
         overview:
           'Most coaching businesses are held back by one constraint, not a dozen. This 8-question quiz diagnoses whether your biggest bottleneck is visibility (not enough people know you exist), conversion (interest that rarely books), offer (underpricing and price resistance), or delivery (maxed out on your own hours) — so you can fix the thing that actually moves the needle.',
         whoFor:
@@ -255,7 +255,7 @@ export const businessCoaching: CategoryFile = {
       seo: {
         title: 'Coaching Skills Quiz — How Effective a Coach Are You?',
         description:
-          'A free 10-question coaching skills quiz for managers and team leads. Test your grasp of the GROW model, powerful questions, and active listening — and see exactly where to level up.',
+          'A free 10-question coaching skills quiz for managers and team leads. Test your grasp of the GROW model, powerful questions, and active listening.',
         overview:
           'Great coaching is a learnable skill, not a personality trait. This 10-question quiz tests how well you apply the fundamentals that managers rely on — asking open, probing questions, listening more than you talk, using the GROW model, and knowing when to coach versus direct — then scores your coaching effectiveness and shows where to grow.',
         whoFor:

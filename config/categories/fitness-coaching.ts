@@ -45,7 +45,7 @@ export const fitnessCoaching: CategoryFile = {
       seo: {
         title: 'Fitness Level Assessment — How Fit Are You Really?',
         description:
-          'A free 5-minute fitness test that scores you across cardio, strength, flexibility, body composition, and lifestyle — with a radar chart showing exactly what to train next. No equipment needed.',
+          'A free 5-minute fitness test scoring your cardio, strength, flexibility, body composition, and lifestyle — with a radar chart of what to train next.',
         overview:
           'Fitness is not one number — it is a balance across several areas, and the spikiest ones tell you where to train. This assessment scores you on five real-world pillars (cardio endurance, muscular strength, flexibility and mobility, body composition, and lifestyle and recovery) and returns a radar-chart report so you can see at a glance where you are strong and where the fastest gains are hiding. No equipment needed.',
         whoFor:
@@ -172,7 +172,7 @@ export const fitnessCoaching: CategoryFile = {
       seo: {
         title: "What's Holding Back Your Fitness Results? Free 5-Minute Scorecard",
         description:
-          'Putting in the work but not seeing results? This free 5-minute scorecard finds which of your 4 fitness pillars — training, nutrition, recovery, and mindset — is stalling your progress, scores you out of 100, and shows what to fix first.',
+          'Training hard but not seeing results? This free 5-minute scorecard finds which fitness pillar — training, nutrition, recovery, or mindset — is stalling you.',
         overview:
           'When results stall, the problem is rarely effort — it is usually one or two hidden pillars quietly dragging the rest down. This scorecard measures the four pillars that decide whether fitness results actually stick: Training Consistency, Nutrition, Recovery & Sleep, and Mindset & Accountability. You get a personalized score out of 100 and a radar chart showing exactly where your weakest link is, so you can fix the right thing first instead of just training harder everywhere. Research on behavior change backs this up: a review in the Journal of Clinical Medicine found accountability and support are among the strongest predictors of whether people sustain an exercise habit, while sleep-deprivation studies show that under 7 hours of sleep can blunt fat loss and muscle recovery even when training and diet are on point (sources below).',
         whoFor:

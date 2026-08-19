@@ -7,7 +7,7 @@ export const golfCoaching: CategoryFile = {
     name: 'Golf Coach',
     title: 'Golf Coach Quizzes & Assessments',
     description:
-      'Refine your swing, scoring, and course strategy. Free golf coaching quizzes and assessments.',
+      'Refine your swing, scoring, and course strategy. Free golf coaching quizzes and golf IQ tests to check how well you really know the game.',
     emoji: '⛳',
     heroCopy:
       'Sharpen your game — start by testing how well you know golf\'s scoring, rules, and strategy.',
@@ -39,9 +39,9 @@ export const golfCoaching: CategoryFile = {
       slug: 'golf-iq-quiz',
       order: 1,
       seo: {
-        title: 'Golf IQ Quiz — Test Your Knowledge of the Game (Free 10-Question Quiz)',
+        title: 'Golf IQ Quiz — Test Your Knowledge of the Game',
         description:
-          'A free 10-question golf IQ quiz on scoring, rules, clubs, and the majors — from birdies and bogeys to Augusta National. Each question comes with an explanation, so you learn as you play.',
+          'A free 10-question golf IQ quiz on scoring, rules, clubs, and the majors — from birdies and bogeys to Augusta National. Every answer explained.',
         overview:
           'Think you know golf? This free 10-question quiz tests your grasp of the game\'s scoring, rules, and iconic tournaments — from birdies and bogeys to the Masters — and scores your Golf IQ out of 100. Each question comes with an explanation, so you learn as you play.',
         whoFor:
