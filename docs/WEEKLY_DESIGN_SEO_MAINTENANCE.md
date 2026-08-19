@@ -37,7 +37,7 @@
   - `src/app/page.tsx`、`src/app/c/[category]/page.tsx`、`src/app/q/[slug]/page.tsx`：三类页面骨架。
   - `src/lib/seo.ts`（metadata + JSON-LD 构造）、`src/app/sitemap.ts`、`robots.ts`、`llms.txt/route.ts`、`opengraph-image.tsx`。
 - DaisyUI 语义色：`bg-base-100/200/300`、`text-base-content`、`text-primary`、`bg-primary` + `text-primary-content`；**优先语义色，别写死 hex**。
-- 站点规模参考：7 个 Hub 顶层分类 + 大量 niche 子分类（多数仍是 draft 空壳），页头导航按 Hub 下拉展开。
+- 站点规模参考：7 个 Hub 顶层分类 + 大量 niche 子分类（多数仍是 draft 空壳）；页头只放「Categories」一个入口，全部 Hub/niche 收在它的全宽大面板里（md 起显示，窄屏走汉堡菜单）。
 
 ---
 
@@ -69,7 +69,7 @@ pnpm dev    # 起在 3000；起不来就退回静态审查 + 直接看线上 coa
 
 逐条过一遍，能修的直接修，修不了的记一句：
 
-- **响应式**：`sm/md/lg` 断点布局；**页头 7 个 Hub 的横向导航在 md–lg 是否挤爆/换行**（已知高风险点，Hub 名字很长）；下拉面板在最右侧 Hub 是否溢出视口右边缘。
+- **响应式**：`sm/md/lg` 断点布局；**页头一行是否仍是「品牌 · Categories/All quizzes · CTA」三段式不折行**；Categories 大面板在 md（3 列）/xl（4 列）下的高度是否吃掉 `max-h-[75vh]` 之外的屏幕。
 - **sticky 头部锚点偏移**：`html { scroll-padding-top }` 是否覆盖头部实际高度。
 - **对比度 / 暗色**：`emerald` 与 `dim` 下文字/背景对比达标；`bg-primary` 上的文字用 `text-primary-content`。
 - **交互态**：链接/按钮都要有 hover 与**键盘 focus-visible**；下拉菜单键盘可达；移动端菜单支持 **Esc 关闭 / 点击外部关闭**。

@@ -16,7 +16,7 @@ interface NavItem {
 }
 
 /**
- * 窄屏（xl 以下）导航菜单：页头的横向 Hub 链接在 xl 以下隐藏，这里补一个汉堡菜单入口。
+ * 窄屏（md 以下）导航菜单：页头的 Categories 大面板在 md 以下隐藏，这里补一个汉堡菜单入口。
  * 分类树由服务端 SiteHeader 以 props 传入（lib/content 为 server-only，不能在客户端直接取）。
  * 有子分类的 Hub 渲染成可展开的手风琴，点开后下钻到 niche；点击链接或再次点按钮即收起。
  */
@@ -66,7 +66,7 @@ export function MobileNav({ items }: { items: NavItem[] }) {
   }, [open])
 
   return (
-    <div ref={rootRef} className="xl:hidden">
+    <div ref={rootRef} className="md:hidden">
       <button
         ref={triggerRef}
         type="button"
@@ -95,7 +95,7 @@ export function MobileNav({ items }: { items: NavItem[] }) {
       {open ? (
         <div
           ref={panelRef}
-          className="absolute inset-x-0 top-full max-h-[80vh] overflow-y-auto border-b border-base-300 bg-base-100 shadow-lg"
+          className="border-base-300 bg-base-100 absolute inset-x-0 top-full max-h-[80vh] overflow-y-auto border-b shadow-lg"
         >
           <nav aria-label="Main" className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-3">
             {items.map((item) => {
@@ -106,7 +106,7 @@ export function MobileNav({ items }: { items: NavItem[] }) {
                   <div className="flex items-center">
                     <Link
                       href={`/c/${item.slug}`}
-                      className="flex-1 rounded-lg px-3 py-2 text-sm font-medium hover:bg-base-200"
+                      className="hover:bg-base-200 flex-1 rounded-lg px-3 py-2 text-sm font-medium"
                       onClick={close}
                     >
                       {item.name}
@@ -134,12 +134,12 @@ export function MobileNav({ items }: { items: NavItem[] }) {
                     ) : null}
                   </div>
                   {hasChildren && isExpanded ? (
-                    <ul className="mb-1 ml-3 border-l border-base-300 pl-2">
+                    <ul className="border-base-300 mb-1 ml-3 border-l pl-2">
                       {item.children.map((child) => (
                         <li key={child.slug}>
                           <Link
                             href={`/c/${child.slug}`}
-                            className="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-base-content/80 hover:bg-base-200 hover:text-base-content"
+                            className="text-base-content/80 hover:bg-base-200 hover:text-base-content flex items-center gap-2 rounded-lg px-3 py-2 text-sm"
                             onClick={close}
                           >
                             {child.emoji ? (
@@ -156,6 +156,10 @@ export function MobileNav({ items }: { items: NavItem[] }) {
                 </div>
               )
             })}
+            {/* 与桌面版页头的第二个导航项对齐：首页即全部测评的总入口 */}
+            <Link href="/" className="hover:bg-base-200 rounded-lg px-3 py-2 text-sm font-medium" onClick={close}>
+              All quizzes
+            </Link>
           </nav>
         </div>
       ) : null}
