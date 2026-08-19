@@ -45,7 +45,7 @@ export const strengthConditioningCoaching: CategoryFile = {
       seo: {
         title: 'Are You Strength-Training Ready? Free Readiness Scorecard',
         description:
-          'A free 2-minute scorecard rating your strength-training readiness across technique, consistency, recovery, and mobility — plus the first gap to fix.',
+          'A free 2-minute scorecard rating your strength-training readiness across technique, consistency and recovery, and mobility — plus the first gap to fix.',
         overview:
           'This free 12-question scorecard rates your strength-training readiness out of 36 across three areas — foundation and technique, consistency and recovery, and mobility and injury prevention — and returns one clear score plus your biggest gap on a radar chart. You land in one of four bands, from Building the Base to Strength-Ready, each with focused next steps. It takes about two minutes and needs no signup to start.',
         whoFor:
