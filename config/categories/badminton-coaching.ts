@@ -41,7 +41,7 @@ export const badmintonCoaching: CategoryFile = {
       seo: {
         title: 'Badminton IQ Quiz — Test Your Badminton Knowledge',
         description:
-          'A free 12-question badminton IQ quiz on rally scoring, serving rules, the shuttlecock, shots, and legends like Lin Dan. Each answer comes with a quick explanation.',
+          'A free 12-question badminton IQ quiz on rally scoring, serving rules, the shuttlecock, shots, and legends like Lin Dan. Every answer explained.',
         overview:
           'Think you know badminton? This free 12-question quiz tests your grasp of BWF rally scoring, the underarm serve rule, court dimensions, shots, and the sport’s greatest players — and reveals your Badminton IQ in about three minutes. Each answer comes with a quick explanation, so you pick up something new.',
         whoFor:

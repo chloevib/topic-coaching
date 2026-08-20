@@ -46,7 +46,7 @@ export const memoryCoaching: CategoryFile = {
       seo: {
         title: 'Memory IQ Quiz — Test Your Recall and Retention',
         description:
-          'A free 10-question memory quiz on the forgetting curve, working-memory limits, spaced repetition, chunking, and memory palaces. Every answer comes with a short explanation.',
+          'A free 10-question memory quiz on the forgetting curve, working-memory limits, spaced repetition, chunking, and memory palaces. Every answer explained.',
         overview:
           'How much do you actually know about how memory works? This free 10-question quiz covers the science of recall, retention, and forgetting — the forgetting curve, working-memory limits, spaced repetition, mnemonic techniques, and the habits that genuinely improve memory. Every question comes with a short explanation, so you sharpen your memory while you test it, and you get your Memory IQ score in about three minutes.',
         whoFor:

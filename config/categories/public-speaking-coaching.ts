@@ -39,7 +39,7 @@ export const publicSpeakingCoaching: CategoryFile = {
       seo: {
         title: 'Public Speaking Style Quiz — Discover Your Speaker Archetype',
         description:
-          'A free 2-minute quiz that reveals your public speaking style — Storyteller, Expert, Energizer, or Connector — plus your strengths on stage and the blind spot to watch.',
+          'A free 2-minute quiz revealing your public speaking style — Storyteller, Expert, Energizer, or Connector — plus your strengths and blind spot.',
         overview:
           'What kind of speaker are you when all eyes are on you? This quick quiz reveals your public speaking archetype — Storyteller, Expert, Energizer, or Connector — so you can lean into your natural strengths, cover your blind spots, and grow into a more confident, magnetic presenter.',
         whoFor:

@@ -39,9 +39,9 @@ export const writingCoaching: CategoryFile = {
       slug: 'writing-skills-scorecard',
       order: 1,
       seo: {
-        title: 'Writing Skills Scorecard — Rate Your Writing (Free 3-Min Quiz)',
+        title: 'Writing Skills Scorecard — Rate Your Writing (Free Quiz)',
         description:
-          'A free 3-minute writing skills scorecard that rates you on clarity & structure, grammar & mechanics, style & voice, and editing & revision, then shows which skill to sharpen next.',
+          'A free 3-minute writing skills scorecard rating your clarity, grammar, style and voice, and editing — then showing which skill to sharpen next.',
         overview:
           'How strong is your writing, really? This free scorecard rates you across the four areas every great writer masters — clarity and structure, grammar and mechanics, style and voice, and editing and revision — and shows you exactly which skill to sharpen next with an overall score and a radar breakdown.',
         whoFor:

@@ -39,9 +39,9 @@ export const meditationCoaching: CategoryFile = {
       slug: 'meditation-style-quiz',
       order: 1,
       seo: {
-        title: 'Meditation Style Quiz — Find the Practice That Fits You (Free)',
+        title: 'Meditation Style Quiz — Find the Practice That Fits You',
         description:
-          'A free 2-minute meditation style quiz that reveals whether mindfulness, breath, movement, mantra, or loving-kindness meditation fits you best — with a simple way to start today.',
+          'A free 2-minute meditation style quiz revealing whether mindfulness, breath, movement, mantra, or loving-kindness meditation fits you best.',
         overview:
           'There is no single right way to meditate — the best practice is the one that fits how your mind actually works. This quick quiz reveals your meditation style across five approaches (mindfulness, breath, movement, mantra, and loving-kindness), why it suits you, and one simple way to begin today.',
         whoFor:

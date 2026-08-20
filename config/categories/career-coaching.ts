@@ -87,7 +87,7 @@ export const careerCoaching: CategoryFile = {
       seo: {
         title: 'Career Archetype Quiz — Discover the Work That Fits You',
         description:
-          'Take this free career archetype quiz to uncover the strengths and motivations behind your best work, the roles that fit you, and a smart next move. 3 minutes, no signup.',
+          'A free career archetype quiz revealing the strengths and motivations behind your best work, the roles that fit you, and a smart next move. 3 minutes.',
         overview:
           'What kind of worker are you really? This quick quiz identifies your career archetype — the pattern of strengths and motivations that shapes how you do your best work — then points to the roles that fit you and a smart next move.',
         whoFor:
@@ -129,7 +129,7 @@ export const careerCoaching: CategoryFile = {
       seo: {
         title: 'Career Change Readiness Quiz — Should You Stay or Go?',
         description:
-          'A free 2-minute career change readiness scorecard that tells you whether to stay and build, start exploring, or make your move — based on where you actually stand. No signup.',
+          'A free 2-minute career change readiness scorecard: stay and build, start exploring, or make your move — based on where you actually stand today.',
         overview:
           'Stuck between staying and leaving? This 2-minute scorecard measures your career-change readiness across four areas, then tells you whether to stay and build, start exploring, or make your move — so the decision is based on where you actually stand, not just how you feel on a hard day.',
         whoFor:
@@ -169,9 +169,9 @@ export const careerCoaching: CategoryFile = {
       slug: 'productivity-style',
       order: 7,
       seo: {
-        title: 'Productivity Style Quiz — Find the System That Fits Your Brain',
+        title: 'Productivity Style Quiz — Find the System That Fits You',
         description:
-          'A free productivity style quiz that reveals how you focus, plan, and get things done — plus the systems that actually fit you instead of generic hacks. 3 minutes, no signup.',
+          'A free productivity style quiz revealing how you focus, plan, and get things done — plus the systems that actually fit you, not generic hacks.',
         overview:
           'Why do some productivity hacks work for you while others fall flat? Because they were built for a different kind of brain. This quick quiz finds your productivity style and the systems that actually fit how you focus, plan, and get things done.',
         whoFor:
@@ -213,7 +213,7 @@ export const careerCoaching: CategoryFile = {
       seo: {
         title: 'Job Interview Readiness Scorecard — Are You Interview-Ready?',
         description:
-          'A free 3-minute interview readiness scorecard that rates you across preparation, answers, presence, and follow-up — so you know exactly what to fix before your next interview.',
+          'A free 3-minute interview readiness scorecard rating your preparation, answers, presence, and follow-up — so you know what to fix before the big day.',
         overview:
           'Most interviews are won or lost before the offer stage — on preparation, storytelling, presence, and follow-up. This 12-question scorecard rates you across four areas that decide most interviews and gives you a score out of 120, so you walk in knowing your strengths and the gaps to close first.',
         whoFor:

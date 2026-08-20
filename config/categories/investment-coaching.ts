@@ -46,7 +46,7 @@ export const investmentCoaching: CategoryFile = {
       seo: {
         title: 'Investing IQ Quiz — Test Your Investment Knowledge',
         description:
-          'A free 12-question investing quiz on stocks, bonds, index funds, compounding, and risk — each with an explanation so you learn as you go. Educational, not advice.',
+          'A free 12-question investing quiz on stocks, bonds, index funds, compounding, and risk — each answer explained. Educational, not financial advice.',
         overview:
           'Think you know your way around investing? This quiz tests your grasp of the core concepts every smart investor relies on — stocks, bonds, compounding, diversification, index funds, liquidity, and fees. Each of the twelve questions comes with a clear explanation, so you actually learn as you go and see where you land, from Curious Beginner to Investing Pro.',
         whoFor:

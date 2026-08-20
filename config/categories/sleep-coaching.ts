@@ -39,7 +39,7 @@ export const sleepCoaching: CategoryFile = {
       seo: {
         title: 'Sleep Quality Scorecard — How Good Is Your Sleep, Really?',
         description:
-          'A free 2-minute sleep quality scorecard that rates your routine, bedroom environment, and daytime energy — then shows the one habit to fix first for deeper rest.',
+          'A free 2-minute sleep quality scorecard rating your routine, bedroom environment, and daytime energy — then the one habit to fix first for deeper rest.',
         overview:
           'How good is your sleep, really? This 2-minute scorecard rates your sleep across three areas — your routine, your bedroom environment, and how you feel during the day — then shows which habit to fix first for deeper, more restorative rest.',
         whoFor:

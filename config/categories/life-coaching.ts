@@ -91,7 +91,7 @@ export const lifeCoaching: CategoryFile = {
       seo: {
         title: 'Procrastination Type Quiz — Why You Put Things Off',
         description:
-          'A free 2-minute procrastination quiz that reveals your type — Perfectionist, Dreamer, Avoider, or Crisis-Maker — what drives it, and the first step to break the cycle.',
+          'A free 2-minute procrastination quiz revealing your type — Perfectionist, Dreamer, Avoider, or Crisis-Maker — and the first step to break the cycle.',
         overview:
           'Procrastination is rarely about laziness — it is a coping response to a specific trigger like fear, overwhelm, perfectionism, or low interest. This quick quiz identifies your procrastination type, what is really driving it, and a first step that works with your wiring instead of against it.',
         whoFor:
@@ -133,7 +133,7 @@ export const lifeCoaching: CategoryFile = {
       seo: {
         title: 'Limiting Beliefs Quiz — What Is Really Holding You Back?',
         description:
-          'A free 2-minute limiting beliefs scorecard that reveals how tightly your beliefs grip your choices across self-worth, fear of failure, fear of judgment, and scarcity.',
+          'A free 2-minute limiting beliefs scorecard showing how tightly your beliefs grip your choices across self-worth, fear of failure, judgment, and scarcity.',
         overview:
           'The biggest thing standing in your way is often a belief you do not even notice — an assumption about yourself you treat as fact. This 2-minute scorecard reveals how tight a grip limiting beliefs have on your choices and which kind holds you back most.',
         whoFor:
@@ -175,7 +175,7 @@ export const lifeCoaching: CategoryFile = {
       seo: {
         title: 'Confidence Scorecard — How Confident Are You Really?',
         description:
-          'A free 2-minute confidence quiz that scores you across four pillars — self-belief, social confidence, resilience, and self-worth — and shows which one to build next.',
+          'A free 2-minute confidence quiz scoring you across four pillars — self-belief, social confidence, resilience, and self-worth — and which to build next.',
         overview:
           'Confidence is not one thing — it is several. This 2-minute scorecard measures yours across self-belief, social confidence, resilience, and self-worth, then shows where you are already solid and which pillar to build next.',
         whoFor:

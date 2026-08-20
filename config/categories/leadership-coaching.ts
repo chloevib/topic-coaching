@@ -49,7 +49,7 @@ export const leadershipCoaching: CategoryFile = {
       seo: {
         title: 'Leadership Style Quiz — What Kind of Leader Are You?',
         description:
-          'Take this free leadership style quiz to reveal your leadership archetype, your core strengths and blind spots, and how to lead more effectively with your natural style. No signup.',
+          'A free leadership style quiz revealing your leadership archetype, your core strengths and blind spots, and how to lead better with your natural style.',
         overview:
           'What kind of leader are you, really? This quick quiz reveals your leadership archetype — your core strengths, your blind spots, and how to lead more effectively by working with your natural style instead of against it.',
         whoFor:
@@ -91,7 +91,7 @@ export const leadershipCoaching: CategoryFile = {
       seo: {
         title: 'Leadership Assessment — Rate Your Leadership Skills Free',
         description:
-          'A free 2-minute leadership assessment scoring your vision, communication, empowerment, and decision-making — see your strongest and weakest pillar and where to grow. No signup.',
+          'A free 2-minute leadership assessment scoring your vision, communication, empowerment, and decision-making — see your strongest and weakest pillar.',
         overview:
           'Great leadership is a set of habits, not a personality. This 2-minute scorecard rates yours across vision, communication, empowering others, and decision-making, then shows your strongest and weakest pillar so you know exactly where to grow.',
         whoFor:

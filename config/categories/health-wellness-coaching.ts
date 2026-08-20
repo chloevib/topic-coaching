@@ -41,9 +41,9 @@ export const healthWellnessCoaching: CategoryFile = {
       slug: 'wellness-scorecard',
       order: 15,
       seo: {
-        title: 'Wellness Assessment — How Healthy Is Your Lifestyle? Free Quiz',
+        title: 'Wellness Assessment — How Healthy Is Your Lifestyle?',
         description:
-          'A free 2-minute wellness assessment rating your movement, nutrition, sleep, and stress — see which habit to focus on first for the biggest return. No signup required.',
+          'A free 2-minute wellness assessment rating your movement, nutrition, sleep, and stress — see which habit to focus on first for the biggest return.',
         overview:
           'Your wellbeing is the sum of daily habits, not a single number on a scale. This 2-minute scorecard rates your lifestyle across movement, nutrition, sleep, and stress, then shows which area to focus on first for the biggest return.',
         whoFor:
@@ -85,7 +85,7 @@ export const healthWellnessCoaching: CategoryFile = {
       seo: {
         title: 'Fitness Personality Quiz — What Workout Is Right for You?',
         description:
-          'A free fitness personality quiz that matches the type of movement to how you are wired, plus the workouts and habits most likely to stick. Takes 3 minutes, no signup.',
+          'A free fitness personality quiz matching the type of movement to how you are wired, plus the workouts and habits most likely to stick. 3 minutes.',
         overview:
           'Stop forcing workouts you secretly hate. This quick quiz finds the type of movement that fits how you are wired, plus the workouts and habits most likely to actually stick — because the best exercise is the one you will keep doing.',
         whoFor:
@@ -128,7 +128,7 @@ export const healthWellnessCoaching: CategoryFile = {
       seo: {
         title: 'Eating Personality Quiz — What Kind of Eater Are You?',
         description:
-          'A free eating personality quiz that reveals the patterns driving how you eat — plus one realistic shift that fits your real life. No willpower, no all-or-nothing diet.',
+          'A free eating personality quiz revealing the patterns driving how you eat — plus one realistic shift that fits your life. No all-or-nothing diet.',
         overview:
           'Healthy eating is not about willpower — it is about your patterns. This quick quiz reveals your eating personality, what is really driving it, and one realistic shift that fits how you actually eat rather than an all-or-nothing diet.',
         whoFor:

@@ -39,7 +39,7 @@ export const negotiationCoaching: CategoryFile = {
       seo: {
         title: 'Negotiation IQ Quiz — Test Your Deal-Making Skills',
         description:
-          'A free 10-question negotiation IQ quiz covering BATNA, ZOPA, anchoring, and win-win value creation — with an explanation after every question so you learn as you go.',
+          'A free 10-question negotiation IQ quiz covering BATNA, ZOPA, anchoring, and win-win value creation — with an explanation after every question.',
         overview:
           'Think you can hold your own at the negotiating table? This 10-question quiz tests the core concepts every strong dealmaker knows — from BATNA and anchoring to win-win value creation — and gives you an explanation after each question, so you sharpen your skills as you score them.',
         whoFor:

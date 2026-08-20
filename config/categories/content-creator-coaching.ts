@@ -45,7 +45,7 @@ export const contentCreatorCoaching: CategoryFile = {
       seo: {
         title: 'Content Creator Style Quiz — Find Your Creator Archetype',
         description:
-          'A free 2-minute quiz that reveals your content creator archetype — educator, entertainer, storyteller, or strategist — with your strengths, blind spots, and how to grow.',
+          'A free 2-minute quiz revealing your content creator archetype — educator, entertainer, storyteller, or strategist — with strengths and blind spots.',
         overview:
           'Every creator who grows has a signature style. This quick quiz maps how you think about creating across four creator archetypes — the Educator, the Entertainer, the Storyteller, and the Strategist — and returns the one that fits you best, with the strengths it gives you and the blind spot to watch as you scale.',
         whoFor:

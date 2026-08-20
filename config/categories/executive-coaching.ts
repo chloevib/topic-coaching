@@ -46,7 +46,7 @@ export const executiveCoaching: CategoryFile = {
       seo: {
         title: 'Executive Coach Readiness Scorecard — Free Test',
         description:
-          'A free 14-question executive coaching readiness assessment. Score your credibility, coaching craft, commercial fluency, and pipeline, and see which dimension is holding you back.',
+          'A free 14-question executive coaching readiness assessment scoring your credibility, coaching craft, commercial fluency, and pipeline.',
         overview:
           'Coaching senior leaders is a different game from coaching individuals: the stakes are higher, the buyer is usually an organisation, and credibility is won before the first session starts. This free 14-question scorecard rates you across four dimensions — Credibility & Experience, Coaching Craft, Business & Commercial, and Positioning & Pipeline — and returns a radar chart plus a concrete next step for whichever dimension is weakest.',
         whoFor:

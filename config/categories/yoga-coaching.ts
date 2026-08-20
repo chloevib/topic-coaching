@@ -45,7 +45,7 @@ export const yogaCoaching: CategoryFile = {
       seo: {
         title: 'Yoga Style Quiz — Which Type of Yoga Fits You?',
         description:
-          'A free 5-minute yoga style quiz that matches you to Vinyasa, Yin, Hatha, or Ashtanga based on how you like to move, breathe, and feel — with what to try in your first class.',
+          'A free 5-minute yoga style quiz matching you to Vinyasa, Yin, Hatha, or Ashtanga based on how you like to move and breathe — plus what to try first.',
         overview:
           'With dozens of yoga styles out there, the hardest part is knowing where to start. This quick quiz matches you to one of four core styles — Vinyasa Flow, Yin & Restorative, Hatha, or Ashtanga / Power — based on how you like to move, the pace you enjoy, and what you want to feel afterward, so your first (or next) class actually fits.',
         whoFor:

@@ -47,7 +47,7 @@ export const personalDevelopmentCoaching: CategoryFile = {
       featured: true,
       order: 1,
       seo: {
-        title: 'Big Five Personality Test (OCEAN) — Free 30-Question Assessment',
+        title: 'Big Five Personality Test (OCEAN) — Free 30-Question Quiz',
         description:
           'A free Big Five (OCEAN) personality test. 30 quick statements score you on Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism.',
         overview:

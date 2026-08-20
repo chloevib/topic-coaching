@@ -87,7 +87,7 @@ export const fitnessCoaching: CategoryFile = {
       seo: {
         title: 'PAR-Q Exercise Readiness Screening — Is It Safe to Start?',
         description:
-          'A free 2-minute pre-exercise readiness check based on the PAR-Q (CSEP). Answer a few yes/no questions and get a clear recommendation before you become more physically active.',
+          'A free 2-minute pre-exercise readiness check based on the PAR-Q (CSEP). Answer a few yes/no questions and get a clear recommendation before you start.',
         overview:
           'Before you start or intensify a workout routine, a two-minute check helps you begin safely. This screening is based on the Physical Activity Readiness Questionnaire (PAR-Q), a widely used self-check from the Canadian Society for Exercise Physiology for people aged 15–69, and gives you one of three clear recommendations: you are cleared to get active, talk to your doctor first, or wait until you feel better. It is an informational self-screening, not medical advice or a diagnosis.',
         whoFor:
@@ -130,7 +130,7 @@ export const fitnessCoaching: CategoryFile = {
       seo: {
         title: 'Runner Type Quiz — Discover Your Running Personality',
         description:
-          'A free 8-question runner type quiz that reveals your running personality — Zen, Competitor, Social, Explorer, or Data-Driven — and how to train in a way that actually fits you.',
+          'A free 8-question runner type quiz revealing your running personality — Zen, Competitor, Social, Explorer, or Data-Driven — and how to train for it.',
         overview:
           'Every runner laces up for a different reason, and knowing yours is what makes training stick. This 8-question quiz reveals your running personality across five types — Zen, Competitor, Social, Explorer, and Data-Driven — so you can train, race, and stay motivated in the way that fits how you are wired.',
         whoFor:
@@ -170,7 +170,7 @@ export const fitnessCoaching: CategoryFile = {
       slug: 'fitness-reset-scorecard',
       order: 4,
       seo: {
-        title: "What's Holding Back Your Fitness Results? Free 5-Minute Scorecard",
+        title: "What's Holding Back Your Fitness Results? Free Scorecard",
         description:
           'Training hard but not seeing results? This free 5-minute scorecard finds which fitness pillar — training, nutrition, recovery, or mindset — is stalling you.',
         overview:

@@ -43,7 +43,7 @@ export const businessCoaching: CategoryFile = {
       seo: {
         title: 'Business Scale Readiness Scorecard — Are You Ready to Grow?',
         description:
-          'A free 12-question scorecard that grades your business across Offer & Market Fit, Marketing, Systems, and Finance — so you know exactly what to fix before you scale.',
+          'A free 12-question scorecard grading your business on Offer & Market Fit, Marketing, Systems, and Finance — so you know what to fix before you scale.',
         overview:
           'Pouring fuel on a business that is not ready just makes the cracks bigger. This 12-question scorecard grades you across four pillars — Offer & Market Fit, Marketing, Systems, and Finance — and shows exactly where to focus before you scale.',
         whoFor:

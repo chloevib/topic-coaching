@@ -41,7 +41,7 @@ export const tennisCoaching: CategoryFile = {
       seo: {
         title: 'Tennis IQ Quiz — Test Your Knowledge of the Game',
         description:
-          'A free 12-question tennis IQ quiz on scoring, the Grand Slams, court surfaces, and shots — from love and deuce to bagels and lets. Each answer comes with a quick explanation.',
+          'A free 12-question tennis IQ quiz on scoring, the Grand Slams, court surfaces, and shots — from love and deuce to bagels and lets. Answers explained.',
         overview:
           'Think you know tennis? This free 12-question quiz tests your grasp of scoring, the Grand Slams, court surfaces, and shots — from love and deuce to aces and bagels — and reveals your Tennis IQ in about three minutes. Each answer comes with a quick explanation, so you pick up something new.',
         whoFor:
