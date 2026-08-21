@@ -85,6 +85,7 @@ export const languageCoaching: CategoryFile = {
       slug: 'language-learning-style-quiz',
       featured: true,
       order: 2,
+      alsoIn: ['learning-coaching'],
       seo: {
         title: 'What’s Your Language-Learning Style? Free Quiz',
         description:
