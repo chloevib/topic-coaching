@@ -17,12 +17,30 @@ export const metadata: Metadata = {
     template: `%s | ${site.name}`,
   },
   description: site.description,
+  /*
+   * 全站抓取指令。默认就是 index/follow，显式写出来是为了带上后面三条：
+   *  - max-image-preview:large —— Google 图片/Discover/SERP 允许用大图缩略图，
+   *    本站每页都有专属 opengraph-image，不开这条等于白生成；
+   *  - max-snippet:-1 / max-video-preview:-1 —— 不限制摘要长度，
+   *    GEO 场景下答案引擎能摘录更完整的段落。
+   */
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="flex min-h-screen flex-col bg-base-100 text-base-content antialiased">
+      <body className="bg-base-100 text-base-content flex min-h-screen flex-col antialiased">
         {/* 站点级实体图谱：全站注入一次,供 AI 引擎建立品牌/站点实体认知 */}
         <JsonLd data={organizationJsonLd()} />
         <JsonLd data={websiteJsonLd()} />
@@ -32,7 +50,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
          */}
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-primary focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-primary-content focus:shadow-lg"
+          className="focus:bg-primary focus:text-primary-content sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:rounded-lg focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:shadow-lg"
         >
           Skip to content
         </a>

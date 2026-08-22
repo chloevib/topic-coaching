@@ -7,7 +7,14 @@ import { JsonLd } from '@/components/JsonLd'
 import { QuizEmbed } from '@/components/QuizEmbed'
 import { QuizGrid } from '@/components/QuizCard'
 import { cairoOrigin, quizEmbedUrl, quizTakeUrl } from '@/lib/cairo'
-import { getDisplayCategory, getQuiz, getQuizzes, getQuizzesUnderCategory, hydrateQuiz, hydrateQuizzes } from '@/lib/content'
+import {
+  getDisplayCategory,
+  getQuiz,
+  getQuizzes,
+  getQuizzesUnderCategory,
+  hydrateQuiz,
+  hydrateQuizzes,
+} from '@/lib/content'
 import { breadcrumbJsonLd, buildMetadata, faqJsonLd, itemListJsonLd, quizJsonLd } from '@/lib/seo'
 
 interface QuizPageProps {
@@ -56,6 +63,13 @@ export default async function QuizPage({ params }: QuizPageProps) {
   }
   // 纯静态导出：以 build 时间作为「最近更新」新鲜度信号
   const lastModified = new Date().toISOString()
+  /*
+   * Quiz 节点的 description 原先直接吃 hydrated.description——清单没写 seo.description
+   * 且 Payload 描述为空时会输出 description:""，等于给结构化数据留了个空字段。
+   * 回退顺序与 generateMetadata 保持一致：清单 → Payload → overview → 兜底句。
+   */
+  const schemaDescription =
+    hydrated.description || overview || `Take the ${hydrated.title} coaching quiz — free and in minutes.`
 
   return (
     <>
@@ -69,7 +83,7 @@ export default async function QuizPage({ params }: QuizPageProps) {
       <JsonLd
         data={quizJsonLd({
           title: hydrated.title,
-          description: hydrated.description,
+          description: schemaDescription,
           path: `/q/${quiz.slug}`,
           image: hydrated.coverUrl,
           about: primaryCategory?.name,
@@ -77,13 +91,22 @@ export default async function QuizPage({ params }: QuizPageProps) {
         })}
       />
       {sampleQuestions.length ? (
-        <JsonLd data={itemListJsonLd(`Sample questions from ${hydrated.title}`, sampleQuestions)} />
+        <JsonLd
+          data={itemListJsonLd(`Sample questions from ${hydrated.title}`, sampleQuestions, {
+            path: `/q/${quiz.slug}`,
+          })}
+        />
       ) : null}
-      {faq.length ? <JsonLd data={faqJsonLd(faq)} /> : null}
+      {faq.length ? <JsonLd data={faqJsonLd(faq, { path: `/q/${quiz.slug}` })} /> : null}
 
-      <div className="mx-auto max-w-3xl px-4 py-10">
+      {/*
+       * 测评页主体本是一篇独立、可自成一体的内容（标题 + 答题器 + 说明 + FAQ），
+       * 原先只是个裸 <div>；换成 <article> 让爬虫与读屏器都能识别这块的边界。
+       * 页面底部的「相关测评」不属于这篇文章，故留在 article 之外。
+       */}
+      <article className="mx-auto max-w-3xl px-4 py-10">
         {/* 面包屑：ol 有序列表 + aria-label，与顶部注入的 BreadcrumbList 结构化数据对齐 */}
-        <nav aria-label="Breadcrumb" className="mb-4 text-sm text-base-content/70">
+        <nav aria-label="Breadcrumb" className="text-base-content/70 mb-4 text-sm">
           <ol className="flex flex-wrap items-center gap-x-2 gap-y-1">
             <li>
               <Link href="/" className="hover:text-primary">
@@ -109,13 +132,11 @@ export default async function QuizPage({ params }: QuizPageProps) {
         </nav>
 
         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">{hydrated.title}</h1>
-        {hydrated.description ? (
-          <p className="mt-4 text-lg text-base-content/70">{hydrated.description}</p>
-        ) : null}
-        {overview ? <p className="mt-4 text-base-content/80">{overview}</p> : null}
+        {hydrated.description ? <p className="text-base-content/70 mt-4 text-lg">{hydrated.description}</p> : null}
+        {overview ? <p className="text-base-content/80 mt-4">{overview}</p> : null}
 
         <div className="mt-4">
-          <a href={takeHref} target="_blank" rel="noopener" className="link text-sm text-primary">
+          <a href={takeHref} target="_blank" rel="noopener" className="link text-primary text-sm">
             Open in full screen ↗
           </a>
         </div>
@@ -131,8 +152,8 @@ export default async function QuizPage({ params }: QuizPageProps) {
             <h2 className="mb-5 text-2xl font-bold tracking-tight sm:text-3xl">What you&rsquo;ll learn</h2>
             <ul className="space-y-3">
               {whatYouLearn.map((point, index) => (
-                <li key={index} className="flex gap-3 text-base-content/80">
-                  <span aria-hidden className="mt-1 text-primary">
+                <li key={index} className="text-base-content/80 flex gap-3">
+                  <span aria-hidden className="text-primary mt-1">
                     ✓
                   </span>
                   <span>{point}</span>
@@ -145,10 +166,10 @@ export default async function QuizPage({ params }: QuizPageProps) {
         {sampleQuestions.length ? (
           <section className="mt-14">
             <h2 className="mb-2 text-2xl font-bold tracking-tight sm:text-3xl">Sample questions</h2>
-            <p className="mb-5 text-base-content/70">
+            <p className="text-base-content/70 mb-5">
               A few of the questions you&rsquo;ll answer in the {hydrated.title}:
             </p>
-            <ol className="list-decimal space-y-3 pl-6 text-base-content/80 marker:text-base-content/40">
+            <ol className="text-base-content/80 marker:text-base-content/40 list-decimal space-y-3 pl-6">
               {sampleQuestions.map((question, index) => (
                 <li key={index} className="pl-1">
                   {question}
@@ -178,7 +199,7 @@ export default async function QuizPage({ params }: QuizPageProps) {
             <h2 className="mb-5 text-2xl font-bold tracking-tight sm:text-3xl">Frequently asked questions</h2>
             <div className="join join-vertical w-full">
               {faq.map((entry, index) => (
-                <div key={index} className="collapse join-item collapse-arrow border border-base-300 bg-base-100">
+                <div key={index} className="join-item collapse-arrow border-base-300 bg-base-100 collapse border">
                   <input type="checkbox" defaultChecked={index === 0} />
                   <div className="collapse-title font-medium">{entry.q}</div>
                   <div className="collapse-content text-base-content/70">
@@ -193,13 +214,15 @@ export default async function QuizPage({ params }: QuizPageProps) {
         <div className="mt-14">
           <CtaCreateYourOwn placement={`quiz-${quiz.slug}`} variant="inline" />
         </div>
-      </div>
+      </article>
 
       {/* Related */}
       {related.length ? (
         <section className="bg-base-200">
           <div className="mx-auto max-w-6xl px-4 py-16">
-            <h2 className="mb-8 text-2xl font-bold tracking-tight sm:text-3xl">More {primaryCategory?.name ?? 'coaching'} quizzes</h2>
+            <h2 className="mb-8 text-2xl font-bold tracking-tight sm:text-3xl">
+              More {primaryCategory?.name ?? 'coaching'} quizzes
+            </h2>
             <QuizGrid items={related} />
           </div>
         </section>

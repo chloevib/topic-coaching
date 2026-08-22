@@ -6,6 +6,8 @@ import { ogContentType, ogSize, renderOgImage } from '@/lib/og'
 export const dynamic = 'force-static'
 export const size = ogSize
 export const contentType = ogContentType
+/* 同分类页：alt 必须静态导出，写成测评页通用的一句，避免 og:image:alt 缺失 */
+export const alt = `${site.name} — free coaching quiz`
 
 /** 每份测评一张静态 OG 图 */
 export function generateStaticParams() {

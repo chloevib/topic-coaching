@@ -4,7 +4,7 @@ import { site } from '@config'
 
 import { MobileNav } from '@/components/MobileNav'
 import { signupUrl } from '@/lib/cairo'
-import { getChildCategories, getHubs } from '@/lib/content'
+import { getChildCategories, getHubs, getPopularQuizLinks } from '@/lib/content'
 
 /** 顶层 Hub + 其已上线的子分类（niche），供页头下拉菜单与移动端手风琴共用 */
 function getNavTree() {
@@ -135,6 +135,7 @@ export function SiteHeader() {
 
 export function SiteFooter() {
   const categories = getHubs()
+  const popular = getPopularQuizLinks()
   return (
     <footer className="border-base-300 bg-base-200 border-t">
       <div className="mx-auto grid max-w-6xl grid-cols-2 gap-8 px-4 py-12 md:grid-cols-4">
@@ -183,14 +184,26 @@ export function SiteFooter() {
             </li>
           </ul>
         </nav>
-        <nav aria-labelledby="footer-resources">
-          <p id="footer-resources" className="mb-3 text-sm font-semibold">
-            Resources
+        {/*
+         * 原先这栏叫「Resources」但只有一条链接，在 4 栏页脚里空得刺眼。
+         * 换成精选测评清单：视觉上与 Categories 栏等高，同时把这几份测评
+         * 变成全站每一页都有的深度 1 入口（内链结构补强）。
+         */}
+        <nav aria-labelledby="footer-popular">
+          <p id="footer-popular" className="mb-3 text-sm font-semibold">
+            Popular quizzes
           </p>
           <ul className="text-base-content/70 space-y-2 text-sm">
+            {popular.map((quiz) => (
+              <li key={quiz.href}>
+                <Link href={quiz.href} className="hover:text-primary">
+                  {quiz.label}
+                </Link>
+              </li>
+            ))}
             <li>
-              <Link href="/" className="hover:text-primary">
-                All quizzes
+              <Link href="/" className="hover:text-primary font-medium">
+                All quizzes →
               </Link>
             </li>
           </ul>

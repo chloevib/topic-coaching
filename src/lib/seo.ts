@@ -33,12 +33,15 @@ export function organizationJsonLd() {
   }
 }
 
+/** WebSite 节点的稳定 @id：各页面的 ItemList / FAQPage / Quiz 都 isPartOf 到它 */
+const WEBSITE_ID = absoluteUrl('/#website')
+
 /** 站点级实体：WebSite。声明本站是 RooQuiz 旗下的 coaching 专题站,归属到 Organization。 */
 export function websiteJsonLd() {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    '@id': absoluteUrl('/#website'),
+    '@id': WEBSITE_ID,
     url: absoluteUrl('/'),
     name: site.name,
     description: site.description,
@@ -50,11 +53,19 @@ export function websiteJsonLd() {
 /**
  * 通用有序清单结构化数据（样题、分类下测评列表等复用）。
  * item 传字符串即纯文本条目；传 {name,url} 则附带链接（如分类下的测评列表）。
+ * 传 path（清单所在页面的站内路径）会给节点带上稳定 @id 与 isPartOf → WebSite，
+ * 让清单挂进站点实体图谱，而不是散落的匿名节点。
  */
-export function itemListJsonLd(name: string, items: Array<string | { name: string; url?: string }>) {
+export function itemListJsonLd(
+  name: string,
+  items: Array<string | { name: string; url?: string }>,
+  opts?: { path?: string },
+) {
+  const pageUrl = opts?.path ? absoluteUrl(opts.path) : null
   return {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
+    ...(pageUrl ? { '@id': `${pageUrl}#itemlist`, url: pageUrl, isPartOf: { '@id': WEBSITE_ID } } : {}),
     name,
     numberOfItems: items.length,
     itemListElement: items.map((item, index) => {
@@ -115,10 +126,16 @@ export function breadcrumbJsonLd(items: { name: string; path: string }[]) {
   }
 }
 
-export function faqJsonLd(faq: { q: string; a: string }[]) {
+/**
+ * FAQPage 结构化数据。传 path 则带上 @id / url / isPartOf，
+ * 把问答块明确绑定到具体页面（同一站点多页都有 FAQ，匿名节点容易混淆归属）。
+ */
+export function faqJsonLd(faq: { q: string; a: string }[], opts?: { path?: string }) {
+  const pageUrl = opts?.path ? absoluteUrl(opts.path) : null
   return {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
+    ...(pageUrl ? { '@id': `${pageUrl}#faq`, url: pageUrl, isPartOf: { '@id': WEBSITE_ID } } : {}),
     mainEntity: faq.map((entry) => ({
       '@type': 'Question',
       name: entry.q,
@@ -151,7 +168,7 @@ export function quizJsonLd(input: {
     inLanguage: 'en',
     // 把测评挂回 WebSite 节点，答案引擎能顺着 isPartOf → WebSite → publisher
     // 走完整条实体链，而不是把每份测评当孤立对象。
-    isPartOf: { '@id': absoluteUrl('/#website') },
+    isPartOf: { '@id': WEBSITE_ID },
     provider: { '@type': 'Organization', '@id': ORG_ID, name: 'RooQuiz', url: ORG_URL },
   }
 }

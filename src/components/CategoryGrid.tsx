@@ -13,16 +13,17 @@ export function CategoryGrid({ categories }: { categories: CoachingCategory[] })
         <Link
           key={category.slug}
           href={`/c/${category.slug}`}
-          className="group rounded-2xl border border-base-300 bg-base-100 p-6 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:border-primary hover:shadow-lg"
+          className="group border-base-300 bg-base-100 hover:border-primary rounded-2xl border p-6 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:shadow-lg"
         >
+          {/* 暗色打磨：primary/10 的图标底片在 dim 主题下几乎看不出来，dark: 各提一档 */}
           <div
             aria-hidden
-            className="mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-2xl transition-colors duration-200 group-hover:bg-primary/15"
+            className="bg-primary/10 group-hover:bg-primary/15 dark:bg-primary/20 dark:group-hover:bg-primary/30 mb-3 flex h-11 w-11 items-center justify-center rounded-xl text-2xl transition-colors duration-200"
           >
             {category.emoji ?? '🧭'}
           </div>
-          <h3 className="mb-1 text-lg font-semibold transition-colors group-hover:text-primary">{category.name}</h3>
-          <p className="text-sm text-base-content/70">{category.description}</p>
+          <h3 className="group-hover:text-primary mb-1 text-lg font-semibold transition-colors">{category.name}</h3>
+          <p className="text-base-content/70 text-sm">{category.description}</p>
         </Link>
       ))}
     </div>

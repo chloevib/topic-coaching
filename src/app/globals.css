@@ -43,6 +43,24 @@ html {
 }
 
 /*
+ * 排版收尾：标题用 balance 让多行标题自动均分每行字数（不再出现最后一行只剩
+ * 一个孤字的难看断行），正文用 pretty 交给浏览器消除孤字与糟糕断行。
+ * 两者都是纯渲染层优化——不改字号、不改字体、不动布局，只让文字块更工整。
+ * balance 对超长文本代价高，故只作用于标题类元素。
+ */
+h1,
+h2,
+h3,
+.card-title {
+  text-wrap: balance;
+}
+
+p,
+li {
+  text-wrap: pretty;
+}
+
+/*
  * 键盘可见焦点：鼠标点击不显示轮廓，Tab 键导航时给统一的焦点环，
  * 提升可访问性与整体精致度。var 缺失时回退到 currentColor，绝不失效。
  * 不再强设 border-radius——浏览器会让 outline 自动贴合元素自身圆角
@@ -64,4 +82,3 @@ html {
     transition: color 0.15s ease;
   }
 }
-

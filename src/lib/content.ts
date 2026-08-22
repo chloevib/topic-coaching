@@ -33,9 +33,7 @@ export function getHubs(): CoachingCategory[] {
  * includeDraft=true 时含草稿分类（用于测评汇总、判断是否 Hub）。
  */
 export function getChildCategories(parentSlug: string, opts?: { includeDraft?: boolean }): CoachingCategory[] {
-  return getCategories().filter(
-    (category) => category.parent === parentSlug && (opts?.includeDraft || !category.draft),
-  )
+  return getCategories().filter((category) => category.parent === parentSlug && (opts?.includeDraft || !category.draft))
 }
 
 /** 该分类是否为 Hub（拥有子分类，含草稿子分类） */
@@ -97,6 +95,22 @@ export function getQuizzesUnderCategory(category: CoachingCategory): CoachingQui
 export function getFeaturedQuizzes(): CoachingQuiz[] {
   const featured = getQuizzes().filter((quiz) => quiz.featured)
   return featured.length ? featured : getQuizzes().slice(0, 6)
+}
+
+/**
+ * 页脚「Popular quizzes」内链数据。
+ *
+ * 页脚是全站每一页都渲染的区块，把几个精选测评放进来等于给它们建立
+ * 站内深度 1 的入口，爬虫从任意页面都能一跳抵达；顺带填平原先只有
+ * 一条链接的空栏。锚点文字由 slug 反推——比 seo.title（动辄 50+ 字符、
+ * 带破折号副标题）短得多，又天然带着目标关键词。
+ *
+ * 用清单里的 slug 直接推导，不发网络请求，页脚可以保持同步组件。
+ */
+export function getPopularQuizLinks(limit = 5): { href: string; label: string }[] {
+  return getFeaturedQuizzes()
+    .slice(0, limit)
+    .map((quiz) => ({ href: `/q/${quiz.slug}`, label: deslugify(quiz.slug) }))
 }
 
 /** 把 HTML 描述压成纯文本（用于 meta description 回退） */
