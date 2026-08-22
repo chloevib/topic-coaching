@@ -40,6 +40,7 @@ export const healthWellnessCoaching: CategoryFile = {
       publicToken: 'u7fsg6ek',
       slug: 'wellness-scorecard',
       order: 15,
+      alsoIn: ['happiness-coaching'],
       seo: {
         title: 'Wellness Assessment — How Healthy Is Your Lifestyle?',
         description:
