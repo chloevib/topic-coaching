@@ -14,7 +14,7 @@ export const relationshipCoaching: CategoryFile = {
     parent: 'life-mindset-relationships',
     intro: [
       'Relationship coaching helps you understand the patterns you bring to your connections — how you communicate, handle conflict, build trust, and respond when you feel close or threatened. The aim is self-awareness you can act on, so you can show up in your relationships more intentionally rather than repeating the same cycles.',
-      'These free relationship quizzes are a quick way to start. Each turns a vague sense that "something keeps happening" into something specific — your attachment style, the health of your current relationship, or the dating pattern that keeps recurring.',
+      'These free relationship quizzes are a quick way to start. Each turns a vague sense that "something keeps happening" into something specific — your attachment style, the health of your current relationship, the dating pattern that keeps recurring, or how your personality type falls in love.',
       'A useful place to begin is attachment style, since it shapes so much of how we connect: research on adult attachment suggests roughly half of adults have a secure style, with the rest falling into anxious or avoidant patterns (source: Verywell Mind, https://www.verywellmind.com/attachment-styles-2795344). Each quiz is free, takes a few minutes, and ends with a personalized result and a next step.',
     ],
     faq: [
@@ -126,7 +126,7 @@ export const relationshipCoaching: CategoryFile = {
     {
       publicToken: 'sn97jbar',
       slug: 'dating-pattern',
-      order: 19,
+      order: 21,
       seo: {
         title: 'Dating Pattern Quiz — Why You Keep Repeating the Same Cycle',
         description:
@@ -161,6 +161,60 @@ export const relationshipCoaching: CategoryFile = {
           {
             q: 'How long does the quiz take, and is it free?',
             a: 'About two minutes, and it is free with a personalized result — no signup required to start.',
+          },
+        ],
+      },
+    },
+    {
+      publicToken: 'ua66tw76',
+      slug: 'mbti-love-test',
+      order: 19,
+      alsoIn: ['personal-development-coaching'],
+      seo: {
+        title: 'MBTI Love Test — How Your Personality Type Falls in Love',
+        description:
+          'A free 20-question MBTI love test: find your romantic archetype, how you flirt, fight and commit, your blind spot, and the types you match best with.',
+        overview:
+          'The same four Myers-Briggs dimensions, pointed straight at your love life. This 20-question MBTI love test reveals how your type falls in love — how you flirt, how you fight, what makes you feel safe — and ends with your love archetype, your blind spot, and the types you tend to click with.',
+        whoFor:
+          'Anyone curious about how their personality type shows up in dating and long-term relationships — whether you are figuring out a new connection, making sense of an old pattern, or comparing results with a partner.',
+        whatYouLearn: [
+          'Your love archetype across all 16 Myers-Briggs types',
+          'How you connect and recharge with a partner (Extraversion vs Introversion)',
+          'What actually makes you feel loved day to day (Sensing vs Intuition)',
+          'How you handle conflict and repair after an argument (Thinking vs Feeling)',
+          'How fast you want to define a relationship (Judging vs Perceiving)',
+          'Your biggest blind spot in love, and the types you tend to click with',
+        ],
+        sampleQuestions: [
+          'Your ideal Friday night with someone you are into: out with a group, or just the two of you talking for hours?',
+          'Your partner is upset — do you work out how to fix it, or get close and feel it with them first?',
+          'Early on, would you rather know where this is going, or let it unfold?',
+          'Right after an argument, do you want to talk it out now or take some space first?',
+          'Once you commit, do you close the other doors, or commit fully but keep the plan loose?',
+        ],
+        howItWorks:
+          'You answer 20 quick either-or questions about how you date, argue, and commit. Each answer votes across the four Myers-Briggs dimensions, and the winning combination gives you one of 16 love archetypes — with how you show love, what you need, your blind spot, the types you click with, and one thing to try this week. It takes about three minutes, is free, and needs no signup to start.',
+        faq: [
+          {
+            q: 'What is an MBTI love test?',
+            a: 'It applies the four Myers-Briggs dimensions — Extraversion/Introversion, Sensing/Intuition, Thinking/Feeling, Judging/Perceiving — to romantic behaviour specifically: how you flirt, what makes you feel loved, how you handle conflict, and how quickly you want to define things. The result is a love archetype rather than a general personality profile.',
+          },
+          {
+            q: 'Which MBTI types are most compatible?',
+            a: 'Popular pairings such as INFJ with ENFP or INTJ with ENTP pair depth with momentum, but compatibility guides broadly agree that matching letters matters far less than understanding each other\'s communication style, emotional needs, and conflict patterns — any two types can work with that awareness (background: https://www.mbtiquiz.com/blog/personality-types-love-compatibility-2026).',
+          },
+          {
+            q: 'Is the MBTI love test scientifically accurate?',
+            a: 'Treat it as a structured way to reflect, not a diagnosis. The Myers-Briggs framework is popular and useful for language and self-awareness, but it is not a clinical instrument, and its type categories are debated among researchers. The value is in what the result helps you notice about your own patterns.',
+          },
+          {
+            q: 'Should my partner take it too?',
+            a: 'It works well as a pair. Taking it separately and swapping results usually surfaces where your needs differ — for example one of you wanting to define things early while the other prefers to let it unfold — which is an easier conversation to have with a name attached.',
+          },
+          {
+            q: 'How long does the MBTI love test take, and is it free?',
+            a: 'About three minutes for the 20 questions, and it is free with a full archetype write-up — no signup required to start.',
           },
         ],
       },
