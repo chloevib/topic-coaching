@@ -209,7 +209,6 @@ export const careerCoaching: CategoryFile = {
     {
       publicToken: '2duu82y6',
       slug: 'mbti-work-style-test',
-      featured: true,
       order: 3,
       alsoIn: ['personal-development-coaching'],
       seo: {
