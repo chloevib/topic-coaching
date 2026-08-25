@@ -207,6 +207,54 @@ export const careerCoaching: CategoryFile = {
       },
     },
     {
+      publicToken: '2duu82y6',
+      slug: 'mbti-work-style-test',
+      featured: true,
+      order: 3,
+      alsoIn: ['personal-development-coaching'],
+      seo: {
+        title: 'MBTI Work Style Test — How Your Personality Type Works Best',
+        description:
+          'A free 3-minute MBTI work style test: find your work archetype, your stall point, the environment that suits you, and the types you pair well with.',
+        overview:
+          'The same four Myers-Briggs dimensions, pointed at your working life. This free 20-question test shows how your type actually operates at work — where your edge is, where you stall, and the conditions that get your best work out of you. It takes about three minutes and ends with your work archetype, your stall point, your best-fit environment, and the types you pair well with.',
+        whoFor:
+          'Professionals, managers, and teams who know their four letters but want something more useful than a label — a practical read on how they work, collaborate, and get stuck at work.',
+        whatYouLearn: [
+          'Your work archetype across the four MBTI dimensions',
+          'Your stall point — the situation where your type reliably loses momentum',
+          'The working conditions and environments that suit you best',
+          'The types you tend to pair well with, and why',
+        ],
+        sampleQuestions: [
+          'Your best working hours are: in the room with people, or head down with the door shut?',
+          'Giving someone hard feedback, do you lead with the gap or with what they did well?',
+          'The scope changes mid-project — energising, or costly?',
+          'A decision is about 80% clear: decide now and adjust, or hold it open a little longer?',
+        ],
+        howItWorks:
+          'You answer 20 forced-choice questions about how you work — energy (E/I), information (S/N), decisions (T/F), and structure (J/P). Your answers map to one of the 16 types, framed around workplace behaviour rather than general personality. Answer as you actually work, not as your performance review says you do. It takes about three minutes, is free, and needs no signup to start.',
+        faq: [
+          {
+            q: 'How is a work style test different from a standard MBTI test?',
+            a: 'The dimensions are the same, but every question is set at work — how you run a meeting, give feedback, handle a scope change, or use your calendar. The result describes your working behaviour and best-fit environment rather than your personality in general.',
+          },
+          {
+            q: 'Do employers actually use MBTI?',
+            a: 'Widely. Personality type indicators are used in team-building and development at a large majority of Fortune 500 companies, and MBTI is among the most common (background: https://leaders.com/articles/business/personality-tests/). Most reputable practitioners use it for self-awareness and team conversation, not for hiring decisions.',
+          },
+          {
+            q: 'How accurate is a personality type result?',
+            a: 'Treat it as a useful lens, not a verdict. Type indicators have limited test-retest stability — a meaningful share of people land on a different type when they retake one — so the value is in the conversation it starts about how you work, not in the four letters themselves.',
+          },
+          {
+            q: 'How long does the test take, and is it free?',
+            a: 'About three minutes for 20 questions, and it is free with a personalized result — no signup required to start.',
+          },
+        ],
+      },
+    },
+    {
       publicToken: 'rwmsuh5m',
       slug: 'job-interview-readiness',
       order: 8,
