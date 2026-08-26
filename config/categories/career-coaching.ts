@@ -14,7 +14,7 @@ export const careerCoaching: CategoryFile = {
     intro: [
       'Career coaching helps you make deliberate decisions about your working life — clarifying your strengths, work style, and direction so your next move is a choice rather than a reaction. Unlike a one-off piece of advice, it focuses on patterns: what energizes you, where you add the most value, and what a good next step actually looks like for you.',
       'These free career-coaching quizzes are a fast way to get that clarity. Each is a short self-assessment that turns a vague feeling — stuck, restless, unsure whether to stay or go — into something specific you can act on, whether that is your career archetype, your readiness to change roles, your productivity style, or how prepared you are for your next interview.',
-      'Not sure where to start? If you are weighing a move, try the career-change readiness scorecard. If you have an interview coming up, start with the interview readiness scorecard. Each takes just a few minutes, is free, and ends with a personalized result and a suggested next step.',
+      'Not sure where to start? If you are weighing a move, try the career-change readiness scorecard. If you have an interview coming up, start with the interview readiness scorecard — or, if you are senior and keep reaching final rounds without an offer, the senior interview scorecard, which measures how you position yourself rather than how you prepare. Each takes just a few minutes, is free, and ends with a personalized result and a suggested next step.',
     ],
     faq: [
       {
@@ -126,6 +126,7 @@ export const careerCoaching: CategoryFile = {
       publicToken: 'hr845jez',
       slug: 'career-change-readiness',
       order: 6,
+      alsoIn: ['job-search-coaching'],
       seo: {
         title: 'Career Change Readiness Quiz — Should You Stay or Go?',
         description:
@@ -257,6 +258,7 @@ export const careerCoaching: CategoryFile = {
       publicToken: 'rwmsuh5m',
       slug: 'job-interview-readiness',
       order: 8,
+      alsoIn: ['job-search-coaching'],
       seo: {
         title: 'Job Interview Readiness Scorecard — Are You Interview-Ready?',
         description:
