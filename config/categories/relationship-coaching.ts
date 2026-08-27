@@ -223,7 +223,7 @@ export const relationshipCoaching: CategoryFile = {
       publicToken: 'zfxrszr6',
       slug: 'parenting-style',
       order: 20,
-      alsoIn: ['child-development-coaching'],
+      alsoIn: ['child-development-coaching', 'parenting-coaching'],
       seo: {
         title: 'Parenting Style Quiz — What Kind of Parent Are You?',
         description:

@@ -43,6 +43,7 @@ export const childDevelopmentCoaching: CategoryFile = {
       publicToken: 'nnce4kgj',
       slug: 'child-development-iq-quiz',
       order: 1,
+      alsoIn: ['parenting-coaching'],
       seo: {
         title: 'Child Development IQ Quiz — Test Your Milestones Knowledge',
         description:

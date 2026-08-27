@@ -36,6 +36,7 @@ export const negotiationCoaching: CategoryFile = {
       publicToken: 'mwghydsj',
       slug: 'negotiation-iq',
       order: 1,
+      alsoIn: ['sales-coaching'],
       seo: {
         title: 'Negotiation IQ Quiz — Test Your Deal-Making Skills',
         description:
