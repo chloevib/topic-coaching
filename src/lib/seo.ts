@@ -55,17 +55,21 @@ export function websiteJsonLd() {
  * item 传字符串即纯文本条目；传 {name,url} 则附带链接（如分类下的测评列表）。
  * 传 path（清单所在页面的站内路径）会给节点带上稳定 @id 与 isPartOf → WebSite，
  * 让清单挂进站点实体图谱，而不是散落的匿名节点。
+ *
+ * anchor：同一页面出现多份清单时（如 Hub 页既列子分类又列测评）用来区分 @id，
+ * 否则两个节点会共用 `#itemlist`，@id 冲突会让爬虫只认其中一个。
  */
 export function itemListJsonLd(
   name: string,
   items: Array<string | { name: string; url?: string }>,
-  opts?: { path?: string },
+  opts?: { path?: string; anchor?: string },
 ) {
   const pageUrl = opts?.path ? absoluteUrl(opts.path) : null
+  const anchor = opts?.anchor ?? 'itemlist'
   return {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    ...(pageUrl ? { '@id': `${pageUrl}#itemlist`, url: pageUrl, isPartOf: { '@id': WEBSITE_ID } } : {}),
+    ...(pageUrl ? { '@id': `${pageUrl}#${anchor}`, url: pageUrl, isPartOf: { '@id': WEBSITE_ID } } : {}),
     name,
     numberOfItems: items.length,
     itemListElement: items.map((item, index) => {
@@ -113,10 +117,16 @@ export function buildMetadata(input: PageMetaInput): Metadata {
   }
 }
 
+/**
+ * 面包屑结构化数据。@id 取「末级页面 URL + #breadcrumb」——全站每页一条面包屑，
+ * 匿名节点在跨页合并实体图时无法区分归属，给它一个稳定标识。
+ */
 export function breadcrumbJsonLd(items: { name: string; path: string }[]) {
+  const last = items[items.length - 1]
   return {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
+    ...(last ? { '@id': `${absoluteUrl(last.path)}#breadcrumb` } : {}),
     itemListElement: items.map((item, index) => ({
       '@type': 'ListItem',
       position: index + 1,

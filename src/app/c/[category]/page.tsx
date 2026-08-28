@@ -75,7 +75,21 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
           data={itemListJsonLd(
             `${category.name} quizzes`,
             quizzes.map((item) => ({ name: item.title, url: absoluteUrl(item.href) })),
-            { path: `/c/${category.slug}` },
+            { path: `/c/${category.slug}`, anchor: 'quizzes' },
+          )}
+        />
+      ) : null}
+      {/*
+       * Hub 页除了测评清单，页面上还有一整块「Coaching areas」子分类网格，
+       * 原先对结构化数据完全不可见。补一份 ItemList，把 Hub → niche 这层
+       * 站内层级显式说给爬虫/答案引擎听，也多给 niche 页一条发现路径。
+       */}
+      {hub && children.length ? (
+        <JsonLd
+          data={itemListJsonLd(
+            `Coaching areas in ${category.name}`,
+            children.map((child) => ({ name: child.name, url: absoluteUrl(`/c/${child.slug}`) })),
+            { path: `/c/${category.slug}`, anchor: 'areas' },
           )}
         />
       ) : null}

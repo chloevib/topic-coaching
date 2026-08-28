@@ -73,6 +73,12 @@ export default async function QuizPage({ params }: QuizPageProps) {
 
   return (
     <>
+      {/*
+       * 答题器 iframe 是本页的主内容且首屏 eager 加载，但它指向 cairo 这个
+       * 第三方 origin——浏览器要等 HTML 解析到 <iframe> 才开始 DNS/TLS 协商。
+       * 提前 preconnect，把这段协商与页面自身资源并行掉，减少首屏空占位的时间。
+       */}
+      <link rel="preconnect" href={cairoOrigin} />
       <JsonLd
         data={breadcrumbJsonLd([
           { name: 'Home', path: '/' },

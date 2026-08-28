@@ -15,17 +15,22 @@ export function QuizCard({ item, priority = false }: { item: HydratedQuiz; prior
   return (
     <Link
       href={item.href}
-      className="group card overflow-hidden rounded-2xl border border-base-300 bg-base-100 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:border-primary hover:shadow-lg"
+      className="group card border-base-300 bg-base-100 hover:border-primary overflow-hidden rounded-2xl border shadow-sm transition duration-200 hover:-translate-y-0.5 hover:shadow-lg"
     >
-      <figure className="aspect-[16/9] overflow-hidden bg-base-200">
+      <figure className="bg-base-200 aspect-[16/9] overflow-hidden">
         {item.coverUrl ? (
           // 封面来自任意主机，用原生 <img> 规避 next/image 白名单
           // eslint-disable-next-line @next/next/no-img-element
           <img
             src={item.coverUrl}
-            // 装饰性封面：卡片标题就在下方 h3 里，alt 再复述一遍只会让读屏器念两遍
-            alt=""
-            aria-hidden
+            /*
+             * 封面不是装饰图，是每份测评专属的内容图：站点已开 max-image-preview:large，
+             * 这些图本可以进 Google 图片 / Discover，而 alt="" + aria-hidden 等于主动
+             * 把它们从图片索引里摘出去。改成描述性 alt（就用测评标题，天然带目标关键词）。
+             * 代价是读屏器会把标题念两遍——这是「链接内图片 + 同名标题」的常见取舍，
+             * 换来的是 70+ 张封面重新变成可索引资产。
+             */
+            alt={item.title}
             className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
             loading={priority ? 'eager' : 'lazy'}
             fetchPriority={priority ? 'high' : 'auto'}
@@ -38,9 +43,9 @@ export function QuizCard({ item, priority = false }: { item: HydratedQuiz; prior
         )}
       </figure>
       <div className="card-body gap-2 p-5">
-        <h3 className="card-title text-base leading-snug transition-colors group-hover:text-primary">{item.title}</h3>
-        {item.description ? <p className="line-clamp-2 text-sm text-base-content/70">{item.description}</p> : null}
-        <span className="mt-1 text-sm font-medium text-primary">
+        <h3 className="card-title group-hover:text-primary text-base leading-snug transition-colors">{item.title}</h3>
+        {item.description ? <p className="text-base-content/70 line-clamp-2 text-sm">{item.description}</p> : null}
+        <span className="text-primary mt-1 text-sm font-medium">
           Take the quiz{' '}
           <span aria-hidden className="inline-block transition-transform duration-200 group-hover:translate-x-0.5">
             →

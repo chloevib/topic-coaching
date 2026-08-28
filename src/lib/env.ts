@@ -8,6 +8,8 @@ export const env = {
   payloadServerDomain: process.env.NEXT_PUBLIC_PAYLOAD_SERVER_DOMAIN ?? 'https://payload.rooquiz.com',
   /** cairo 答题器域名（embed / 全屏作答 / 结果页） */
   cairoDomain: process.env.NEXT_PUBLIC_CAIRO_DOMAIN ?? 'https://quizster.app',
+  /** 测评封面图 CDN（R2）——仅用于建立 preconnect，加速首屏 LCP 图的连接协商 */
+  mediaOrigin: process.env.NEXT_PUBLIC_MEDIA_ORIGIN ?? 'https://r2.rooquiz.com',
   /** 本站规范域名 */
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://coaching.rooquiz.com',
   /** B 端转化 CTA 目标地址（RooQuiz 官网） */

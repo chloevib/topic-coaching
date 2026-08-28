@@ -41,6 +41,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className="bg-base-100 text-base-content flex min-h-screen flex-col antialiased">
+        {/*
+         * LCP 提速：所有测评封面都托管在 R2（第三方 origin），浏览器要先做完
+         * DNS → TCP → TLS 三次协商才能开始下载首屏那几张 eager 图。提前 preconnect
+         * 把这段协商挪到 HTML 解析初期并行进行。封面是普通 <img>（非 CORS 请求），
+         * 所以 preconnect 不能带 crossOrigin —— 带了会开一条 CORS 连接，图片请求
+         * 复用不到，反而白建一条。dns-prefetch 作为不支持 preconnect 时的兜底。
+         * React 19 会把这两个 link 提升到 <head>。
+         */}
+        <link rel="preconnect" href={env.mediaOrigin} />
+        <link rel="dns-prefetch" href={env.mediaOrigin} />
         {/* 站点级实体图谱：全站注入一次,供 AI 引擎建立品牌/站点实体认知 */}
         <JsonLd data={organizationJsonLd()} />
         <JsonLd data={websiteJsonLd()} />

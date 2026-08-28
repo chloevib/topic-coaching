@@ -6,7 +6,7 @@ import { CategoryGrid } from '@/components/CategoryGrid'
 import { CtaCreateYourOwn } from '@/components/CtaCreateYourOwn'
 import { JsonLd } from '@/components/JsonLd'
 import { QuizGrid } from '@/components/QuizCard'
-import { getFeaturedQuizzes, getHubs, hydrateQuizzes } from '@/lib/content'
+import { getFeaturedQuizzes, getHubs, getQuizzes, hydrateQuizzes } from '@/lib/content'
 import { absoluteUrl, buildMetadata, itemListJsonLd } from '@/lib/seo'
 
 export const metadata: Metadata = buildMetadata({
@@ -18,6 +18,17 @@ export const metadata: Metadata = buildMetadata({
 export default async function HomePage() {
   const hubs = getHubs()
   const featured = await hydrateQuizzes(getFeaturedQuizzes())
+
+  /*
+   * Hero 数据条：数字全部由清单实时算出（不是写死的文案），随内容增长自动更新。
+   * 原先 hero 只有「标题 + 副标题 + 两颗按钮」，下面一大片留白直接接到卡片网格，
+   * 首屏既空又不给任何「这站有多少东西」的信号；补一条数据条把留白填成信息。
+   */
+  const heroStats = [
+    { value: String(getQuizzes().length), label: 'Quizzes' },
+    { value: String(hubs.length), label: 'Coaching topics' },
+    { value: '100%', label: 'Free, no signup' },
+  ]
 
   return (
     <>
@@ -46,10 +57,36 @@ export default async function HomePage() {
             <Link href="#featured" className="btn btn-primary">
               Browse quizzes
             </Link>
-            <Link href="#categories" className="btn btn-ghost">
+            {/*
+             * 次级按钮原先是 btn-ghost：无边框、无底色，落在 hero 的浅色渐变上
+             * 几乎读不出「这是一颗按钮」，与主按钮的权重差拉得过大。
+             * 换成 btn-outline btn-primary —— 依然明显次于实心主按钮，
+             * 但轮廓把它固定成一个可点对象，两颗按钮成为清晰的主/次一对。
+             */}
+            <Link href="#categories" className="btn btn-outline btn-primary">
               Explore by topic
             </Link>
           </div>
+
+          {/*
+           * 数据条：dl 语义（每项 dt 标签 + dd 数值），用 flex-col-reverse 让数值显示在上、
+           * 标签在下，DOM 里仍保持 dt → dd 的合法顺序。竖线分隔按 index 判断而不是
+           * first: 变体——`sm:border-l` 与 `first:border-none` 在 Tailwind 产物里
+           * 媒体查询排在伪类之后，会把「首项不画线」覆盖掉，用 index 最稳。
+           */}
+          <dl className="mt-10 flex flex-wrap items-center justify-center gap-y-6">
+            {heroStats.map((stat, index) => (
+              <div
+                key={stat.label}
+                className={`flex flex-col-reverse items-center px-6 ${
+                  index > 0 ? 'border-base-content/15 sm:border-l' : ''
+                }`}
+              >
+                <dt className="text-base-content/60 mt-1 text-xs font-medium tracking-wide uppercase">{stat.label}</dt>
+                <dd className="text-2xl font-bold tracking-tight sm:text-3xl">{stat.value}</dd>
+              </div>
+            ))}
+          </dl>
         </div>
       </section>
 
@@ -69,24 +106,38 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* How it works */}
+      {/*
+       * How it works —— 原先是三段裸文字浮在空白底上，是首页视觉上最松散的一块：
+       * 上面是卡片网格、下面是实心 CTA 色带，中间这层没有任何容器，读起来像掉了样式。
+       * 改成与 QuizCard / CategoryGrid 同一套卡片规范（rounded-2xl + border-base-300 +
+       * shadow-sm），全站三种网格终于是同一种语言；序号从纯色圆点换成「圆角方块 +
+       * 淡色底 + 主色数字」，弱化后不再和主 CTA 抢注意力，dark: 提一档保证暗色可见。
+       * 文案同时从居中改为左对齐——三张卡片的正文左对齐后基线整齐，比居中耐读。
+       */}
       <section className="mx-auto max-w-5xl px-4 py-16">
-        <h2 className="mb-8 text-center text-2xl font-bold tracking-tight sm:text-3xl">How it works</h2>
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
+        <h2 className="mb-2 text-center text-2xl font-bold tracking-tight sm:text-3xl">How it works</h2>
+        <p className="text-base-content/70 mb-8 text-center">Three steps, a few minutes, no account needed.</p>
+        <ol className="grid grid-cols-1 gap-5 sm:grid-cols-3">
           {[
             { n: '1', t: 'Pick a quiz', d: 'Choose from coaching assessments grouped by topic.' },
             { n: '2', t: 'Answer honestly', d: 'Takes just a few minutes — no signup required to start.' },
             { n: '3', t: 'Get your result', d: 'See a personalized breakdown and what to do next.' },
           ].map((step) => (
-            <div key={step.n} className="text-center">
-              <div className="bg-primary text-primary-content mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full text-lg font-bold">
+            <li
+              key={step.n}
+              className="border-base-300 bg-base-100 rounded-2xl border p-6 shadow-sm transition duration-200 hover:shadow-md"
+            >
+              <div
+                aria-hidden
+                className="bg-primary/10 text-primary dark:bg-primary/20 mb-3 flex h-10 w-10 items-center justify-center rounded-xl text-lg font-bold"
+              >
                 {step.n}
               </div>
               <h3 className="mb-1 font-semibold">{step.t}</h3>
               <p className="text-base-content/70 text-sm">{step.d}</p>
-            </div>
+            </li>
           ))}
-        </div>
+        </ol>
       </section>
 
       <CtaCreateYourOwn placement="home" />
