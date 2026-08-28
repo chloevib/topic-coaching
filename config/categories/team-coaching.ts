@@ -47,7 +47,7 @@ export const teamCoaching: CategoryFile = {
       publicToken: 'rkqf3edm',
       slug: 'team-health-scorecard',
       order: 1,
-      alsoIn: ['leadership-coaching'],
+      alsoIn: ['leadership-coaching', 'organization-development-coaching'],
       seo: {
         title: 'How Strong Is Your Team? Free Team Health Scorecard (4 min)',
         description:

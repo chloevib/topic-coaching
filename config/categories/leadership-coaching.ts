@@ -88,6 +88,7 @@ export const leadershipCoaching: CategoryFile = {
       publicToken: 'h2s7shhn',
       slug: 'leadership-scorecard',
       order: 9,
+      alsoIn: ['organization-development-coaching'],
       seo: {
         title: 'Leadership Assessment — Rate Your Leadership Skills Free',
         description:
