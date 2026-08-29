@@ -36,6 +36,7 @@ export const publicSpeakingCoaching: CategoryFile = {
       publicToken: 'g6u68cht',
       slug: 'public-speaking-style',
       order: 1,
+      alsoIn: ['communication-coaching'],
       seo: {
         title: 'Public Speaking Style Quiz — Discover Your Speaker Archetype',
         description:

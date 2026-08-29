@@ -36,6 +36,7 @@ export const emotionalIntelligenceCoaching: CategoryFile = {
       publicToken: 'cd8g5jes',
       slug: 'emotional-intelligence-test',
       order: 1,
+      alsoIn: ['communication-coaching', 'leadership-coaching'],
       seo: {
         title: 'Emotional Intelligence Test — The Free EQ Quiz',
         description:

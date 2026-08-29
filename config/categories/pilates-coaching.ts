@@ -43,6 +43,7 @@ export const pilatesCoaching: CategoryFile = {
       slug: 'pilates-readiness',
       featured: true,
       order: 1,
+      alsoIn: ['posture-coaching', 'yoga-coaching'],
       seo: {
         title: 'Pilates Readiness Quiz — Are You Ready to Start Pilates?',
         description:

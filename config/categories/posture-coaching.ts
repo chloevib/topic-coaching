@@ -38,6 +38,7 @@ export const postureCoaching: CategoryFile = {
       publicToken: 'degba6na',
       slug: 'posture-health-scorecard',
       order: 1,
+      alsoIn: ['pilates-coaching'],
       seo: {
         title: 'Posture Health Scorecard — How Good Is Your Posture?',
         description:

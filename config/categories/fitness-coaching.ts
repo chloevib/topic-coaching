@@ -42,6 +42,7 @@ export const fitnessCoaching: CategoryFile = {
       slug: 'fitness-level-assessment',
       featured: true,
       order: 1,
+      alsoIn: ['strength-conditioning-coaching'],
       seo: {
         title: 'Fitness Level Assessment — How Fit Are You Really?',
         description:
@@ -84,6 +85,7 @@ export const fitnessCoaching: CategoryFile = {
       publicToken: 'jdx56qds',
       slug: 'par-q-exercise-readiness',
       order: 2,
+      alsoIn: ['strength-conditioning-coaching', 'running-coaching', 'swimming-coaching'],
       seo: {
         title: 'PAR-Q Exercise Readiness Screening — Is It Safe to Start?',
         description:

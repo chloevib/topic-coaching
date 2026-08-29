@@ -125,7 +125,7 @@ export const businessCoaching: CategoryFile = {
       publicToken: 'x594wcnf',
       slug: 'selling-style',
       order: 12,
-      alsoIn: ['sales-coaching'],
+      alsoIn: ['sales-coaching', 'negotiation-coaching'],
       seo: {
         title: 'Selling Style Quiz — Find Your Natural Sales Approach',
         description:

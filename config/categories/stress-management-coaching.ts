@@ -1,9 +1,9 @@
 import type { CategoryFile } from '../schema'
 
 /**
- * niche · 压力管理教练（draft）
- * 现有 2 道题（stress-type / burnout-risk），未达 ≥3 开页门槛。
- * 补齐第 3 道（如 "How Resilient Are You Under Pressure? Resilience Scorecard"）后去掉 draft 即促级。
+ * niche · 压力管理教练（已上线）
+ * 现有 2 道题（stress-type / burnout-risk），两卷均已跨挂到相关分类。
+ * 待补第 3 道（建议 "How Regulated Is Your Nervous System? The Regulation Check"）以加厚分类页。
  */
 export const stressManagementCoaching: CategoryFile = {
   category: {
@@ -45,6 +45,7 @@ export const stressManagementCoaching: CategoryFile = {
       slug: 'stress-type',
       featured: true,
       order: 13,
+      alsoIn: ['emotional-intelligence-coaching', 'meditation-coaching'],
       seo: {
         title: 'Stress Type Quiz — What Kind of Stress Do You Have?',
         description:
@@ -87,6 +88,7 @@ export const stressManagementCoaching: CategoryFile = {
       publicToken: '9jfaswcx',
       slug: 'burnout-risk',
       order: 14,
+      alsoIn: ['sleep-coaching'],
       seo: {
         title: 'Burnout Risk Test — Are You Burning Out? Free 2-Minute Quiz',
         description:

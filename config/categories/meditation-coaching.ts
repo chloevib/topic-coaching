@@ -38,6 +38,7 @@ export const meditationCoaching: CategoryFile = {
       publicToken: 'k3uwatzg',
       slug: 'meditation-style-quiz',
       order: 1,
+      alsoIn: ['yoga-coaching', 'stress-management-coaching'],
       seo: {
         title: 'Meditation Style Quiz — Find the Practice That Fits You',
         description:

@@ -38,6 +38,7 @@ export const creativityCoaching: CategoryFile = {
       publicToken: 'xzxeqbmg',
       slug: 'creativity-style-quiz',
       order: 1,
+      alsoIn: ['content-creator-coaching'],
       seo: {
         title: 'Creativity Style Quiz — Find Your Creative Archetype',
         description:

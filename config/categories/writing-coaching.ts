@@ -38,6 +38,7 @@ export const writingCoaching: CategoryFile = {
       publicToken: '4hvz52eb',
       slug: 'writing-skills-scorecard',
       order: 1,
+      alsoIn: ['communication-coaching'],
       seo: {
         title: 'Writing Skills Scorecard — Rate Your Writing (Free Quiz)',
         description:

@@ -42,6 +42,7 @@ export const contentCreatorCoaching: CategoryFile = {
       slug: 'content-creator-style',
       featured: true,
       order: 1,
+      alsoIn: ['creativity-coaching'],
       seo: {
         title: 'Content Creator Style Quiz — Find Your Creator Archetype',
         description:

@@ -52,7 +52,7 @@ export const organizationDevelopmentCoaching: CategoryFile = {
       publicToken: 'cu9m4j8h',
       slug: 'change-readiness-assessment',
       order: 1,
-      alsoIn: ['leadership-coaching'],
+      alsoIn: ['leadership-coaching', 'team-coaching'],
       seo: {
         title: 'Change Readiness Assessment — Is Your Organization Ready to Change?',
         description:

@@ -42,6 +42,7 @@ export const yogaCoaching: CategoryFile = {
       slug: 'yoga-style',
       featured: true,
       order: 1,
+      alsoIn: ['meditation-coaching'],
       seo: {
         title: 'Yoga Style Quiz — Which Type of Yoga Fits You?',
         description:

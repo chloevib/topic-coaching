@@ -42,6 +42,7 @@ export const lifeCoaching: CategoryFile = {
       slug: 'self-sabotage-pattern',
       featured: true,
       order: 1,
+      alsoIn: ['mindset-coaching'],
       seo: {
         title: 'Self-Sabotage Pattern Quiz — Find What Holds You Back',
         description:
@@ -130,6 +131,7 @@ export const lifeCoaching: CategoryFile = {
       publicToken: '5e6w29n8',
       slug: 'limiting-beliefs',
       order: 3,
+      alsoIn: ['mindset-coaching'],
       seo: {
         title: 'Limiting Beliefs Quiz — What Is Really Holding You Back?',
         description:
@@ -172,6 +174,7 @@ export const lifeCoaching: CategoryFile = {
       publicToken: 'ehr7e6as',
       slug: 'confidence-scorecard',
       order: 4,
+      alsoIn: ['mindset-coaching', 'public-speaking-coaching'],
       seo: {
         title: 'Confidence Scorecard — How Confident Are You Really?',
         description:
@@ -214,7 +217,7 @@ export const lifeCoaching: CategoryFile = {
       publicToken: '3k53mxxu',
       slug: 'learning-style-vark',
       order: 5,
-      alsoIn: ['learning-coaching'],
+      alsoIn: ['learning-coaching', 'memory-coaching'],
       seo: {
         title: 'Learning Style Quiz (VARK) — Discover How You Learn Best',
         description:

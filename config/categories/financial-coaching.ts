@@ -126,6 +126,7 @@ export const financialCoaching: CategoryFile = {
       publicToken: 'x5kjbgay',
       slug: 'money-iq',
       order: 3,
+      alsoIn: ['investment-coaching'],
       seo: {
         title: 'Money IQ Quiz — Test Your Personal Finance Smarts',
         description:

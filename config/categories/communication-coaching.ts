@@ -38,6 +38,12 @@ export const communicationCoaching: CategoryFile = {
       publicToken: 'wutb6cqh',
       slug: 'communication-skills-scorecard',
       order: 1,
+      alsoIn: [
+        'team-coaching',
+        'negotiation-coaching',
+        'public-speaking-coaching',
+        'emotional-intelligence-coaching',
+      ],
       seo: {
         title: 'Communication Skills Scorecard — Rate Your Skills',
         description:
