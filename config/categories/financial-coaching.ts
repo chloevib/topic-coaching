@@ -7,7 +7,7 @@ export const financialCoaching: CategoryFile = {
     name: 'Financial Coach',
     title: 'Financial Coaching Quizzes & Assessments',
     description:
-      'Take control of your money with free financial-coaching quizzes — discover your money personality, test your financial IQ, and score your financial wellness.',
+      'Take control of your money with free financial-coaching quizzes — discover your money personality, test your financial IQ, score your financial wellness, and check your debt payoff readiness.',
     emoji: '💰',
     heroCopy: 'Money stress is rarely about the math. Start by understanding how you actually relate to money.',
     order: 12,
@@ -15,7 +15,8 @@ export const financialCoaching: CategoryFile = {
     intro: [
       'Financial coaching is about behavior, not just budgets. Most money problems are not caused by a lack of information — they come from the habits, emotions, and beliefs that quietly drive how we earn, spend, save, and worry. A good financial coach helps you see those patterns clearly and build a plan that fits how you actually think about money.',
       'It matters more than ever. Surveys in 2025 found that roughly 7 to 9 in 10 Americans feel some form of financial stress, and most say money worries disrupt their sleep, relationships, and focus at work. Naming what is really going on with your money is the first step to loosening that grip.',
-      'These free financial-coaching quizzes are a fast, judgment-free place to begin. Discover your money personality, pressure-test your financial knowledge, or score your overall financial wellness. Each takes just a few minutes, is free, and ends with a personalized result and a practical next step — no signup required to start.',
+      'Debt is where that shows up most clearly. Americans carried about $1.26 trillion in credit card balances in the second quarter of 2026, part of $18.77 trillion in total household debt, and the households that clear their balances are usually not the ones with the best spreadsheet. Behavioural research on debt repayment found that people who close accounts one at a time are significantly more likely to eliminate all their debt, whatever the interest-rate maths says — readiness and momentum beat optimisation.',
+      'These free financial-coaching quizzes are a fast, judgment-free place to begin. Discover your money personality, pressure-test your financial knowledge, score your overall financial wellness, or rate how ready you actually are to become debt-free. Each takes just a few minutes, is free, and ends with a personalized result and a practical next step — no signup required to start.',
     ],
     faq: [
       {
@@ -25,6 +26,10 @@ export const financialCoaching: CategoryFile = {
       {
         q: 'Why does my "money personality" matter?',
         a: 'Financial-psychology research — notably Dr. Brad Klontz\'s work on "money scripts" — shows that beliefs about money form early in life and unconsciously drive adult financial behavior. Knowing your pattern (for example, whether you avoid money, worship it, tie it to status, or watch it anxiously) helps you build a plan that works with your tendencies instead of against them.',
+      },
+      {
+        q: 'Should I pay off the smallest debt or the highest interest rate first?',
+        a: 'The highest-rate debt first (the "avalanche") always wins on paper and saves the most interest. But research published in the Journal of Marketing Research found that people who reduce the number of open debt accounts faster are significantly more likely to eliminate all their debt — the "snowball" wins on completion. The practical answer is to pick one order deliberately and stay with it; spreading spare money evenly across every balance is the option that clears nothing quickly.',
       },
       {
         q: 'Are these financial quizzes free?',
@@ -161,6 +166,56 @@ export const financialCoaching: CategoryFile = {
           {
             q: 'How long does the quiz take, and is it free?',
             a: 'About five minutes, and it is free with your score and explanations — no signup required to start.',
+          },
+        ],
+      },
+    },
+    {
+      publicToken: 'eqqnwctr',
+      slug: 'debt-payoff-readiness-scorecard',
+      order: 4,
+      seo: {
+        title: 'Debt Payoff Readiness Scorecard — Are You Ready to Be Debt-Free?',
+        description:
+          'A free 3-minute debt payoff quiz that scores the five things deciding how fast your debt comes off — clarity, room to pay, strategy, holding the line, and support. No credit check.',
+        overview:
+          'Most debt plans fail on readiness, not on the maths. This free 3-minute scorecard rates the five things that actually decide how fast debt comes off: how clearly you see what you owe, how much room your month leaves you, whether you have a payoff order, whether new debt is still going on the other end, and who is in your corner. You get a score out of 100, a radar chart of all five areas, and the one to fix first — no account numbers and no credit check.',
+        whoFor:
+          'Anyone carrying credit cards, loans, buy-now-pay-later balances or money owed to family who wants an honest read on whether a payoff plan would actually stick this time — and coaches who want a starting point with a client.',
+        whatYouLearn: [
+          'Your debt payoff readiness score out of 100 across five areas',
+          'Whether your constraint is clarity, cash flow, strategy, discipline, or support',
+          'Whether new debt is quietly cancelling out the payments you are already making',
+          'The one area to fix in the next 90 days, rather than a list of everything at once',
+        ],
+        sampleQuestions: [
+          'Could you say roughly what you owe in total right now, without looking it up?',
+          'After minimum payments and normal living costs, what’s typically left at the end of the month?',
+          'Is there an order you’re paying your debts off in?',
+          'Over the last three months, your total debt has gone up, stayed flat, or gone down?',
+        ],
+        howItWorks:
+          'Fifteen questions across five sections — Clarity, Room to Pay, Payoff Strategy, Holding the Line, and Support & Mindset — are each scored on a 0/3/7/10 scale and combined into a score out of 100, shown as a radar so you can see which area is lowest. A few closing questions about your largest balance and your 90-day priority shape the advice but do not affect the score. It takes about three minutes, is free, asks for no account numbers, and runs no credit check.',
+        faq: [
+          {
+            q: 'Is this a credit check or a debt-relief application?',
+            a: 'Neither. It is a self-assessment: no account numbers, no credit pull, no effect on your credit file. It scores habits and readiness, not your balances, and nothing you enter is verified against any financial institution.',
+          },
+          {
+            q: 'How much debt do people usually carry?',
+            a: 'For scale, US households held roughly $1.26 trillion in credit card balances in the second quarter of 2026 within about $18.77 trillion of total household debt, and among households actually carrying a card balance the average sits near $9,900. Your number matters far less than the five behaviours this scorecard measures.',
+          },
+          {
+            q: 'Why does readiness matter more than the payoff method?',
+            a: 'Because most plans stop before the maths gets a chance to work. Behavioural research published in the Journal of Marketing Research found that people who close debt accounts faster are significantly more likely to eliminate all their debt regardless of interest rates — momentum, visibility and support predict completion better than picking the optimal order does.',
+          },
+          {
+            q: 'Can I take it with my partner?',
+            a: 'Yes, and it is more useful that way. Take it separately, enter the same name in the optional box, then compare: the questions where your answers disagree most — usually clarity and holding the line — are the conversation worth having before you pick a payoff order.',
+          },
+          {
+            q: 'How long does the scorecard take, and is it free?',
+            a: 'About three minutes for fifteen questions. It is free, gives you a score out of 100 with a five-area radar breakdown, and needs no signup to start.',
           },
         ],
       },
