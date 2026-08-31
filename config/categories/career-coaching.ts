@@ -169,6 +169,7 @@ export const careerCoaching: CategoryFile = {
       publicToken: 'vdes5a8j',
       slug: 'productivity-style',
       order: 7,
+      alsoIn: ['life-organization-coaching'],
       seo: {
         title: 'Productivity Style Quiz — Find the System That Fits You',
         description:

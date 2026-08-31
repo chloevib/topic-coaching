@@ -40,6 +40,7 @@ export const businessCoaching: CategoryFile = {
       publicToken: '6asmj28d',
       slug: 'business-scale-readiness',
       order: 10,
+      alsoIn: ['entrepreneur-coaching'],
       seo: {
         title: 'Business Scale Readiness Scorecard — Are You Ready to Grow?',
         description:
@@ -83,6 +84,7 @@ export const businessCoaching: CategoryFile = {
       slug: 'founder-archetype',
       featured: true,
       order: 11,
+      alsoIn: ['entrepreneur-coaching'],
       seo: {
         title: 'Founder Archetype Quiz — Which Founder Type Are You?',
         description:
