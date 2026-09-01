@@ -7,7 +7,7 @@ export const teamCoaching: CategoryFile = {
     name: 'Team Coach',
     title: 'Team Health Quizzes & Team Effectiveness Assessments',
     description:
-      'Free team health assessments that score trust, alignment, accountability and conflict — with a radar chart of what is really holding your team back. Instant result, no signup.',
+      'Free team health assessments scoring trust, alignment, accountability and conflict — with a radar chart of what is holding your team back. No signup.',
     emoji: '👥',
     heroCopy:
       'Teams rarely fail on talent. Find out which of the four dimensions of team health is quietly costing you the most.',
@@ -51,7 +51,7 @@ export const teamCoaching: CategoryFile = {
       seo: {
         title: 'How Strong Is Your Team? Free Team Health Scorecard (4 min)',
         description:
-          'A free 12-question team health assessment scoring trust, alignment, accountability and conflict, with a radar chart of your weakest dimension. About 4 minutes, no signup.',
+          'A free 12-question team health assessment scoring trust, alignment, accountability and conflict, with a radar chart of your weakest dimension.',
         overview:
           'Most teams do not fail on talent — they fail because trust is thin, priorities are fuzzy, commitments quietly slip, and the real conversation happens after the meeting rather than in it. This free 12-question scorecard rates your team out of 60 across four dimensions of team health and returns a radar chart showing which one is dragging the others down, plus a specific first behaviour to change. It takes about four minutes.',
         whoFor:

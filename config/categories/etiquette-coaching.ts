@@ -9,9 +9,9 @@ export const etiquetteCoaching: CategoryFile = {
   category: {
     slug: 'etiquette-coaching',
     name: 'Etiquette Coach',
-    title: 'Business Etiquette Quizzes & Professional Etiquette Assessments',
+    title: 'Business Etiquette Quizzes & Professional Assessments',
     description:
-      'Free business etiquette quizzes and professional etiquette assessments — score how your client-facing team handles meetings, email, hosting, cross-cultural norms, and follow-through.',
+      'Free business etiquette quizzes and assessments — score how your client-facing team handles meetings, email, hosting and cross-cultural norms.',
     emoji: '🎩',
     heroCopy: 'Clients rarely complain about etiquette. They just stop calling back.',
     intro: [
@@ -51,7 +51,7 @@ export const etiquetteCoaching: CategoryFile = {
       order: 1,
       alsoIn: ['business-coaching', 'communication-coaching'],
       seo: {
-        title: 'Business Etiquette Scorecard — How Polished Is Your Client-Facing Team?',
+        title: 'Business Etiquette Scorecard — How Polished Is Your Team?',
         description:
           'A free 4-minute business etiquette assessment. Twelve questions, four areas, a score out of 120 — and the one habit quietly costing your team client trust.',
         overview:

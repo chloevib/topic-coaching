@@ -49,7 +49,7 @@ export const jobSearchCoaching: CategoryFile = {
       seo: {
         title: 'Senior Interview Scorecard — Do You Interview at Your Level?',
         description:
-          'A free 5-minute senior interview scorecard for experienced candidates. Twelve situations, four dimensions, a score out of 120 — and the one habit costing you the offer.',
+          'A free 5-minute senior interview scorecard for experienced candidates — twelve situations, four dimensions, and the one habit costing you the offer.',
         overview:
           'Experienced candidates rarely lose offers on competence. They lose them on how the competence comes across: answering at the wrong level, describing responsibilities instead of decisions, sounding credible without being compelling. This scorecard puts twelve realistic interview situations in front of you — none with an obviously right answer — and scores which option you reach for first.',
         whoFor:

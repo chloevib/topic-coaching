@@ -7,7 +7,7 @@ export const financialCoaching: CategoryFile = {
     name: 'Financial Coach',
     title: 'Financial Coaching Quizzes & Assessments',
     description:
-      'Take control of your money with free financial-coaching quizzes — discover your money personality, test your financial IQ, score your financial wellness, and check your debt payoff readiness.',
+      'Free financial coaching quizzes — discover your money personality, test your financial IQ, and score your financial wellness and debt payoff readiness.',
     emoji: '💰',
     heroCopy: 'Money stress is rarely about the math. Start by understanding how you actually relate to money.',
     order: 12,
@@ -175,9 +175,9 @@ export const financialCoaching: CategoryFile = {
       slug: 'debt-payoff-readiness-scorecard',
       order: 4,
       seo: {
-        title: 'Debt Payoff Readiness Scorecard — Are You Ready to Be Debt-Free?',
+        title: 'Debt Payoff Readiness Quiz — Are You Ready to Be Debt-Free?',
         description:
-          'A free 3-minute debt payoff quiz that scores the five things deciding how fast your debt comes off — clarity, room to pay, strategy, holding the line, and support. No credit check.',
+          'A free 3-minute debt payoff quiz scoring the five things that decide how fast your debt comes off — clarity, room to pay, strategy, discipline and support.',
         overview:
           'Most debt plans fail on readiness, not on the maths. This free 3-minute scorecard rates the five things that actually decide how fast debt comes off: how clearly you see what you owe, how much room your month leaves you, whether you have a payoff order, whether new debt is still going on the other end, and who is in your corner. You get a score out of 100, a radar chart of all five areas, and the one to fix first — no account numbers and no credit check.',
         whoFor:

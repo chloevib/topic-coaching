@@ -56,7 +56,7 @@ export const parentingCoaching: CategoryFile = {
       seo: {
         title: 'Parenting Partnership Quiz — Are You Two Actually a Team?',
         description:
-          'A free 5-minute parenting partnership scorecard across 5 dimensions — united front, conflict repair, the invisible load, your couple time and emotional alignment.',
+          'A free 5-minute parenting partnership scorecard across 5 dimensions — united front, conflict repair, the invisible load, couple time and alignment.',
         overview:
           'Most parenting problems are not really about the child. They are about two adults who love the same kid and are quietly running two different playbooks. This free scorecard measures the partnership rather than the parenting, across the five dimensions that decide whether your home feels like a team or a tug-of-war, and gives you a score out of 100 with one experiment to run for the next two weeks.',
         whoFor:

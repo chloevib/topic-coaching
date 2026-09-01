@@ -21,7 +21,7 @@ export const lifeOrganizationCoaching: CategoryFile = {
   category: {
     slug: 'life-organization-coaching',
     name: 'Life Organization Coach',
-    title: 'Life Organization Coaching Quizzes & Productivity Style Tests',
+    title: 'Life Organization Quizzes & Productivity Style Tests',
     description:
       'Free life organization quizzes — find the productivity system that fits how you actually work, and the reason you keep putting things off.',
     emoji: '🗂️',

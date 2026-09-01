@@ -10,9 +10,9 @@ export const organizationDevelopmentCoaching: CategoryFile = {
   category: {
     slug: 'organization-development-coaching',
     name: 'Organization Development Coach',
-    title: 'Organizational Change & OD Assessments — Free Diagnostic Quizzes',
+    title: 'Organizational Change & OD Assessments — Free Quizzes',
     description:
-      'Free organization development assessments — score your change readiness, team health and leadership strength, and find the one condition blocking your next transformation.',
+      'Free organization development assessments — score your change readiness, team health and leadership strength, and find what blocks your transformation.',
     emoji: '🏗️',
     heroCopy:
       'Diagnose the organization, not the slide deck. Short assessments that show which condition is actually blocking your next change.',
@@ -54,9 +54,9 @@ export const organizationDevelopmentCoaching: CategoryFile = {
       order: 1,
       alsoIn: ['leadership-coaching', 'team-coaching'],
       seo: {
-        title: 'Change Readiness Assessment — Is Your Organization Ready to Change?',
+        title: 'Change Readiness Assessment — Is Your Organization Ready?',
         description:
-          'A free 3-minute change readiness assessment scoring your organization across four pillars: case for change, leadership alignment, capacity to absorb, and trust from the last change.',
+          'A free 3-minute change readiness assessment scoring your organization on four pillars: case for change, leadership alignment, capacity and trust.',
         overview:
           'Most change programmes do not fail because the plan was wrong. They fail because the organization had no capacity left to absorb them, or because the last change taught people that waiting it out works. This free assessment scores your organization out of 120 across the four conditions that predict whether a change actually sticks, and shows you which one is blocking you — before you announce anything.',
         whoFor:
