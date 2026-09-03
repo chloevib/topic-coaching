@@ -42,7 +42,7 @@ export const languageCoaching: CategoryFile = {
       slug: 'english-vocabulary-quiz',
       featured: true,
       order: 1,
-      alsoIn: ['writing-coaching'],
+      alsoIn: ['writing-coaching', 'academic-coaching'],
       seo: {
         title: 'Test Your English: Vocabulary & Common Mistakes Quiz (Free)',
         description:

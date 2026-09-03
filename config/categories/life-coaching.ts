@@ -218,7 +218,7 @@ export const lifeCoaching: CategoryFile = {
       publicToken: '3k53mxxu',
       slug: 'learning-style-vark',
       order: 5,
-      alsoIn: ['learning-coaching', 'memory-coaching'],
+      alsoIn: ['learning-coaching', 'memory-coaching', 'academic-coaching'],
       seo: {
         title: 'Learning Style Quiz (VARK) — Discover How You Learn Best',
         description:

@@ -43,7 +43,7 @@ export const memoryCoaching: CategoryFile = {
       publicToken: 'sxq2xn5t',
       slug: 'memory-iq-quiz',
       order: 1,
-      alsoIn: ['learning-coaching'],
+      alsoIn: ['learning-coaching', 'academic-coaching'],
       seo: {
         title: 'Memory IQ Quiz — Test Your Recall and Retention',
         description:
