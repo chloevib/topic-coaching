@@ -7,7 +7,7 @@ export const soccerCoaching: CategoryFile = {
     name: 'Soccer Coach',
     title: 'Soccer Coach Quizzes & Assessments',
     description:
-      'Test your soccer knowledge, tactics, and match sense. Free soccer quizzes and assessments.',
+      'Test your soccer knowledge, tactics, and match sense with free soccer quizzes — World Cup trivia, rules, and which national team suits your playing style.',
     emoji: '⚽',
     heroCopy:
       'Sharpen your soccer brain — test what you know about the game, the 2026 World Cup, and the style of football that fits you.',

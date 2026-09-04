@@ -7,10 +7,9 @@ export const postureCoaching: CategoryFile = {
     name: 'Posture Coach',
     title: 'Posture Coach Quizzes & Assessments',
     description:
-      'Fix rounded shoulders, tech neck, and desk slump. Free posture coaching quizzes and assessments.',
+      'Fix rounded shoulders, tech neck, and desk slump. Free posture coaching quizzes and assessments that score your sitting, standing, and screen habits.',
     emoji: '🧍',
-    heroCopy:
-      'Sit and stand taller — start by scoring your posture habits and finding the first fix to make today.',
+    heroCopy: 'Sit and stand taller — start by scoring your posture habits and finding the first fix to make today.',
     order: 15,
     parent: 'health-body-fitness',
     intro: [

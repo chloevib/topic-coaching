@@ -7,7 +7,7 @@ export const relationshipCoaching: CategoryFile = {
     name: 'Relationship Coaching',
     title: 'Relationship Coaching Quizzes',
     description:
-      'Explore your communication style and relationship patterns with free relationship-coaching quizzes.',
+      'Explore your attachment style, communication habits, and relationship patterns with free relationship coaching quizzes and a relationship health scorecard.',
     emoji: '💬',
     heroCopy: 'Better relationships start with self-awareness. Take a quiz to begin.',
     order: 2,
@@ -202,7 +202,7 @@ export const relationshipCoaching: CategoryFile = {
           },
           {
             q: 'Which MBTI types are most compatible?',
-            a: 'Popular pairings such as INFJ with ENFP or INTJ with ENTP pair depth with momentum, but compatibility guides broadly agree that matching letters matters far less than understanding each other\'s communication style, emotional needs, and conflict patterns — any two types can work with that awareness (background: https://www.mbtiquiz.com/blog/personality-types-love-compatibility-2026).',
+            a: "Popular pairings such as INFJ with ENFP or INTJ with ENTP pair depth with momentum, but compatibility guides broadly agree that matching letters matters far less than understanding each other's communication style, emotional needs, and conflict patterns — any two types can work with that awareness (background: https://www.mbtiquiz.com/blog/personality-types-love-compatibility-2026).",
           },
           {
             q: 'Is the MBTI love test scientifically accurate?',

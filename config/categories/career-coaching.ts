@@ -6,7 +6,8 @@ export const careerCoaching: CategoryFile = {
     slug: 'career-coaching',
     name: 'Career Coaching',
     title: 'Career Coaching Quizzes & Assessments',
-    description: 'Discover your strengths, work style, and ideal career path with free career-coaching assessments.',
+    description:
+      'Discover your strengths, work style, and ideal career path with free career coaching assessments — career archetype, change readiness, and interview prep.',
     emoji: '🚀',
     heroCopy: 'Figure out your next career move with assessments built around real coaching frameworks.',
     order: 1,

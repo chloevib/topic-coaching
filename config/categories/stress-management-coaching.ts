@@ -10,7 +10,8 @@ export const stressManagementCoaching: CategoryFile = {
     slug: 'stress-management-coaching',
     name: 'Stress Management',
     title: 'Stress & Burnout Coaching Quizzes',
-    description: 'Understand your stress response and burnout risk with free stress-management coaching assessments.',
+    description:
+      'Understand your stress response and burnout risk with free stress management coaching assessments — find your stress type and the pattern behind it.',
     emoji: '🌊',
     heroCopy: 'Stress is not the enemy — how you respond to it is. Start by understanding your pattern.',
     order: 13,

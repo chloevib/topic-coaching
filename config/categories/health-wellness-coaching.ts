@@ -6,7 +6,8 @@ export const healthWellnessCoaching: CategoryFile = {
     slug: 'health-wellness-coaching',
     name: 'Health & Wellness',
     title: 'Health & Wellness Coaching Quizzes',
-    description: 'Understand your energy, eating, and habits with free wellness and health-coaching assessments.',
+    description:
+      'Understand your energy, eating, and daily habits with free wellness and health coaching assessments — get a lifestyle baseline and a realistic first step.',
     emoji: '🧘',
     heroCopy: 'Small changes, big results — start by understanding your current baseline.',
     order: 1,
