@@ -108,6 +108,9 @@ export function buildMetadata(input: PageMetaInput): Metadata {
       url: canonical,
       siteName: 'RooQuiz Coaching',
       type: 'website',
+      // 全站英文单语。og:locale 缺失时抓取方只能猜语言，
+      // 补上后分享卡片与多语索引都少一次猜测。
+      locale: 'en_US',
     },
     twitter: {
       card: 'summary_large_image',
@@ -154,6 +157,44 @@ export function faqJsonLd(faq: { q: string; a: string }[], opts?: { path?: strin
   }
 }
 
+/**
+ * 分类落地页的页面级节点：CollectionPage。
+ *
+ * 原先分类页只注入 BreadcrumbList / ItemList / FAQPage 三个「零件」，
+ * 却没有一个代表「这一页本身」的节点——爬虫拿到的是三份悬空清单，
+ * 而不是「一个归属于本站的合集页，主体是这些测评，面包屑在这里」。
+ * 补上 CollectionPage 后，页面级实体链条完整：
+ *   WebSite → CollectionPage（本页）→ mainEntity=ItemList → 各测评
+ * 所有字段都有值才输出，不制造空字段。
+ */
+export function collectionPageJsonLd(input: {
+  title: string
+  description: string
+  path: string
+  /** 本页主题（分类短名），供引擎归类 */
+  about?: string
+  /** 本页测评清单的 anchor（有测评时才传），用于 mainEntity 指向同页 ItemList */
+  itemListAnchor?: string
+}) {
+  const pageUrl = absoluteUrl(input.path)
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    '@id': `${pageUrl}#webpage`,
+    url: pageUrl,
+    name: input.title,
+    description: input.description,
+    inLanguage: 'en',
+    isPartOf: { '@id': WEBSITE_ID },
+    breadcrumb: { '@id': `${pageUrl}#breadcrumb` },
+    primaryImageOfPage: absoluteUrl(`${input.path}/opengraph-image`),
+    ...(input.about ? { about: input.about } : {}),
+    ...(input.itemListAnchor ? { mainEntity: { '@id': `${pageUrl}#${input.itemListAnchor}` } } : {}),
+    isAccessibleForFree: true,
+    publisher: { '@id': ORG_ID },
+  }
+}
+
 export function quizJsonLd(input: {
   title: string
   description: string
@@ -164,12 +205,21 @@ export function quizJsonLd(input: {
   /** 最近更新时间(ISO),提供新鲜度信号 */
   dateModified?: string
 }) {
+  const pageUrl = absoluteUrl(input.path)
   return {
     '@context': 'https://schema.org',
     '@type': 'Quiz',
+    /*
+     * 稳定 @id：本页其他节点（面包屑、FAQ、样题清单）早就有 @id，唯独主角
+     * Quiz 是匿名节点，跨页合并实体图时无法被引用，也没法被面包屑挂住。
+     */
+    '@id': `${pageUrl}#quiz`,
+    // 不写 breadcrumb：schema.org 里它的 domain 只有 WebPage，
+    // 挂到 Quiz 上属于越界属性，宁缺勿滥。
+    mainEntityOfPage: pageUrl,
     name: input.title,
     description: input.description,
-    url: absoluteUrl(input.path),
+    url: pageUrl,
     ...(input.image ? { image: input.image } : {}),
     ...(input.about ? { about: input.about } : {}),
     ...(input.dateModified ? { dateModified: input.dateModified } : {}),

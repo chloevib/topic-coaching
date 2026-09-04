@@ -82,7 +82,8 @@ export default async function HomePage() {
                   index > 0 ? 'border-base-content/15 sm:border-l' : ''
                 }`}
               >
-                <dt className="text-base-content/60 mt-1 text-xs font-medium tracking-wide uppercase">{stat.label}</dt>
+                {/* 对比度：12px 大写小字压到 /60 在 dim 暗色主题下已经贴着 AA 线，提到 /70 */}
+                <dt className="text-base-content/70 mt-1 text-xs font-medium tracking-wide uppercase">{stat.label}</dt>
                 <dd className="text-2xl font-bold tracking-tight sm:text-3xl">{stat.value}</dd>
               </div>
             ))}
@@ -125,7 +126,13 @@ export default async function HomePage() {
           ].map((step) => (
             <li
               key={step.n}
-              className="border-base-300 bg-base-100 rounded-2xl border p-6 shadow-sm transition duration-200 hover:shadow-md"
+              /*
+               * 这三张卡不是链接，却带着 hover:shadow-md —— 鼠标掠过时抬一下影子，
+               * 等于向用户承诺「可以点」，点下去却没反应，是纯粹的误导性反馈。
+               * 全站真正可点的卡（QuizCard / CategoryGrid）才保留 hover 抬升；
+               * 这里去掉 hover 态，静态卡就老老实实是静态的。
+               */
+              className="border-base-300 bg-base-100 rounded-2xl border p-6 shadow-sm"
             >
               <div
                 aria-hidden

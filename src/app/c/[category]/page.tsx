@@ -16,7 +16,14 @@ import {
   hydrateQuizzes,
   isHub,
 } from '@/lib/content'
-import { absoluteUrl, breadcrumbJsonLd, buildMetadata, faqJsonLd, itemListJsonLd } from '@/lib/seo'
+import {
+  absoluteUrl,
+  breadcrumbJsonLd,
+  buildMetadata,
+  collectionPageJsonLd,
+  faqJsonLd,
+  itemListJsonLd,
+} from '@/lib/seo'
 
 interface CategoryPageProps {
   params: Promise<{ category: string }>
@@ -69,6 +76,20 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
 
   return (
     <>
+      {/*
+       * 页面级节点：把本页声明成一个 CollectionPage，并让 mainEntity 指向
+       * 下面那份测评 ItemList、breadcrumb 指向本页面包屑，
+       * 于是三份原本各自悬空的清单被串成一条完整的实体链。
+       */}
+      <JsonLd
+        data={collectionPageJsonLd({
+          title: category.title,
+          description: category.description,
+          path: `/c/${category.slug}`,
+          about: category.name,
+          itemListAnchor: quizzes.length ? 'quizzes' : undefined,
+        })}
+      />
       <JsonLd data={breadcrumbJsonLd(crumbs)} />
       {quizzes.length ? (
         <JsonLd

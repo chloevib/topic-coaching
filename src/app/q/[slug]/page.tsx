@@ -110,115 +110,159 @@ export default async function QuizPage({ params }: QuizPageProps) {
        * 原先只是个裸 <div>；换成 <article> 让爬虫与读屏器都能识别这块的边界。
        * 页面底部的「相关测评」不属于这篇文章，故留在 article 之外。
        */}
-      <article className="mx-auto max-w-3xl px-4 py-10">
-        {/* 面包屑：ol 有序列表 + aria-label，与顶部注入的 BreadcrumbList 结构化数据对齐 */}
-        <nav aria-label="Breadcrumb" className="text-base-content/70 mb-4 text-sm">
-          <ol className="flex flex-wrap items-center gap-x-2 gap-y-1">
-            <li>
-              <Link href="/" className="hover:text-primary">
-                Home
-              </Link>
-            </li>
-            {primaryCategory ? (
-              <li className="flex items-center gap-x-2">
-                <span aria-hidden>/</span>
-                <Link href={`/c/${primaryCategory.slug}`} className="hover:text-primary">
-                  {primaryCategory.name}
+      <article>
+        {/*
+         * 测评页页头band：首页与分类页都有一条 primary/10 → base-100 的渐变 hero，
+         * 唯独 79 张测评页（站点的主力落地页）是从纯白直接开始，三类页面看着像
+         * 出自两个站。这里把同一档渐变搬过来包住「面包屑 + 标题 + 摘要 + 元信息行」，
+         * 渐变收在 base-100 上，所以与下方答题器天然无缝、也不产生任何布局位移。
+         */}
+        <div className="from-primary/10 to-base-100 dark:from-primary/20 bg-gradient-to-b">
+          <div className="mx-auto max-w-3xl px-4 pt-8 pb-10">
+            {/* 面包屑：ol 有序列表 + aria-label，与顶部注入的 BreadcrumbList 结构化数据对齐 */}
+            <nav aria-label="Breadcrumb" className="text-base-content/70 mb-4 text-sm">
+              <ol className="flex flex-wrap items-center gap-x-2 gap-y-1">
+                <li>
+                  <Link href="/" className="hover:text-primary">
+                    Home
+                  </Link>
+                </li>
+                {primaryCategory ? (
+                  <li className="flex items-center gap-x-2">
+                    <span aria-hidden>/</span>
+                    <Link href={`/c/${primaryCategory.slug}`} className="hover:text-primary">
+                      {primaryCategory.name}
+                    </Link>
+                  </li>
+                ) : null}
+                {/* 末项补上测评自身：原先可见面包屑只有 2 级，而注入的 BreadcrumbList 是 3 级，两者对不上 */}
+                <li className="flex items-center gap-x-2">
+                  <span aria-hidden>/</span>
+                  <span aria-current="page" className="line-clamp-1">
+                    {hydrated.title}
+                  </span>
+                </li>
+              </ol>
+            </nav>
+
+            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">{hydrated.title}</h1>
+            {hydrated.description ? <p className="text-base-content/70 mt-4 text-lg">{hydrated.description}</p> : null}
+            {overview ? <p className="text-base-content/80 mt-4">{overview}</p> : null}
+
+            {/*
+             * 元信息行：原先这里只有一条孤零零的「Open in full screen ↗」小链接，
+             * 松垮地挂在标题与答题器之间。改成一行胶囊：所属分类（首屏就多一条
+             * 指向 Hub/niche 的站内链接——面包屑之外的第二条，内链权重与可点性都更好）、
+             * 「Free · no signup」这条最有说服力的卖点，再把全屏链接收在同一行右侧。
+             */}
+            <div className="mt-6 flex flex-wrap items-center gap-2 text-sm">
+              {primaryCategory ? (
+                <Link
+                  href={`/c/${primaryCategory.slug}`}
+                  className="border-primary/30 bg-primary/10 text-primary hover:bg-primary/20 dark:bg-primary/20 dark:hover:bg-primary/30 inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-medium transition-colors"
+                >
+                  {primaryCategory.emoji ? <span aria-hidden>{primaryCategory.emoji}</span> : null}
+                  <span>{primaryCategory.name}</span>
                 </Link>
-              </li>
-            ) : null}
-            {/* 末项补上测评自身：原先可见面包屑只有 2 级，而注入的 BreadcrumbList 是 3 级，两者对不上 */}
-            <li className="flex items-center gap-x-2">
-              <span aria-hidden>/</span>
-              <span aria-current="page" className="line-clamp-1">
-                {hydrated.title}
+              ) : null}
+              <span className="border-base-300 bg-base-100 text-base-content/70 rounded-full border px-3 py-1 text-xs font-medium">
+                Free · no signup
               </span>
-            </li>
-          </ol>
-        </nav>
-
-        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">{hydrated.title}</h1>
-        {hydrated.description ? <p className="text-base-content/70 mt-4 text-lg">{hydrated.description}</p> : null}
-        {overview ? <p className="text-base-content/80 mt-4">{overview}</p> : null}
-
-        <div className="mt-4">
-          <a href={takeHref} target="_blank" rel="noopener" className="link text-primary text-sm">
-            Open in full screen ↗
-          </a>
+              <a
+                href={takeHref}
+                target="_blank"
+                rel="noopener"
+                /* ml-auto 只在 sm 起生效：窄屏胶囊会换行，右推会让这条链接孤零零占一整行 */
+                className="text-primary text-sm font-medium hover:underline sm:ml-auto"
+              >
+                Open in full screen ↗
+              </a>
+            </div>
+          </div>
         </div>
 
         {/* 内联嵌入 cairo 答题器 */}
-        <div className="mt-6">
+        <div className="mx-auto max-w-3xl px-4">
           <QuizEmbed src={embedSrc} token={quiz.publicToken} allowedOrigin={cairoOrigin} title={hydrated.title} />
         </div>
 
-        {/* GEO 正文：把测评实质内容以可抓取文本呈现,供答案引擎摘录 */}
-        {whatYouLearn.length ? (
-          <section className="mt-14">
-            <h2 className="mb-5 text-2xl font-bold tracking-tight sm:text-3xl">What you&rsquo;ll learn</h2>
-            <ul className="space-y-3">
-              {whatYouLearn.map((point, index) => (
-                <li key={index} className="text-base-content/80 flex gap-3">
-                  <span aria-hidden className="text-primary mt-1">
-                    ✓
-                  </span>
-                  <span>{point}</span>
-                </li>
-              ))}
-            </ul>
-          </section>
-        ) : null}
+        {/* 页头 band 之下的正文列：与 band 内层同宽同边距，视觉上是同一列 */}
+        <div className="mx-auto max-w-3xl px-4 pb-10">
+          {/*
+           * 文内小节标题降一档：原先是 text-2xl/3xl，与本页 h1（text-3xl/4xl）
+           * 几乎同重，长页面滚下来分不清哪个是页面标题、哪个是小节。
+           * 收到 text-xl/2xl 后 h1 → h2 的落差才成立；
+           * 页面级区块标题（底部「More … quizzes」）保持大号不变。
+           */}
 
-        {sampleQuestions.length ? (
-          <section className="mt-14">
-            <h2 className="mb-2 text-2xl font-bold tracking-tight sm:text-3xl">Sample questions</h2>
-            <p className="text-base-content/70 mb-5">
-              A few of the questions you&rsquo;ll answer in the {hydrated.title}:
-            </p>
-            <ol className="text-base-content/80 marker:text-base-content/40 list-decimal space-y-3 pl-6">
-              {sampleQuestions.map((question, index) => (
-                <li key={index} className="pl-1">
-                  {question}
-                </li>
-              ))}
-            </ol>
-          </section>
-        ) : null}
+          {/* GEO 正文：把测评实质内容以可抓取文本呈现,供答案引擎摘录 */}
+          {whatYouLearn.length ? (
+            <section className="mt-14">
+              <h2 className="mb-5 text-xl font-bold tracking-tight sm:text-2xl">What you&rsquo;ll learn</h2>
+              <ul className="space-y-3">
+                {whatYouLearn.map((point, index) => (
+                  <li key={index} className="text-base-content/80 flex gap-3">
+                    <span aria-hidden className="text-primary mt-1">
+                      ✓
+                    </span>
+                    <span>{point}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
 
-        {whoFor ? (
-          <section className="mt-14">
-            <h2 className="mb-5 text-2xl font-bold tracking-tight sm:text-3xl">Who this quiz is for</h2>
-            <p className="text-base-content/80">{whoFor}</p>
-          </section>
-        ) : null}
+          {sampleQuestions.length ? (
+            <section className="mt-14">
+              <h2 className="mb-2 text-xl font-bold tracking-tight sm:text-2xl">Sample questions</h2>
+              <p className="text-base-content/70 mb-5">
+                A few of the questions you&rsquo;ll answer in the {hydrated.title}:
+              </p>
+              <ol className="text-base-content/80 marker:text-base-content/40 list-decimal space-y-3 pl-6">
+                {sampleQuestions.map((question, index) => (
+                  <li key={index} className="pl-1">
+                    {question}
+                  </li>
+                ))}
+              </ol>
+            </section>
+          ) : null}
 
-        {howItWorks ? (
-          <section className="mt-14">
-            <h2 className="mb-5 text-2xl font-bold tracking-tight sm:text-3xl">How it works</h2>
-            <p className="text-base-content/80">{howItWorks}</p>
-          </section>
-        ) : null}
+          {whoFor ? (
+            <section className="mt-14">
+              <h2 className="mb-5 text-xl font-bold tracking-tight sm:text-2xl">Who this quiz is for</h2>
+              <p className="text-base-content/80">{whoFor}</p>
+            </section>
+          ) : null}
 
-        {/* FAQ */}
-        {faq.length ? (
-          <section className="mt-14">
-            <h2 className="mb-5 text-2xl font-bold tracking-tight sm:text-3xl">Frequently asked questions</h2>
-            <div className="join join-vertical w-full">
-              {faq.map((entry, index) => (
-                <div key={index} className="join-item collapse-arrow border-base-300 bg-base-100 collapse border">
-                  <input type="checkbox" defaultChecked={index === 0} />
-                  <div className="collapse-title font-medium">{entry.q}</div>
-                  <div className="collapse-content text-base-content/70">
-                    <p>{entry.a}</p>
+          {howItWorks ? (
+            <section className="mt-14">
+              <h2 className="mb-5 text-xl font-bold tracking-tight sm:text-2xl">How it works</h2>
+              <p className="text-base-content/80">{howItWorks}</p>
+            </section>
+          ) : null}
+
+          {/* FAQ */}
+          {faq.length ? (
+            <section className="mt-14">
+              <h2 className="mb-5 text-xl font-bold tracking-tight sm:text-2xl">Frequently asked questions</h2>
+              <div className="join join-vertical w-full">
+                {faq.map((entry, index) => (
+                  <div key={index} className="join-item collapse-arrow border-base-300 bg-base-100 collapse border">
+                    <input type="checkbox" defaultChecked={index === 0} />
+                    <div className="collapse-title font-medium">{entry.q}</div>
+                    <div className="collapse-content text-base-content/70">
+                      <p>{entry.a}</p>
+                    </div>
                   </div>
-                </div>
-              ))}
-            </div>
-          </section>
-        ) : null}
+                ))}
+              </div>
+            </section>
+          ) : null}
 
-        <div className="mt-14">
-          <CtaCreateYourOwn placement={`quiz-${quiz.slug}`} variant="inline" />
+          <div className="mt-14">
+            <CtaCreateYourOwn placement={`quiz-${quiz.slug}`} variant="inline" />
+          </div>
         </div>
       </article>
 
