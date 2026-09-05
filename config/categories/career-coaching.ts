@@ -47,7 +47,7 @@ export const careerCoaching: CategoryFile = {
         description:
           'A free quiz that tests your workplace AI skills and readiness — from prompting to judgment — so you can see where you stand and what to learn next.',
         overview:
-          'AI is reshaping work faster than almost any skill shift before it. This quick quiz tests how ready you are to use AI on the job — from writing effective prompts to knowing when to trust or double-check its output — and shows exactly where to level up.',
+          'AI is reshaping work faster than almost any skill shift before it, and the gap is no longer about access — nine in ten employees now touch AI tools at least occasionally, while around a third have had no training at all. This quick quiz tests how ready you are to use AI on the job — from writing effective prompts to knowing when to trust or double-check its output — and shows exactly where to level up.',
         whoFor:
           'Any professional who wants to stay competitive as AI reshapes their field, whether you are already using AI tools daily or just starting to figure out where they fit into your work.',
         whatYouLearn: [
@@ -70,8 +70,16 @@ export const careerCoaching: CategoryFile = {
             a: 'Demand is climbing fast: analyses in 2025 found employers require AI skills in roughly three times more job postings than two years earlier, and roles that call for AI skills command a meaningful wage premium. Building basic AI fluency is quickly becoming a core professional skill rather than a niche one.',
           },
           {
+            q: 'How big is the workplace AI skills gap in 2026?',
+            a: 'Wide, and mostly a training gap rather than an adoption gap. Survey data published in 2026 puts regular or occasional AI use at roughly nine in ten employees while about 35% report receiving no AI training of any kind, and analysts expect the majority of large enterprises to hit critical AI skills shortages this year. The practical upshot is that self-assessment matters: most people are already using AI without ever being taught what good use looks like.',
+          },
+          {
             q: 'Do I need a technical background to be AI-ready?',
             a: 'No. Most workplace AI readiness is about practical judgment — writing clear prompts, checking output, knowing which tasks to delegate to AI, and using it responsibly — not coding or building models.',
+          },
+          {
+            q: 'What actually closes an AI skills gap?',
+            a: 'Hours of deliberate practice, not one-off demos. Employees with at least five hours of AI training show markedly higher confidence and regular use, and coached or hands-on formats outperform passive training — which is why identifying your weakest area first is worth more than another tool tutorial.',
           },
           {
             q: 'How long does the quiz take, and is it free?',
