@@ -38,6 +38,63 @@ export const careerCoaching: CategoryFile = {
   },
   quizzes: [
     {
+      publicToken: '2xwn3ra8',
+      slug: 'disc-personality-test',
+      order: 2,
+      alsoIn: ['personal-development-coaching', 'team-coaching'],
+      seo: {
+        title: 'DISC Personality Test — Free 12-Question Work Style Assessment',
+        description:
+          'A free DISC personality test in about 3 minutes. Score your D, I, S and C dimensions, see your radar, your blind spot, and how to work with the other styles.',
+        overview:
+          'DISC sorts working behaviour into four dimensions — Drive, Influence, Steadiness and Conscientiousness. This free 12-question test asks what you actually did the last time a project slipped, a peer handed you work that was 80% right, or you disagreed with your manager in a room of eight people, rather than how you would describe yourself. You get a radar across all four dimensions, your strongest and weakest, the blind spot that comes with your style, one thing to try this week, and how to work with the other three styles.',
+        whoFor:
+          'Professionals who want a practical read on how they behave at work, managers building a shared language for a team, and coaches or L&D practitioners running a team session. It works best when a whole team answers separately and then compares radars.',
+        whatYouLearn: [
+          'Your score across all four DISC dimensions — D (Drive), I (Influence), S (Steadiness) and C (Conscientiousness)',
+          'Your dominant style and what colleagues reliably notice about you under real pressure',
+          'The blind spot that comes with your style, and the cost it quietly creates for the people around you',
+          'One specific thing to try this week that stretches your weakest dimension',
+          'How to adapt when you work with each of the other three styles',
+        ],
+        sampleQuestions: [
+          'A project is behind and the team is arguing about why. In the first ten minutes of that meeting, what do you actually do?',
+          'You disagree with your manager\'s decision, in a room of eight people.',
+          'A teammate hands you work that is 80% right.',
+          'Under real pressure, what do colleagues notice first about you?',
+          'How do you want feedback about yourself?',
+        ],
+        howItWorks:
+          'Twelve situational questions, each with four responses mapped to the DISC dimensions. Choosing a response adds points to the dimension it expresses, so your result is a profile across all four rather than a single label — most people are a blend with one clear lead. Answer for how you behave at work in a normal week, not how you would like to. A few context questions about your role and team size do not affect your style. It takes about three minutes and is free with no signup.',
+        faq: [
+          {
+            q: 'What do D, I, S and C stand for?',
+            a: 'D is Drive — decisive, direct, fast to act. I is Influence — persuasive, energising, people-oriented. S is Steadiness — patient, dependable, protective of the team. C is Conscientiousness — precise, analytical, standards-driven. The model traces back to psychologist William Moulton Marston\'s 1928 book Emotions of Normal People, which was later turned into the assessment format used today.',
+          },
+          {
+            q: 'Is there a best DISC style?',
+            a: 'No. DISC describes behaviour, not ability, and every style has a matching cost: Drive moves fast and misses people, Influence builds momentum and skips detail, Steadiness holds a team together and avoids necessary conflict, Conscientiousness raises the standard and slows the decision. The useful part of a result is the blind spot, not the letter.',
+          },
+          {
+            q: 'How is DISC different from MBTI or the Big Five?',
+            a: 'DISC is about observable workplace behaviour and adapts easily to team conversation. MBTI describes cognitive preferences across 16 types. The Big Five is the model with the strongest research support and measures five broad traits. If you want a shared vocabulary for how a team works together, DISC is the most immediately practical of the three.',
+          },
+          {
+            q: 'Can DISC be used for hiring?',
+            a: 'It should not be. DISC is a development and communication tool, not a selection, clinical or diagnostic instrument, and it is not designed to predict job performance. Reputable practitioners use it to improve self-awareness and team conversation, and keep it out of hiring and promotion decisions.',
+          },
+          {
+            q: 'How do I use this with my team?',
+            a: 'Have everyone answer separately before any discussion, and type the same team name so results can be lined up. Then compare radars: the dimension your team is collectively missing usually explains a recurring failure mode — an all-D team that decides fast and re-decides often, or an all-C team that never ships.',
+          },
+          {
+            q: 'How long does the DISC test take, and is it free?',
+            a: 'About three minutes for twelve questions. It is free, gives an instant personalized profile with a radar chart, and needs no signup to start.',
+          },
+        ],
+      },
+    },
+    {
       publicToken: '8sq49p2w',
       slug: 'ai-readiness',
       featured: true,
