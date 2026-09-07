@@ -42,6 +42,7 @@ export const relationshipCoaching: CategoryFile = {
       slug: 'relationship-health-scorecard',
       featured: true,
       order: 17,
+      alsoIn: ['family-coaching'],
       seo: {
         title: 'Relationship Health Quiz — How Healthy Is Yours?',
         description:
@@ -223,7 +224,7 @@ export const relationshipCoaching: CategoryFile = {
       publicToken: 'zfxrszr6',
       slug: 'parenting-style',
       order: 20,
-      alsoIn: ['child-development-coaching', 'parenting-coaching'],
+      alsoIn: ['child-development-coaching', 'parenting-coaching', 'family-coaching'],
       seo: {
         title: 'Parenting Style Quiz — What Kind of Parent Are You?',
         description:

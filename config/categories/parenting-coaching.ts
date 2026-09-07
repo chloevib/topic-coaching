@@ -52,7 +52,7 @@ export const parentingCoaching: CategoryFile = {
       publicToken: '6drmsvpg',
       slug: 'parenting-partnership-scorecard',
       order: 1,
-      alsoIn: ['relationship-coaching'],
+      alsoIn: ['relationship-coaching', 'family-coaching'],
       seo: {
         title: 'Parenting Partnership Quiz — Are You Two Actually a Team?',
         description:
