@@ -46,7 +46,7 @@ export const stressManagementCoaching: CategoryFile = {
       slug: 'stress-type',
       featured: true,
       order: 13,
-      alsoIn: ['emotional-intelligence-coaching', 'meditation-coaching'],
+      alsoIn: ['emotional-intelligence-coaching', 'meditation-coaching', 'exam-coaching'],
       seo: {
         title: 'Stress Type Quiz — What Kind of Stress Do You Have?',
         description:

@@ -36,6 +36,7 @@ export const sleepCoaching: CategoryFile = {
       publicToken: '7w726wyt',
       slug: 'sleep-quality-scorecard',
       order: 1,
+      alsoIn: ['exam-coaching'],
       seo: {
         title: 'Sleep Quality Scorecard — How Good Is Your Sleep, Really?',
         description:

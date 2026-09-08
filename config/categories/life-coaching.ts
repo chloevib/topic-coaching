@@ -89,7 +89,7 @@ export const lifeCoaching: CategoryFile = {
       publicToken: '9gcn38sp',
       slug: 'procrastination-type',
       order: 2,
-      alsoIn: ['life-organization-coaching'],
+      alsoIn: ['life-organization-coaching', 'exam-coaching'],
       seo: {
         title: 'Procrastination Type Quiz — Why You Put Things Off',
         description:

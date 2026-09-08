@@ -42,6 +42,7 @@ export const mindsetCoaching: CategoryFile = {
       slug: 'growth-vs-fixed-mindset-quiz',
       featured: true,
       order: 1,
+      alsoIn: ['exam-coaching'],
       seo: {
         title: 'Growth vs. Fixed Mindset Quiz — What’s Your Mindset? (Free)',
         description:
