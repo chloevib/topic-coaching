@@ -9,7 +9,7 @@ Hosts every coaching-domain/industry quiz. SEO + sharing draw B2C users to take 
 ## Architecture in one line
 
 - **Quiz-taking experience**: reuses the cairo quiz player (embeds `quizster.app/a/{token}?embed=1` in an iframe, auto-resizes height via postMessage).
-- **Quiz data**: build-time GraphQL calls Payload's `getPublicForm(publicToken)` (`payload.rooquiz.com/api/graphql`), fetched once during `next build` and frozen into the static output.
+- **Quiz data**: build-time REST call to Payload's `GET /api/app/public/forms/:publicToken` (`payload.rooquiz.com`), fetched once during `next build` and frozen into the static output.
 - **Centralized config**: a single root-level `site.config.ts` (validated with zod) — site info (name/tagline/CTA) + categories + the quiz list all live here.
 - **OG images**: generated at build time by `opengraph-image.tsx` file conventions (home / category / quiz) into static PNGs — no runtime image endpoint.
 - This site **does not render result pages** (cairo handles those) and **does not touch the Payload backend**.
