@@ -40,6 +40,7 @@ export const careerCoaching: CategoryFile = {
     {
       publicToken: '2xwn3ra8',
       slug: 'disc-personality-test',
+      featured: true,
       order: 2,
       alsoIn: ['personal-development-coaching', 'team-coaching'],
       seo: {

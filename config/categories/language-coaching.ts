@@ -2,8 +2,11 @@ import type { CategoryFile } from '../schema'
 
 /**
  * niche · 语言教练
- * 现有 1 道英语能力测评（english-vocabulary-quiz），完整 GEO 内容。
- * 距 ≥3 开页门槛差 2 道；补更多语言/英语测评后去掉 draft 即促级。
+ * 已上线（非 draft）。现有 3 道测评，均含完整 GEO 内容：
+ *   - english-vocabulary-quiz  常见错词/语法陷阱
+ *   - language-learning-style-quiz  学习风格分型
+ *   - english-level-test  CEFR A1–C2 分级（featured，并 alsoIn exam/academic）
+ * 后续可补 IELTS readiness（qf73asx4）与 english course finder（s8mfg7h6）成完整内链簇。
  */
 export const languageCoaching: CategoryFile = {
   category: {
@@ -121,6 +124,60 @@ export const languageCoaching: CategoryFile = {
           {
             q: 'How long does it take, and is it free?',
             a: 'About two minutes for the 8 questions. It is completely free and gives you a personalized learning-style result with tailored tips — no signup required to start.',
+          },
+        ],
+      },
+    },
+    {
+      publicToken: 'twmxyhkz',
+      slug: 'english-level-test',
+      featured: true,
+      order: 3,
+      alsoIn: ['exam-coaching', 'academic-coaching'],
+      seo: {
+        title: 'English Level Test: Find Your CEFR Level A1–C2 (Free, 20 Questions)',
+        description:
+          'A free 20-question English level test that places you on the CEFR scale from A1 to C2. Get your level in 5 minutes, what you can already do, and what to study next.',
+        overview:
+          'This free 20-question placement test maps your English onto the CEFR scale — the A1 to C2 framework language schools, universities and employers use worldwide. The questions get harder as you go, moving from basic present-simple agreement up to inversion, register and idiom. In about five minutes you get your level, a plain-English summary of what you can already handle at it, and the specific grammar and vocabulary to work on to reach the next one.',
+        whoFor:
+          'Learners who need a number before choosing a course, booking an exam, or writing a CV — and confident speakers who want to know whether they sit at B2, C1 or C2 rather than guessing.',
+        whatYouLearn: [
+          'Your CEFR level from A1 Beginner through to C2 Proficient',
+          'What you can realistically do in English at that level, in concrete terms',
+          'The exact grammar and vocabulary to study next to move up one level',
+          'A rough sense of the study hours each jump typically takes',
+          'An explanation for every question, so you learn from the ones you miss',
+        ],
+        sampleQuestions: [
+          'Complete the sentence: “She ___ to school every day.” (go / going / goes / gone)',
+          'Complete the sentence: “I ___ in London since 2019.” (live / lived / am living / have lived)',
+          'Complete the sentence: “If I ___ about the traffic, I would have left earlier.” (knew / know / would know / had known)',
+          'Complete the sentence: “Not only ___ the deadline, but he also exceeded every target.” (he met / did he meet / he did meet / met he)',
+          'What does the idiom “to take something with a pinch of salt” mean?',
+        ],
+        howItWorks:
+          'You answer 20 multiple-choice questions covering grammar, vocabulary, phrasal verbs, collocation and register, ordered from easiest to hardest. Each correct answer scores one point, and your total maps to one of the six CEFR bands: A1 Beginner, A2 Elementary, B1 Intermediate, B2 Upper-Intermediate, C1 Advanced or C2 Proficient. Every question comes with a short explanation. The CEFR itself was developed by the Council of Europe and describes what a learner can do in a language rather than how many words they know, which is why the same six bands appear on course catalogues, university entry requirements and job adverts across Europe and beyond.',
+        faq: [
+          {
+            q: 'What is the CEFR scale?',
+            a: 'The Common European Framework of Reference for Languages is a six-level scale — A1, A2, B1, B2, C1, C2 — created by the Council of Europe to describe language ability in terms of what you can actually do, such as handling travel situations or following technical discussion in your field. It is the standard language schools, universities and employers use to state requirements.',
+          },
+          {
+            q: 'Which CEFR level do universities and employers usually ask for?',
+            a: 'B2 Upper-Intermediate is the most common threshold for university study and professional work in English, because it is the point at which you can follow complex material in your own field and hold a conversation with fluent speakers without strain on either side. C1 is typical for more demanding academic or client-facing roles.',
+          },
+          {
+            q: 'How accurate is a 20-question placement test?',
+            a: 'It is a fast estimate of your grammar, vocabulary and usage, which is enough to pick the right course level or decide whether to sit an exam. It does not test listening, speaking or writing, so a full assessment or an official exam will give you a more complete picture.',
+          },
+          {
+            q: 'How long does it take to move up one CEFR level?',
+            a: 'It varies by learner and by level, but the jumps get longer as you climb — early levels often take roughly 100 to 200 hours of guided study each, while B1 to B2 is commonly the longest stretch and the point where most self-taught learners stall. Your result includes an estimate for the level you land on.',
+          },
+          {
+            q: 'Is the test free, and do I need to sign up?',
+            a: 'It is free and takes about five minutes. No signup is required to start, and you get your CEFR level plus a per-question explanation at the end.',
           },
         ],
       },
