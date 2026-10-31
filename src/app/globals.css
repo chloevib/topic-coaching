@@ -82,3 +82,12 @@ li {
     transition: color 0.15s ease;
   }
 }
+
+/*
+ * skip link 落点：<main tabIndex={-1}> 只是为了能接住编程式焦点，本身不可交互。
+ * 某些浏览器会对它命中 :focus-visible，于是整块正文被画上一圈主色描边。
+ * 对 tabindex="-1" 的非交互容器去掉轮廓——真正可交互的控件不受影响。
+ */
+[tabindex='-1']:focus {
+  outline: none;
+}

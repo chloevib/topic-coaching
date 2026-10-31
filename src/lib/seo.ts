@@ -195,6 +195,39 @@ export function collectionPageJsonLd(input: {
   }
 }
 
+/**
+ * 测评落地页的页面级节点：WebPage。
+ *
+ * 分类页早有 CollectionPage 作为「这一页本身」的节点，测评页却只有 Quiz +
+ * 面包屑 + FAQ + 样题清单四个零件：BreadcrumbList 的 @id 没有任何节点引用，
+ * Quiz 的 mainEntityOfPage 也只是个裸 URL 字符串。补上 WebPage 后两类落地页
+ * 的实体链对齐：WebSite → WebPage（本页）→ mainEntity=Quiz，breadcrumb → 本页面包屑。
+ */
+export function quizPageJsonLd(input: {
+  title: string
+  description: string
+  path: string
+  dateModified?: string
+}) {
+  const pageUrl = absoluteUrl(input.path)
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `${pageUrl}#webpage`,
+    url: pageUrl,
+    name: input.title,
+    description: input.description,
+    inLanguage: 'en',
+    isPartOf: { '@id': WEBSITE_ID },
+    breadcrumb: { '@id': `${pageUrl}#breadcrumb` },
+    mainEntity: { '@id': `${pageUrl}#quiz` },
+    primaryImageOfPage: absoluteUrl(`${input.path}/opengraph-image`),
+    ...(input.dateModified ? { dateModified: input.dateModified } : {}),
+    isAccessibleForFree: true,
+    publisher: { '@id': ORG_ID },
+  }
+}
+
 export function quizJsonLd(input: {
   title: string
   description: string
@@ -216,7 +249,8 @@ export function quizJsonLd(input: {
     '@id': `${pageUrl}#quiz`,
     // 不写 breadcrumb：schema.org 里它的 domain 只有 WebPage，
     // 挂到 Quiz 上属于越界属性，宁缺勿滥。
-    mainEntityOfPage: pageUrl,
+    // 指向同页 WebPage 节点（quizPageJsonLd），而不是裸 URL：两节点双向互引
+    mainEntityOfPage: { '@id': `${pageUrl}#webpage` },
     name: input.title,
     description: input.description,
     url: pageUrl,

@@ -15,7 +15,7 @@ import {
   hydrateQuiz,
   hydrateQuizzes,
 } from '@/lib/content'
-import { breadcrumbJsonLd, buildMetadata, faqJsonLd, itemListJsonLd, quizJsonLd } from '@/lib/seo'
+import { breadcrumbJsonLd, buildMetadata, faqJsonLd, itemListJsonLd, quizJsonLd, quizPageJsonLd } from '@/lib/seo'
 
 interface QuizPageProps {
   params: Promise<{ slug: string }>
@@ -79,6 +79,14 @@ export default async function QuizPage({ params }: QuizPageProps) {
        * 提前 preconnect，把这段协商与页面自身资源并行掉，减少首屏空占位的时间。
        */}
       <link rel="preconnect" href={cairoOrigin} />
+      <JsonLd
+        data={quizPageJsonLd({
+          title: hydrated.title,
+          description: schemaDescription,
+          path: `/q/${quiz.slug}`,
+          dateModified: lastModified,
+        })}
+      />
       <JsonLd
         data={breadcrumbJsonLd([
           { name: 'Home', path: '/' },
@@ -201,9 +209,26 @@ export default async function QuizPage({ params }: QuizPageProps) {
               <h2 className="mb-5 text-xl font-bold tracking-tight sm:text-2xl">What you&rsquo;ll learn</h2>
               <ul className="space-y-3">
                 {whatYouLearn.map((point, index) => (
-                  <li key={index} className="text-base-content/80 flex gap-3">
-                    <span aria-hidden className="text-primary mt-1">
-                      ✓
+                  <li key={index} className="text-base-content/80 flex gap-3 leading-relaxed">
+                    {/*
+                     * 原先是一个裸「✓」字符，字形随系统字体变、粗细对不上正文，
+                     * 列表看着像草稿。换成与站内图标块同一语言的圆形淡底徽标 + SVG 勾，
+                     * dark: 提一档底色；mt-0.5 让徽标与首行文字光学居中。
+                     */}
+                    <span
+                      aria-hidden
+                      className="bg-primary/10 text-primary dark:bg-primary/20 mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-3.5 w-3.5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={3}
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="m5 13 4 4L19 7" />
+                      </svg>
                     </span>
                     <span>{point}</span>
                   </li>
@@ -231,14 +256,14 @@ export default async function QuizPage({ params }: QuizPageProps) {
           {whoFor ? (
             <section className="mt-14">
               <h2 className="mb-5 text-xl font-bold tracking-tight sm:text-2xl">Who this quiz is for</h2>
-              <p className="text-base-content/80">{whoFor}</p>
+              <p className="text-base-content/80 leading-relaxed">{whoFor}</p>
             </section>
           ) : null}
 
           {howItWorks ? (
             <section className="mt-14">
               <h2 className="mb-5 text-xl font-bold tracking-tight sm:text-2xl">How it works</h2>
-              <p className="text-base-content/80">{howItWorks}</p>
+              <p className="text-base-content/80 leading-relaxed">{howItWorks}</p>
             </section>
           ) : null}
 
@@ -251,7 +276,7 @@ export default async function QuizPage({ params }: QuizPageProps) {
                   <div key={index} className="join-item collapse-arrow border-base-300 bg-base-100 collapse border">
                     <input type="checkbox" defaultChecked={index === 0} />
                     <div className="collapse-title font-medium">{entry.q}</div>
-                    <div className="collapse-content text-base-content/70">
+                    <div className="collapse-content text-base-content/70 leading-relaxed">
                       <p>{entry.a}</p>
                     </div>
                   </div>
