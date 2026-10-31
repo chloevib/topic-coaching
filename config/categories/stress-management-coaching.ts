@@ -128,5 +128,58 @@ export const stressManagementCoaching: CategoryFile = {
         ],
       },
     },
+    {
+      publicToken: 'jvtmu4yp',
+      slug: 'manager-burnout-scorecard',
+      order: 15,
+      alsoIn: ['leadership-coaching', 'corporate-coaching'],
+      seo: {
+        title: 'Manager Burnout Test: Are You Burning Out, or Just Tired? (Free)',
+        description:
+          'A free 12-question manager burnout scorecard across exhaustion, detachment, efficacy and load. Four minutes to see which kind of strain you are carrying.',
+        overview:
+          'Tiredness lifts after a good weekend; burnout does not, and the two call for completely different responses. This free 12-question scorecard separates them by looking at four things that behave differently in each case — whether rest still restores you, how much distance has opened up between you and the work, whether your effort still seems to change anything, and how much you are structurally carrying. You get a strain score, a radar across the four dimensions, and what your highest one specifically calls for.',
+        whoFor:
+          'People who manage others — team leads, managers of managers, founders and anyone in HR or people ops — who suspect the tiredness has stopped being ordinary, plus individual contributors who want the same four-dimension read.',
+        whatYouLearn: [
+          'Whether your answers look more like ordinary tiredness or like sustained strain',
+          'Which of the four dimensions is highest, and why that changes the right response',
+          'Why losing a sense of efficacy is a symptom of conditions rather than evidence about you',
+          'How much of your load is invisible to the people who could resource it',
+          'What to raise upward, and when the right next step is a professional rather than a plan',
+        ],
+        sampleQuestions: [
+          'After a normal weekend off, how do you feel on Monday morning — reset, slightly better, barely touched, or no different?',
+          'When someone on your team brings you a problem, what is your first internal reaction?',
+          'Does your effort still seem to change outcomes, or does a lot of it feel like running in place?',
+          'How much of what you carry would show up on anyone else’s plan if you stopped?',
+          'Who do you talk to honestly about how work is actually going?',
+        ],
+        howItWorks:
+          'You answer 12 questions, three for each of four dimensions — Exhaustion & Recovery, Detachment, Sense of Efficacy, and Load & Boundaries — each scored from 0 to 3, giving a strain score out of 36 across four bands from "tired, not burning out" to "severe strain". The four dimensions follow the way occupational burnout is commonly described: exhaustion that rest does not resolve, mental distance from the work, and a reduced sense of professional efficacy, with structural load treated separately because it is the part a decision can change. Manager burnout is tracked separately in workplace research for a reason — people who manage others absorb pressure from above and below at once, and large-scale workplace surveys consistently report burnout among managers at rates close to or above those of the teams they lead.',
+        faq: [
+          {
+            q: 'What is the difference between burnout and being tired?',
+            a: 'Tiredness is a deficit that rest resolves. Burnout is better understood as a chronic mismatch between what a job demands and the resources and control available to meet it, and it shows up as three things together: exhaustion that rest does not touch, mental distance from the work, and a sense that your effort no longer changes anything. The third is the one people miss, because it feels like a personal failing rather than a symptom.',
+          },
+          {
+            q: 'Why a separate scorecard for managers?',
+            a: 'The manager version has a distinctive shape. Much of the load is invisible — absorbing other people’s pressure, smoothing conflicts, covering gaps — so it never appears in anyone’s plan and never gets resourced. Managers are also the people least likely to be asked how they are doing, which is why the scorecard treats load and who you can talk to as a dimension in its own right.',
+          },
+          {
+            q: 'Can this quiz diagnose burnout?',
+            a: 'No. It is a structured reflection tool, not a clinical or diagnostic instrument, and it cannot assess any health condition. It is useful for naming which kind of strain you are carrying and starting a conversation about it. If symptoms have persisted for months, a doctor or mental health professional is the right place to take that.',
+          },
+          {
+            q: 'What should I actually do with a high score?',
+            a: 'Act on your highest dimension rather than the total, because the responses differ: high exhaustion calls for protected recovery, high detachment for reconnecting with the part of the work you can influence, low efficacy for a conversation about mismatched expectations, and high load for putting one thing you have been quietly absorbing on the table. At higher bands, self-management alone is usually not enough — the conditions need to change, which means someone else has to know.',
+          },
+          {
+            q: 'Is it free and private?',
+            a: 'It is free and takes about four minutes, with no signup required to start. You can also use it as a periodic check-in — the dimension pattern is more informative than any single score.',
+          },
+        ],
+      },
+    },
   ],
 }

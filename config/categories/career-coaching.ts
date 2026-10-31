@@ -365,5 +365,58 @@ export const careerCoaching: CategoryFile = {
         ],
       },
     },
+    {
+      publicToken: '6mmcj5uy',
+      slug: 'ai-career-risk-scorecard',
+      order: 9,
+      alsoIn: ['job-search-coaching', 'executive-coaching'],
+      seo: {
+        title: 'Will AI Take My Job? The AI Career Risk Scorecard (Free Test)',
+        description:
+          'A free 12-question test scoring your role’s AI exposure across task texture, human stakes, judgment and AI fluency. Get your resilience score and the gap worth closing.',
+        overview:
+          'Asking whether AI will replace your job title is the wrong question — exposure attaches to tasks, accountability and context, and two people with identical titles can land fifteen points apart. This free 12-question scorecard scores the work you actually do across four dimensions and returns an AI-resilience score out of 36, a radar of the four, and the specific move that closes your weakest one. Exposure is not destiny: the lowest dimension is usually the most learnable.',
+        whoFor:
+          'Anyone who has read the layoff headlines and wants a concrete read instead of a vibe — mid-career professionals in knowledge roles especially, plus freelancers and people between jobs deciding what to retrain into.',
+        whatYouLearn: [
+          'Your AI-resilience score out of 36, and what band it falls in',
+          'A radar across four dimensions: Task Texture, Human Stakes, Context & Judgment, AI Fluency',
+          'Which single dimension is doing least work for you — the one worth acting on',
+          'Why AI Fluency is the only dimension most people can move inside a quarter',
+          'The difference between a role being eliminated and a role being reshaped, and which one your answers point to',
+        ],
+        sampleQuestions: [
+          'In a normal week, how much of your work has the same shape as the week before?',
+          'If you wrote a perfect step-by-step procedure for your job, how much of it could a careful stranger then do?',
+          'When a decision in your area goes badly wrong, who actually carries it?',
+          'How much of what makes you good at this job is written down anywhere?',
+          'If a tool arrived next month that did 40% of your current work, what would you realistically do?',
+        ],
+        howItWorks:
+          'You answer 12 questions, three for each of four dimensions, scored 0 to 3 — giving each dimension a maximum of 9 and a total resilience score out of 36 across four bands from "high exposure" to "highly AI-resilient". The dimensions reflect what current tools actually struggle with: work whose shape changes week to week, accountability a named person has to carry, judgment that was never written down, and fluency with the tools themselves. The framing follows the task-level approach used in serious labour-market analysis rather than occupation-level predictions, because within-title variation turns out to be larger than between-title variation — and because skills in AI-exposed roles are currently shifting faster than in other jobs, which is an argument for moving early rather than for alarm.',
+        faq: [
+          {
+            q: 'Will AI take my job?',
+            a: 'Nobody can answer that for an individual, and any tool claiming to is overselling. What can be assessed is exposure: how routine, documented and screen-based your tasks are, how much accountability sits with you personally, how much of your expertise is tacit, and how fluent you already are with the tools. This scorecard measures those four and tells you which one is weakest.',
+          },
+          {
+            q: 'Which jobs are most exposed to AI?',
+            a: 'Exposure tracks task characteristics more closely than job titles. Work that is highly repeatable, fully screen-based, well documented and individually low-stakes is absorbed first — which cuts across industries rather than landing on specific professions. Roles built on ambiguous judgment, named accountability and deep organisational context are considerably more insulated.',
+          },
+          {
+            q: 'What can I actually do to become more AI-proof?',
+            a: 'Of the four dimensions, AI Fluency is the only one most people can move substantially within a quarter — and fluency means rebuilding a whole workflow around a tool, not using it occasionally. Human Stakes grows by taking visible ownership of decisions and relationships. Context & Judgment compounds with years spent making calls rather than executing them. Task Texture usually requires a change of scope rather than of skill.',
+          },
+          {
+            q: 'Is a higher score better?',
+            a: 'Yes — the score measures resilience, so higher means more insulated. But the total matters less than the shape: your lowest bar on the radar is the dimension doing least work for you, and the one where effort pays back fastest.',
+          },
+          {
+            q: 'How long does it take, and is it free?',
+            a: 'About four minutes for the 12 questions. It is free, needs no signup to start, and ends with your score, the four-dimension radar, and specific next steps for your weakest dimension.',
+          },
+        ],
+      },
+    },
   ],
 }
