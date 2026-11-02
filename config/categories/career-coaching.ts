@@ -373,7 +373,7 @@ export const careerCoaching: CategoryFile = {
       seo: {
         title: 'Will AI Take My Job? The AI Career Risk Scorecard (Free Test)',
         description:
-          'A free 12-question test scoring your role’s AI exposure across task texture, human stakes, judgment and AI fluency. Get your resilience score and the gap worth closing.',
+          'A free 12-question test scoring your AI exposure across task texture, human stakes, judgment and AI fluency. Get a resilience score and the gap to close.',
         overview:
           'Asking whether AI will replace your job title is the wrong question — exposure attaches to tasks, accountability and context, and two people with identical titles can land fifteen points apart. This free 12-question scorecard scores the work you actually do across four dimensions and returns an AI-resilience score out of 36, a radar of the four, and the specific move that closes your weakest one. Exposure is not destiny: the lowest dimension is usually the most learnable.',
         whoFor:
@@ -414,6 +414,55 @@ export const careerCoaching: CategoryFile = {
           {
             q: 'How long does it take, and is it free?',
             a: 'About four minutes for the 12 questions. It is free, needs no signup to start, and ends with your score, the four-dimension radar, and specific next steps for your weakest dimension.',
+          },
+        ],
+      },
+    },
+    {
+      publicToken: 'aw8pnx6d',
+      slug: 'ai-career-plan',
+      order: 10,
+      alsoIn: ['job-search-coaching'],
+      seo: {
+        title: 'How AI-Proof Is Your Career? Free Personal AI Career Plan',
+        description:
+          'Answer 14 questions about your real tasks and get a free AI career plan: a resilience rating, which tasks AI will automate or assist, and a 90-day action plan.',
+        overview:
+          'The question is not whether your work changes but whether you shape that change. Employers surveyed for the World Economic Forum’s Future of Jobs Report 2025 expect 39% of the key skills required in the job market to change by 2030, with AI and big data the fastest-growing skills. This free AI career plan asks 14 questions about the tasks you actually do, how you use AI today and where you want to go, then sorts your work into likely automated, AI-assisted and human-core, and gives you a Career Resilience rating and a 90-day plan with AI workflows to try this week.',
+        whoFor:
+          'Professionals who have read the AI layoff headlines and want a concrete plan rather than a vague worry — knowledge workers, managers, freelancers and anyone weighing a move into an AI-related role. Career coaches and L&D teams can use it to start a development conversation.',
+        whatYouLearn: [
+          'A Career Resilience rating from 1 to 10 with a clear verdict',
+          'Your main tasks sorted into likely automated, AI-assisted and human-core',
+          'A six-area breakdown of your AI readiness',
+          'The skills worth building now for your specific 12-month goal',
+          'A 90-day action plan, including AI workflows to try this week',
+        ],
+        sampleQuestions: [
+          'What is your job title, and what are you responsible for in one or two sentences?',
+          'Which activities take up most of your working week — writing, data processing, analysis, client conversations, managing people, coding?',
+          'Describe three to five specific tasks you did last week and roughly how long each took.',
+          'How often do you use AI tools in your work today?',
+          'What is your main career goal for the next 12 months?',
+        ],
+        howItWorks:
+          'The quiz has three parts: your work today, you and AI, and your direction. Because exposure attaches to tasks rather than job titles, it asks you to describe real tasks from last week instead of choosing a generic occupation. An AI then writes your report from your answers, classifying each task, rating your readiness and building a plan that fits the learning time you actually have. It pairs well with the AI Career Risk Scorecard on this site, which gives a quick numeric score; this plan goes further and tells you what to do next (source for the skills-change figure: World Economic Forum, Future of Jobs Report 2025, https://www.weforum.org/publications/the-future-of-jobs-report-2025/).',
+        faq: [
+          {
+            q: 'Will AI replace my job?',
+            a: 'For most people AI changes the mix of tasks in a job before it replaces the job itself. Routine, documented, screen-based tasks are the most exposed; work built on judgment, relationships and accountability is more insulated. This plan sorts your own tasks into those groups so you can see where you stand.',
+          },
+          {
+            q: 'How is this different from the AI Career Risk Scorecard?',
+            a: 'The scorecard is a fast 12-question test that gives you a resilience score and a four-dimension radar. This AI career plan asks about your actual tasks and goals in more depth and returns a written, personalized 90-day plan with specific skills and AI workflows to try.',
+          },
+          {
+            q: 'What skills should I learn to stay relevant as AI spreads?',
+            a: 'It depends on your role and goal, but two themes recur: fluency in using AI tools within your own workflow, and the human skills AI handles poorly, such as judgment, persuasion and leading people. Your plan recommends specific skills based on your tasks and your 12-month goal.',
+          },
+          {
+            q: 'Is it free, and how long does it take?',
+            a: 'Yes, it is free and needs no signup to start. It takes about five minutes — the more specific you are about your real tasks, the sharper the plan.',
           },
         ],
       },

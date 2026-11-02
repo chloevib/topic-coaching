@@ -14,7 +14,7 @@ export const familyCoaching: CategoryFile = {
     name: 'Family Coach',
     title: 'Family Coaching Quizzes & Family Relationship Assessments',
     description:
-      'Free family coaching quizzes — check how healthy your family relationships are, see how well you and your co-parent work as a team, and find the one pattern worth changing first.',
+      'Free family coaching quizzes: check how healthy your family relationships are, how well you work as a co-parenting team, and the one pattern to change first.',
     emoji: '👪',
     heroCopy:
       'Fewer repeat arguments, more of the family you actually want. Short assessments that show you what is really driving the friction at home.',

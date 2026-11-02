@@ -88,5 +88,54 @@ export const jobSearchCoaching: CategoryFile = {
         ],
       },
     },
+    {
+      publicToken: 'ts3qebt3',
+      slug: 'ai-resume-review',
+      order: 2,
+      alsoIn: ['career-coaching'],
+      seo: {
+        title: 'Free AI Resume Review: Will Your Resume Get Past the Bots?',
+        description:
+          'Answer 16 questions or upload your resume for a free AI resume review: a strength rating, a 6-area breakdown, and a rewritten summary and bullets.',
+        overview:
+          'Worried an applicant tracking system is throwing your resume away? In a recruiter survey by Enhancv, 23 of 25 U.S. recruiters said their systems do not auto-reject resumes on formatting or content — what usually gets a resume skipped is volume, timing and a weak match that a busy human spots in seconds. This free AI resume review asks 16 questions about the job you want and your resume today (upload it for a line-by-line read) and returns a Resume Strength rating, a six-area breakdown, the doubts a recruiter may have about you, and a rewritten summary and bullet points you can use immediately.',
+        whoFor:
+          'Job seekers at any stage — new graduates, mid-career professionals, career changers and people returning after a break — especially anyone sending applications and hearing nothing back. Career coaches and resume writers can use it as a fast first-pass audit.',
+        whatYouLearn: [
+          'A Resume Strength rating from 1 to 10 with a clear verdict',
+          'A breakdown across targeting, summary, impact, readability, career story and tailoring',
+          'What “getting past the ATS” really means — and what actually gets resumes skipped',
+          'The doubts a recruiter may have about your background, and how to answer them',
+          'A rewritten summary and two or three rewritten bullet points ready to paste in',
+        ],
+        sampleQuestions: [
+          'What job titles are you applying for, and which industry are you targeting?',
+          'How has your job search gone in the last three months — few replies, interviews but no offers, or offers you want to upgrade?',
+          'How many of your bullet points include numbers or measurable results?',
+          'How often do you tailor your resume to a specific job ad?',
+          'Is anything in your background you worry a recruiter will question, such as a gap, a career change or several short jobs?',
+        ],
+        howItWorks:
+          'The quiz has three parts: the job you want, your resume today, and your story and strengths. You paste in real lines — your summary, a few recent bullet points, key requirements from a job ad you would love to land — and can optionally upload your resume as a PDF or Word file. An AI then reviews it the way a recruiter would, judged against your target role rather than in the abstract, and writes your report with specific rewrites. The recruiter data cited above comes from a small survey published by a resume-tool company (source: Enhancv, https://enhancv.com/blog/does-ats-reject-resumes/), so treat it as directional; its core point — that relevance and tailoring matter more than ATS-proof formatting tricks — matches standard recruiter advice.',
+        faq: [
+          {
+            q: 'Do applicant tracking systems automatically reject resumes?',
+            a: 'Far less often than the viral “75% rejected by bots” claim suggests. Most recruiters say their systems store and rank applications while humans make the decisions; automatic rejections are usually tied to hard requirements such as work authorisation, location or a required licence answered in knockout questions. A clear, tailored, relevant resume matters far more than formatting tricks.',
+          },
+          {
+            q: 'Is the AI resume review free?',
+            a: 'Yes. The quiz and your personalized review, including the rewritten summary and bullets, are free and need no signup to start. It takes about six minutes.',
+          },
+          {
+            q: 'Do I need to upload my resume?',
+            a: 'No, but it helps. Pasting your summary and a few bullet points is enough for a useful review; uploading the full file lets the AI give line-by-line feedback.',
+          },
+          {
+            q: 'Why am I applying to lots of jobs but getting no interviews?',
+            a: 'The most common reasons are a weak match between your resume and the role, untailored applications, and bullet points that list duties instead of results. The review scores targeting, impact and tailoring separately so you can see which one is costing you replies.',
+          },
+        ],
+      },
+    },
   ],
 }

@@ -8,6 +8,7 @@ import type { CategoryFile } from '../schema'
  * 定位与 academic-coaching 区分：academic 读「一学期的学习系统」，
  * exam 读「考试本身」——考前焦虑、复习拖延、回忆提取、考砸后的心态、考期睡眠。
  * 已补 intro + faq 并促级上线（去 draft）。
+ * 2026-11-03 新增 2 道自有测评：exam-readiness-scorecard（zc6g9hu3）、ai-study-plan（fb9tadve）。
  */
 export const examCoaching: CategoryFile = {
   category: {
@@ -54,5 +55,104 @@ export const examCoaching: CategoryFile = {
     order: 13,
     parent: 'learning-education',
   },
-  quizzes: [],
+  quizzes: [
+    {
+      publicToken: 'zc6g9hu3',
+      slug: 'exam-readiness-scorecard',
+      order: 1,
+      alsoIn: ['academic-coaching'],
+      seo: {
+        title: 'Am I Ready for My Exam? Free Exam Readiness Test',
+        description:
+          'A free 12-question exam readiness scorecard rating content mastery, exam technique, study consistency and test-day mindset. Find your weak spot weeks early.',
+        overview:
+          'Most students find out they were not ready on exam day. This free 12-question scorecard finds out four to six weeks earlier, across the four things that actually decide the result: content mastery, exam technique, study consistency and test-day mindset. You get an overall readiness score and a breakdown by area, so you know whether the next few weeks should go on topics, timed past papers, a proper revision schedule or managing nerves.',
+        whoFor:
+          'Students preparing for standardized tests such as the SAT, ACT or GCSEs, end-of-term finals, class tests or entrance and certification exams — plus parents, tutors and coaches assessing a student.',
+        whatYouLearn: [
+          'Your overall exam readiness score',
+          'How you rate on Content Mastery, Exam Technique, Study Consistency and Test-Day Mindset',
+          'Which area is most likely to cost you marks if left alone',
+          'Whether your revision methods match what learning research recommends',
+          'A focused first step for the weeks you have left',
+        ],
+        sampleQuestions: [
+          'When you sit a past paper for this exam without help, how do you do?',
+          'How many syllabus topics could you explain to someone else right now?',
+          'How many full timed past papers have you completed under real exam conditions?',
+          'How do you usually revise — rereading, highlighting, or practice questions with spaced review?',
+          'When you hit a hard question in the exam, do you freeze or flag it and move on?',
+        ],
+        howItWorks:
+          'You answer 12 multiple-choice questions, three for each of four areas, and each answer scores from 0 to 3. The scores combine into an overall readiness result and a per-area breakdown. A few optional questions at the end — who you are, what exam you are preparing for, and the one thing you would fix — do not affect the score. The four areas reflect the evidence on exam performance: knowing the material, practising under real timing, revising consistently with self-testing and spacing rather than rereading, and managing anxiety and sleep in the final week.',
+        faq: [
+          {
+            q: 'How do I know if I am ready for an exam?',
+            a: 'The most reliable signal is how you perform on full past papers under real timing without help. If you are scoring comfortably, can explain most topics in your own words, and finish sections on time, you are likely ready. This scorecard checks those signals alongside your revision consistency and test-day mindset.',
+          },
+          {
+            q: 'When should I take this scorecard?',
+            a: 'Ideally four to six weeks before the exam, when there is still time to act on the weakest area. Taking it again a week or two out is a useful check that the gap has closed.',
+          },
+          {
+            q: 'Can parents or tutors use it?',
+            a: 'Yes. You can answer on behalf of a student, and an optional name field makes it easy to compare results across a family, class or tutoring group.',
+          },
+          {
+            q: 'How long does it take, and is it free?',
+            a: 'About four minutes for the 12 questions. It is free and needs no signup to start.',
+          },
+        ],
+      },
+    },
+    {
+      publicToken: 'fb9tadve',
+      slug: 'ai-study-plan',
+      order: 2,
+      alsoIn: ['academic-coaching', 'learning-coaching'],
+      seo: {
+        title: 'Free AI Study Plan Generator for Your Next Exam',
+        description:
+          'Answer 13 questions and get a free week-by-week AI study plan for your exam, built on practice testing and spaced review instead of rereading and highlighting.',
+        overview:
+          'Most students work hard on the wrong things. This free AI study plan generator asks 13 questions about your exam, your timeline, your weak and strong topics and how you study now, then builds a week-by-week plan to exam day around the techniques learning research rates most effective. You also get a Study Readiness rating, a check of your current methods against the evidence, a daily session template, and advice on using AI chatbots as a quiz master rather than an answer machine.',
+        whoFor:
+          'Students preparing for school, university, language, entrance or professional certification exams, and tutors, teachers and learning coaches who want a structured starting plan for a student.',
+        whatYouLearn: [
+          'A Study Readiness rating from 1 to 10 with a clear verdict',
+          'How your current study methods compare with learning research',
+          'A week-by-week plan to exam day built around your weakest topics',
+          'How to use AI chatbots to quiz yourself instead of just reading answers',
+          'A daily study session template plus exam-week and exam-day tips',
+        ],
+        sampleQuestions: [
+          'What exam or subject are you studying for, and how long until it takes place?',
+          'How many hours a week can you realistically study?',
+          'How do you usually study — rereading, highlighting, summaries, flashcards, past papers or asking AI to explain?',
+          'Which topics feel weakest or most confusing right now?',
+          'What pulls you away from studying most often?',
+        ],
+        howItWorks:
+          'The quiz has three short parts: your exam, how you study now, and your focus and wellbeing. When you finish, an AI writes your report from your answers, so the timetable reflects your actual weeks remaining, available hours, weak topics and best focus time. The plan leans on the two strategies a major review of learning techniques rated high-utility — practice testing and spacing study out over time — and moves you away from rereading and highlighting, which were rated low utility (source: Dunlosky et al., Psychological Science in the Public Interest, 2013, https://journals.sagepub.com/doi/abs/10.1177/1529100612453266).',
+        faq: [
+          {
+            q: 'Is the AI study plan free?',
+            a: 'Yes. The quiz and your personalized study plan are free, and no signup is needed to start. It takes about four minutes.',
+          },
+          {
+            q: 'What is the most effective way to study for an exam?',
+            a: 'Test yourself and space it out. Practice questions, past papers and recalling material from memory, reviewed over several days or weeks, consistently outperform rereading notes and highlighting. Your plan is built around exactly those methods.',
+          },
+          {
+            q: 'Does it work if my exam is only a week away?',
+            a: 'Yes. You tell it how long you have, and the plan prioritises your weakest topics and the highest-value practice for the time left, along with exam-week and exam-day tips.',
+          },
+          {
+            q: 'Should I use ChatGPT to study?',
+            a: 'It can help if you use it to quiz you and check your explanations rather than to hand you answers. Your report includes specific ways to use AI chatbots as a quiz master so you get the benefit of retrieval practice.',
+          },
+        ],
+      },
+    },
+  ],
 }

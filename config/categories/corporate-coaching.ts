@@ -11,7 +11,7 @@ export const corporateCoaching: CategoryFile = {
     name: 'Corporate Coach',
     title: 'Corporate Coaching Assessments & Coaching Culture Scorecard',
     description:
-      'Free corporate coaching assessments — score your coaching culture across asking, feedback, development time and reinforcement, and see which one is the constraint.',
+      'Free corporate coaching assessments: score your coaching culture across asking, feedback, development time and reinforcement, and find the constraint.',
     emoji: '🏢',
     heroCopy:
       'Most companies say they want managers who coach. Find out whether yours actually does — measured on behaviour, not values.',

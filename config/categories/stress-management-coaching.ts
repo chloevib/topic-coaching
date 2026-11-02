@@ -134,7 +134,7 @@ export const stressManagementCoaching: CategoryFile = {
       order: 15,
       alsoIn: ['leadership-coaching', 'corporate-coaching'],
       seo: {
-        title: 'Manager Burnout Test: Are You Burning Out, or Just Tired? (Free)',
+        title: 'Manager Burnout Test: Burning Out, or Just Tired? (Free)',
         description:
           'A free 12-question manager burnout scorecard across exhaustion, detachment, efficacy and load. Four minutes to see which kind of strain you are carrying.',
         overview:

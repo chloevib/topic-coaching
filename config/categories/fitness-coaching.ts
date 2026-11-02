@@ -42,7 +42,7 @@ export const fitnessCoaching: CategoryFile = {
       slug: 'fitness-level-assessment',
       featured: true,
       order: 1,
-      alsoIn: ['strength-conditioning-coaching'],
+      alsoIn: ['strength-conditioning-coaching', 'sports-performance-coaching'],
       seo: {
         title: 'Fitness Level Assessment — How Fit Are You Really?',
         description:
@@ -205,6 +205,55 @@ export const fitnessCoaching: CategoryFile = {
           {
             q: 'How long does the scorecard take, and is it free?',
             a: 'About five minutes for the 12 questions, and it is free with a personalized score and radar chart — no signup required to start.',
+          },
+        ],
+      },
+    },
+    {
+      publicToken: 'p8bttrhc',
+      slug: 'ai-workout-plan',
+      order: 5,
+      alsoIn: ['strength-conditioning-coaching', 'sports-performance-coaching'],
+      seo: {
+        title: 'Free AI Workout Plan Generator: Your 4-Week Training Plan',
+        description:
+          'Answer 13 questions about your goal, schedule and equipment and get a free personalized 4-week workout plan with sets, reps and progression rules.',
+        overview:
+          'Most people do not lack willpower — they lack a plan that fits their week. This free AI workout plan generator asks 13 questions about your goal, current activity level, schedule, equipment and what has derailed you before, then writes a realistic four-week training plan around your answers. You get a Training Readiness rating, week-by-week sessions with exercises, sets and reps, simple progression rules, and easy swaps for exercises you dislike or cannot do.',
+        whoFor:
+          'Beginners and people returning after a break who want a plan that fits real life, busy adults training at home or in the gym with limited time, and personal trainers who want a fast first draft for a new client.',
+        whatYouLearn: [
+          'A Training Readiness rating from 1 to 10 with a clear verdict',
+          'A week-by-week four-week plan with sessions, exercises, sets and reps',
+          'Simple progression rules so you keep improving safely',
+          'Strategies for the specific things that made you stop training before',
+          'Exercise swaps that match your equipment and preferences',
+        ],
+        sampleQuestions: [
+          'What is your main training goal — losing body fat, building strength and muscle, improving stamina, moving better, or training for an event?',
+          'How many days a week can you realistically train, and how long can each session be?',
+          'Will you train mostly in a gym, at home with some equipment, at home with none, or outdoors?',
+          'Which kinds of exercise do you enjoy or at least not mind?',
+          'What has made you stop training in the past?',
+        ],
+        howItWorks:
+          'The quiz has three short parts: your goal and starting point, your schedule and setup, and what keeps you going. A brief health screen flags anything that means you should check with a doctor first. When you finish, an AI writes your report from your answers, so the plan reflects your actual days, session length, equipment and preferences rather than a generic template. Your plan is built around the U.S. activity guidelines of regular aerobic activity plus muscle-strengthening work at least twice a week — a target CDC data shows only about a quarter of U.S. adults meet (source: CDC NCHS, https://www.cdc.gov/nchs/products/databriefs/db443.htm).',
+        faq: [
+          {
+            q: 'Is the AI workout plan really free?',
+            a: 'Yes. The quiz and your personalized four-week plan are free, and you do not need to sign up to start. It takes about four minutes.',
+          },
+          {
+            q: 'Can I use it if I only train at home with no equipment?',
+            a: 'Yes. You choose where you train and what equipment you have, including bodyweight only, and the plan is written around that. It also asks about exercises you dislike or cannot do so it can swap them out.',
+          },
+          {
+            q: 'What happens after four weeks?',
+            a: 'The plan includes progression rules you can keep applying, and you can retake the quiz with your new activity level and goal to get the next block.',
+          },
+          {
+            q: 'Is this safe for beginners or people with health conditions?',
+            a: 'It is general fitness guidance, not medical advice. The quiz includes a short screen for things like heart conditions, chest pain or current injuries; if any apply, check with a doctor before starting a new programme.',
           },
         ],
       },

@@ -6,7 +6,8 @@ import type { CategoryFile } from '../schema'
  *   - english-vocabulary-quiz  常见错词/语法陷阱
  *   - language-learning-style-quiz  学习风格分型
  *   - english-level-test  CEFR A1–C2 分级（featured，并 alsoIn exam/academic）
- * 后续可补 IELTS readiness（qf73asx4）与 english course finder（s8mfg7h6）成完整内链簇。
+ *   - ielts-readiness-scorecard  IELTS 四项技能+应试策略备考度（2026-11-03 收录，alsoIn exam）
+ * 后续可补 english course finder（s8mfg7h6）成完整内链簇。
  */
 export const languageCoaching: CategoryFile = {
   category: {
@@ -45,7 +46,7 @@ export const languageCoaching: CategoryFile = {
       slug: 'english-vocabulary-quiz',
       featured: true,
       order: 1,
-      alsoIn: ['writing-coaching', 'academic-coaching'],
+      alsoIn: ['writing-coaching', 'academic-coaching', 'reading-coaching'],
       seo: {
         title: 'Test Your English: Vocabulary & Common Mistakes Quiz (Free)',
         description:
@@ -135,9 +136,9 @@ export const languageCoaching: CategoryFile = {
       order: 3,
       alsoIn: ['exam-coaching', 'academic-coaching'],
       seo: {
-        title: 'English Level Test: Find Your CEFR Level A1–C2 (Free, 20 Questions)',
+        title: 'English Level Test: Find Your CEFR Level A1–C2 (Free)',
         description:
-          'A free 20-question English level test that places you on the CEFR scale from A1 to C2. Get your level in 5 minutes, what you can already do, and what to study next.',
+          'A free 20-question English level test that places you on the CEFR scale from A1 to C2. Get your level in 5 minutes and what to study next.',
         overview:
           'This free 20-question placement test maps your English onto the CEFR scale — the A1 to C2 framework language schools, universities and employers use worldwide. The questions get harder as you go, moving from basic present-simple agreement up to inversion, register and idiom. In about five minutes you get your level, a plain-English summary of what you can already handle at it, and the specific grammar and vocabulary to work on to reach the next one.',
         whoFor:
@@ -178,6 +179,55 @@ export const languageCoaching: CategoryFile = {
           {
             q: 'Is the test free, and do I need to sign up?',
             a: 'It is free and takes about five minutes. No signup is required to start, and you get your CEFR level plus a per-question explanation at the end.',
+          },
+        ],
+      },
+    },
+    {
+      publicToken: 'qf73asx4',
+      slug: 'ielts-readiness-scorecard',
+      order: 4,
+      alsoIn: ['exam-coaching'],
+      seo: {
+        title: 'Am I Ready for IELTS? Free IELTS Readiness Test',
+        description:
+          'A free 15-question IELTS readiness scorecard covering listening, reading, writing, speaking and exam strategy. See which skill is holding your band score down.',
+        overview:
+          'Most people book their IELTS test date by guessing. This free 15-question scorecard replaces the guess with a number: you rate your readiness across all four skills — listening, reading, writing and speaking — plus exam strategy, and see which one is most likely to hold your band score down. It takes about four minutes and tells you what to fix first before you pay for a test date.',
+        whoFor:
+          'Candidates preparing for IELTS Academic or General Training for study, work or migration — especially anyone deciding whether to book now or wait — and English teachers or tutors checking a student’s readiness.',
+        whatYouLearn: [
+          'Your overall IELTS readiness score',
+          'A breakdown across Listening, Reading, Writing, Speaking and Exam Strategy',
+          'The single skill furthest from your target band',
+          'Exam-specific gaps such as timing, True/False/Not Given and the Part 2 long turn',
+          'Whether you are ready to book or should practise for a few more weeks',
+        ],
+        sampleQuestions: [
+          'When you listen to a podcast or news broadcast at native speed with no subtitles, how much do you follow?',
+          'Can you finish three long reading passages and 40 questions within 60 minutes?',
+          'How reliably can you tell “Not Given” from “False” in the reading test?',
+          'How confident are you writing the overview sentence and describing trends in Writing Task 1?',
+          'Speaking Part 2 gives you one minute to prepare and two to talk — can you fill the time with a clear structure?',
+        ],
+        howItWorks:
+          'You answer 15 questions — three for each of the four IELTS skills and three on exam strategy and test-day admin. Each answer is scored, and the results combine into an overall readiness score and a per-skill breakdown that shows which area is weakest. Questions focus on the specific demands of the test: following one-play audio across British, Australian, North American and New Zealand accents, finishing the reading section in an hour, writing both tasks within 60 minutes, and sustaining the two-minute speaking long turn. It is a self-assessment, not an official band prediction.',
+        faq: [
+          {
+            q: 'How do I know if I am ready to take IELTS?',
+            a: 'Good signs are completing full timed practice in every skill, finishing reading and writing within the time limits, getting band-scored feedback on your writing, and knowing the band you need for your goal. This scorecard checks each of those and shows which skill is furthest from ready.',
+          },
+          {
+            q: 'Does this predict my IELTS band score?',
+            a: 'No. It is a readiness self-assessment, not an official band prediction. Use it to decide what to practise and when to book, and use a full timed mock test for a closer band estimate.',
+          },
+          {
+            q: 'Which IELTS skill do most candidates find hardest?',
+            a: 'It varies, but writing and speaking are where many candidates stall because they are hardest to practise alone and need feedback to improve. The scorecard asks whether you have had band-scored feedback for exactly this reason.',
+          },
+          {
+            q: 'How long does it take, and is it free?',
+            a: 'About four minutes for the 15 questions. It is free and needs no signup to start.',
           },
         ],
       },
