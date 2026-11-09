@@ -14,7 +14,7 @@ export const examCoaching: CategoryFile = {
   category: {
     slug: 'exam-coaching',
     name: 'Exam Coach',
-    title: 'Exam Coaching Quizzes — Test Anxiety, Revision & Exam Performance',
+    title: 'Exam Coaching Quizzes: Test Anxiety, Revision & Readiness',
     description:
       'Free exam coaching quizzes on test anxiety, revision procrastination, recall, mindset, and exam-period sleep. Each takes a few minutes, with no signup.',
     emoji: '📝',

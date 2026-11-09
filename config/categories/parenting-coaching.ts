@@ -22,7 +22,7 @@ export const parentingCoaching: CategoryFile = {
       'Parenting coaching is not about being told you are doing it wrong. It is a practical, forward-looking process that helps you see the patterns in your own home — how you set limits, how you respond to big feelings, how you and your partner divide the work — and then change one of them on purpose rather than by accident.',
       'A surprising amount of what feels like a child problem is really a coordination problem. Children quickly learn which parent to ask for what, and a rule that only one adult enforces stops being a rule. Researchers call the quality of that adult partnership the coparenting alliance, and studies consistently link it to lower parenting stress and better family functioning — independently of how skilled either parent is on their own.',
       'The other quiet pressure is the invisible load: the mental list of appointments, forms, sizes and who needs what by Thursday. A 2025 study by researchers at the University of Bath and the University of Melbourne, published in the Journal of Marriage and Family, found that mothers report carrying around 71% of that household mental load — and that fathers are far more likely to describe it as evenly shared. Pew Research Center finds a similar gap even where both parents work full time, with 52% of those couples saying the mother does more of the day-to-day parenting and only 10% saying the father does. That mismatch in perception, more than the split itself, is usually what turns into the recurring argument.',
-      'Not sure where to start? If the friction is mostly between the two adults, take the Parenting Partnership Scorecard — and have your partner take it separately, then compare. If you want to understand your own default approach to limits and warmth, start with the Parenting Style quiz. If you are trying to work out whether a behaviour is a problem or just the age, try the Child Development IQ quiz. Each one is free, takes about five minutes, and ends with a specific next step rather than a verdict.',
+      'Not sure where to start? If the friction is mostly between the two adults, take the Parenting Partnership Scorecard — and have your partner take it separately, then compare. If you want to understand your own default approach to limits and warmth, start with the Parenting Style quiz. If you are trying to work out whether a behaviour is a problem or just the age, try the Child Development IQ quiz. And if one daily battle — tantrums, bedtime, screens or not listening — is wearing everyone down, the AI Parenting Game Plan decodes your last episode and gives you word-for-word scripts and a four-week plan. Each one is free, takes about five minutes, and ends with a specific next step rather than a verdict.',
     ],
     faq: [
       {
@@ -97,6 +97,55 @@ export const parentingCoaching: CategoryFile = {
           {
             q: 'How long does it take, and is it free?',
             a: 'About five minutes for 20 questions. It is free, gives you a personalized report and radar chart, and needs no signup to start.',
+          },
+        ],
+      },
+    },
+    {
+      publicToken: 'tzbzu7je',
+      slug: 'ai-parenting-plan',
+      order: 2,
+      alsoIn: ['family-coaching', 'child-development-coaching'],
+      seo: {
+        title: 'Free AI Parenting Plan: Tantrums, Bedtime & Screens',
+        description:
+          'Describe your toughest parenting moment and get a free AI game plan: what may drive the behavior, word-for-word scripts and a 4-week plan for ages 1 to 17.',
+        overview:
+          'Tantrums, bedtime battles, screen-time fights and "you\'re not listening" on repeat tend to follow a pattern, and a pattern can be changed. This free AI parenting planner asks 12 questions about one child and one challenge — their age, what happened last time, when it tends to flare up, how you usually respond and what has worked even a little — then writes a Behavior Decoder and Game Plan: a replay of the last episode, a trigger-by-trigger prevention table, script cards for before, during and after, and a four-week plan toward the win you describe. It follows the approach the American Academy of Pediatrics recommends: prevention, clear and consistent limits, and calm repair rather than harsh punishment.',
+        whoFor:
+          'Parents and caregivers of toddlers through teens facing a recurring flashpoint — meltdowns, bedtime, screens, sibling fights, homework, big worries or backtalk. Parenting coaches and family educators can use it as an intake and conversation starter.',
+        whatYouLearn: [
+          'A Game Plan Readiness score out of 10 and recognition of what is already going well',
+          'What your child may have been feeling and needing at each point of the last episode, in age-appropriate terms',
+          'A decoder table linking each trigger to what may be going on and how to prevent it',
+          'Word-for-word scripts for before, during and after the hard moment',
+          'A four-week practice plan, a calm-parent toolkit, and clear signs it is worth talking to a professional',
+        ],
+        sampleQuestions: [
+          'How old is your child?',
+          'Which challenge do you most want help with — tantrums, bedtime, screen time, sibling fighting, not listening, homework, big emotions or backtalk?',
+          'Describe the last time it happened: what led up to it, what happened and how it ended.',
+          'How do you usually respond in the moment?',
+          'Four weeks from now, what would feel like a real win?',
+        ],
+        howItWorks:
+          'Three short parts — your child and the challenge, how you respond, and your routines and goals — take about four minutes. An AI parenting coach then decodes the episode you described and builds scripts and a plan matched to your child\'s age and what has already worked. It never suggests physical punishment, shaming, threats or withholding food or affection, and it does not diagnose. If a teacher, doctor or caregiver has raised concerns, or the behavior involves harm or is not improving, the report points you to your pediatrician, a school counselor or a child psychologist. Background: American Academy of Pediatrics on effective discipline (https://www.healthychildren.org/English/family-life/family-dynamics/communication-discipline/Pages/Disciplining-Your-Child.aspx). General guidance, not medical or psychological advice.',
+        faq: [
+          {
+            q: 'How do I handle my toddler\'s tantrums?',
+            a: 'You cannot prevent every one, but most cluster around transitions, tiredness and hunger. Warnings before transitions and predictable routines prevent many; staying calm, holding the limit and reconnecting afterwards handles the rest. The plan tailors this to your child\'s age and their specific triggers.',
+          },
+          {
+            q: 'Why won\'t my child listen until I yell?',
+            a: 'Often because instructions only get enforced once voices rise, so children learn the first request is optional. Getting close, giving one clear instruction and following through calmly breaks that loop. The report gives you the exact words to use for your situation.',
+          },
+          {
+            q: 'Does the parenting plan work for teenagers?',
+            a: 'Yes. It covers ages 1 to 17, and the scripts and explanations change with age — what helps a three-year-old through a meltdown is very different from what works with backtalk from a fourteen-year-old.',
+          },
+          {
+            q: 'Is the AI parenting plan free?',
+            a: 'Yes. The quiz and your full game plan are free, take about four minutes, and need no signup to start.',
           },
         ],
       },

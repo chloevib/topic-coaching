@@ -263,5 +263,53 @@ export const relationshipCoaching: CategoryFile = {
         ],
       },
     },
+    {
+      publicToken: 'mzjnm8rd',
+      slug: 'ai-relationship-insight-report',
+      order: 22,
+      seo: {
+        title: 'Free AI Relationship Check: Find Your Conflict Pattern',
+        description:
+          'Answer 13 questions for a free AI relationship insight report: your conflict cycle, a 6-area breakdown, conversation starters and a 7-day reconnection plan.',
+        overview:
+          'Most couples do not argue because they have stopped caring; they get stuck repeating the same argument the same way. Research from the Gottman Institute suggests that most couple conflicts are perpetual — rooted in lasting differences rather than solvable problems — so the goal is to handle them well, not make them disappear. This free AI relationship check asks 13 questions about how disagreements go, how you repair, appreciation, quality time and what you wish your partner understood, and returns a Relationship Insight Letter: a Connection Snapshot score, your conflict cycle mapped step by step in non-blaming language, a both-sides needs table, a conversation guide for your toughest topic and a 7-day reconnection plan.',
+        whoFor:
+          'Couples who are dating, committed, married, raising kids or long-distance and keep having the same fight, feel distant, or want to communicate their needs more clearly. One partner can take it alone. Relationship coaches can use it as a pre-session reflection.',
+        whatYouLearn: [
+          'A Connection Snapshot score out of 10 and a personal read on your strengths and main challenge',
+          'A breakdown across communication, conflict, repair, appreciation, quality time and shared goals',
+          'The conflict cycle you may be stuck in — such as one partner pursuing while the other withdraws — explained step by step',
+          'A conversation guide and four repair phrases for your hardest topic',
+          'A day-by-day reconnection plan and the signs a couples counselor would help',
+        ],
+        sampleQuestions: [
+          'What works well between you, and what do you love about your relationship?',
+          'How do disagreements usually go — talked through, the same fight again, one pushes while the other shuts down, avoided, or heated fast?',
+          'After an argument, how do you usually reconnect?',
+          'How much focused time do you spend together each week, with no phones and not just logistics?',
+          'If your partner described the main challenge, what might they say?',
+        ],
+        howItWorks:
+          'Three short parts — your relationship, conflict and connection, and needs and wellbeing — take about five minutes, and your answers stay private to your report. An AI relationship coach then maps your cycle and writes a personal letter, a conversation guide and a 7-day plan sized to the time you actually have together. It never diagnoses or takes sides. The quiz includes a safety question: if you ever feel afraid of your partner, the report puts your safety first and points you to support rather than advice to compromise. Background on perpetual conflict: The Gottman Institute (https://www.gottman.com/blog/managing-conflict-solvable-vs-perpetual-problems/). Educational coaching content, not therapy.',
+        faq: [
+          {
+            q: 'Why do we keep having the same fight?',
+            a: 'Usually because the topic sits on a lasting difference — in tidiness, money, closeness or family — and the way you argue about it has become a loop. Changing the loop, not winning the argument, is what helps. The report maps your cycle so you can see where to interrupt it.',
+          },
+          {
+            q: 'Can I take the relationship check without my partner?',
+            a: 'Yes. It is designed for one person and includes a question asking how your partner might describe the challenge. You can also both take it separately and compare reports.',
+          },
+          {
+            q: 'Is this the same as couples therapy?',
+            a: 'No. It is an educational coaching tool for reflection and practical next steps. If there is ongoing distress, betrayal or any safety concern, a licensed couples therapist or local support service is the right next step, and the report explains when.',
+          },
+          {
+            q: 'Is the AI relationship insight report free?',
+            a: 'Yes. The quiz and your full report are free, take about five minutes, and need no signup to start.',
+          },
+        ],
+      },
+    },
   ],
 }

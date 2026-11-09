@@ -11,7 +11,7 @@ export const readingCoaching: CategoryFile = {
   category: {
     slug: 'reading-coaching',
     name: 'Reading Coach',
-    title: 'Reading Coaching Quizzes — Reading Comprehension & Retention Tests',
+    title: 'Reading Coaching Quizzes: Comprehension & Retention Tests',
     description:
       'Free reading coaching quizzes: score how well you choose, focus on, engage with and remember what you read, plus memory and vocabulary tests. No signup.',
     emoji: '📖',

@@ -53,7 +53,7 @@ export const corporateCoaching: CategoryFile = {
       order: 1,
       alsoIn: ['organization-development-coaching', 'leadership-coaching'],
       seo: {
-        title: 'Coaching Culture Assessment — Free Coaching Culture Scorecard',
+        title: 'Coaching Culture Assessment — Free Scorecard',
         description:
           'A free 3-minute coaching culture assessment. Score your organization out of 120 across asking vs telling, feedback, development time and reinforcement.',
         overview:

@@ -44,7 +44,7 @@ export const careerCoaching: CategoryFile = {
       order: 2,
       alsoIn: ['personal-development-coaching', 'team-coaching'],
       seo: {
-        title: 'DISC Personality Test — Free 12-Question Work Style Assessment',
+        title: 'DISC Personality Test — Free 12-Question Work Style Quiz',
         description:
           'A free DISC personality test in about 3 minutes. Score your D, I, S and C dimensions, see your radar, your blind spot, and how to work with the other styles.',
         overview:
@@ -371,7 +371,7 @@ export const careerCoaching: CategoryFile = {
       order: 9,
       alsoIn: ['job-search-coaching', 'executive-coaching'],
       seo: {
-        title: 'Will AI Take My Job? The AI Career Risk Scorecard (Free Test)',
+        title: 'Will AI Take My Job? Free AI Career Risk Scorecard',
         description:
           'A free 12-question test scoring your AI exposure across task texture, human stakes, judgment and AI fluency. Get a resilience score and the gap to close.',
         overview:
