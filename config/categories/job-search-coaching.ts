@@ -7,7 +7,7 @@ export const jobSearchCoaching: CategoryFile = {
     name: 'Job Search Coach',
     title: 'Job Search Coaching Quizzes & Interview Assessments',
     description:
-      'Free job search coaching quizzes and interview assessments — check your interview readiness, senior-level positioning, and readiness to change roles.',
+      'Free job search coaching quizzes and tools — interview readiness, senior-level positioning, an AI resume review and an AI LinkedIn profile review.',
     emoji: '📄',
     heroCopy: 'Find the stage of your job search that is quietly costing you the offer.',
     order: 11,
@@ -15,7 +15,7 @@ export const jobSearchCoaching: CategoryFile = {
     intro: [
       'Job search coaching works on the search itself rather than on your career direction. A job search coach looks at the whole funnel — how your experience is framed, which roles you target, how you answer in the room, and how you follow up — and finds the specific stage where good candidates lose good jobs. That stage is rarely the one people assume.',
       'The numbers explain why the search feels harder than it used to. A single posting now draws around 250 applications, and analyses of recruiting data put the application-to-interview rate at roughly 2–3%, down sharply from a decade ago. Once you reach the interview stage the odds change completely: about one interview process in four ends in an offer. So the search has two very different problems — getting seen, and converting the conversations you already have.',
-      'These free job search quizzes are a fast way to find out which of the two is yours. The interview readiness scorecard rates preparation, answers, presence and follow-up. The senior interview scorecard is for experienced candidates who keep reaching final rounds without the offer, and measures positioning rather than preparation. And if you are still deciding whether to search at all, the career change readiness scorecard is the place to start. Each takes a few minutes, is free, and ends with a score and a first step.',
+      'These free job search quizzes are a fast way to find out which of the two is yours. The interview readiness scorecard rates preparation, answers, presence and follow-up. The senior interview scorecard is for experienced candidates who keep reaching final rounds without the offer, and measures positioning rather than preparation. If the problem is getting seen, the AI resume review and AI LinkedIn profile review check your two most visible documents and rewrite the parts recruiters read first. And if you are still deciding whether to search at all, the career change readiness scorecard is the place to start. Each takes a few minutes, is free, and ends with a score and a first step.',
     ],
     faq: [
       {
@@ -133,6 +133,59 @@ export const jobSearchCoaching: CategoryFile = {
           {
             q: 'Why am I applying to lots of jobs but getting no interviews?',
             a: 'The most common reasons are a weak match between your resume and the role, untailored applications, and bullet points that list duties instead of results. The review scores targeting, impact and tailoring separately so you can see which one is costing you replies.',
+          },
+        ],
+      },
+    },
+    {
+      publicToken: 'e4y38fr6',
+      slug: 'ai-linkedin-profile-review',
+      order: 3,
+      alsoIn: ['career-coaching'],
+      seo: {
+        title: 'Free LinkedIn Profile Review — AI Headline & About Feedback',
+        description:
+          'Get a free AI LinkedIn profile review: a 1–10 strength score, 6-area breakdown, a rewritten headline and About opening, and a weekly activity routine.',
+        overview:
+          'Turn your LinkedIn profile from an online resume into something that brings opportunities to you. Answer 14 questions, paste your real headline and About opening, and optionally upload a screenshot, and get a personalized AI LinkedIn Review: a Profile Strength rating from 1 to 10, a breakdown across six areas (headline, About, visuals, proof, keywords and activity), a rewritten headline and About opening you can paste in today, and a simple weekly activity routine that fits your goal.',
+        whoFor:
+          'Job seekers and career changers, consultants and coaches looking for clients, and professionals building a reputation as an expert who suspect their LinkedIn profile is being scrolled past — plus career and personal-branding coaches who want a fast first-pass review for clients.',
+        whatYouLearn: [
+          'Your Profile Strength rating (1–10) and a clear verdict',
+          'How your headline, About, visuals, proof, keywords and activity each score',
+          'A rewritten headline and About opening tailored to the people you want to reach',
+          'The keywords your target recruiters or clients actually search for',
+          'A realistic weekly posting and commenting routine for your goal',
+        ],
+        sampleQuestions: [
+          'What do you most want LinkedIn to do for you right now — land a job, bring in clients, build your reputation, hire, or grow your visibility?',
+          'Who should find you and think “this is exactly who I need”?',
+          'Which 3–5 keywords would those people search for to find someone like you?',
+          'Paste your current headline and the first lines of your About section.',
+          'What results are you getting today — hardly any views, views but no messages, or messages from the wrong people?',
+        ],
+        howItWorks:
+          'Three short parts — your goal, your profile today and your activity — take about five minutes. You paste real text from your profile so the AI reviews what visitors actually see, and an optional screenshot adds a visual check of your photo, banner and headline. The AI then scores each area against your stated goal and audience and rewrites the parts that matter most. With LinkedIn reporting more than 1 billion members, a specific headline and keyword-rich About section are what make you findable. It is free and needs no signup to start.',
+        faq: [
+          {
+            q: 'What makes a good LinkedIn headline?',
+            a: 'A good headline says who you help, how, and with what result — using the words your audience searches for — instead of just repeating your job title. Your review includes a rewritten headline based on your goal and keywords.',
+          },
+          {
+            q: 'What should I write in my LinkedIn About section?',
+            a: 'Open with a hook that speaks directly to the people you want to reach, then add proof (results, examples, numbers), your key skills and keywords, and a clear call to action. The first two or three lines matter most because they show before “see more”.',
+          },
+          {
+            q: 'How often should I post on LinkedIn?',
+            a: 'Consistency beats volume. For most professionals, one or two thoughtful posts a week plus regular comments on other people’s posts is enough to grow visibility. Your report suggests a weekly routine matched to your goal and available time.',
+          },
+          {
+            q: 'Is my profile information kept private?',
+            a: 'Your answers are used only to generate your report. Paste only the profile text you are comfortable sharing — your public headline and About section are all the review needs.',
+          },
+          {
+            q: 'Is the LinkedIn profile review free?',
+            a: 'Yes. It is free, takes about five minutes, and there is no signup required to start.',
           },
         ],
       },

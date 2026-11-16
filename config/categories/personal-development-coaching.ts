@@ -2,8 +2,7 @@ import type { CategoryFile } from '../schema'
 
 /**
  * niche · 个人成长教练
- * 现有 2 道自我认知测评（big-five / mbti），均为完整 GEO 内容。
- * 距 ≥3 开页门槛差 1 道；补第 3 道（如 Enneagram / DISC / self-awareness scorecard）后去掉 draft 即促级。
+ * 自有 3 道自我认知测评（big-five / mbti / ai-strengths-portrait，后者 2026-11-17 收录），均为完整 GEO 内容。
  */
 export const personalDevelopmentCoaching: CategoryFile = {
   category: {
@@ -11,15 +10,15 @@ export const personalDevelopmentCoaching: CategoryFile = {
     name: 'Personal Development Coach',
     title: 'Personality Tests & Personal Development Assessments',
     description:
-      'Free personality tests and self-awareness assessments — Big Five and MBTI — to understand how you think, work, and grow.',
+      'Free personality tests and self-awareness assessments — Big Five, MBTI and an AI strengths test — to understand how you think, work, and grow.',
     emoji: '🌱',
     heroCopy: 'Self-awareness is where growth starts. See who you are, then decide who you want to become.',
     order: 11,
     parent: 'life-mindset-relationships',
     intro: [
       'Personal development starts with self-awareness — a clear, honest picture of how you think, make decisions, and relate to other people. Research on emotional intelligence popularized by psychologist Daniel Goleman puts self-awareness at the foundation of personal growth, and validated personality models give you a structured way to build it.',
-      'These free assessments turn self-awareness into something concrete. The Big Five (OCEAN) test measures the five broad traits that academic psychologists consider the most scientifically supported model of personality, while the Myers-Briggs style type test translates Carl Jung’s theory of psychological types into a memorable four-letter profile. Together they show you two complementary views of yourself: your trait levels and your natural preferences.',
-      'Not sure where to begin? If you want the most research-backed read, start with the Big Five personality test. If you prefer an intuitive, shareable profile with clear strengths and growth edges, take the 16-type MBTI test. Each is free, takes only a few minutes, and ends with a personalized result you can act on.',
+      'These free assessments turn self-awareness into something concrete. The Big Five (OCEAN) test measures the five broad traits that academic psychologists consider the most scientifically supported model of personality, while the Myers-Briggs style type test translates Carl Jung’s theory of psychological types into a memorable four-letter profile. Together they show you two complementary views of yourself: your trait levels and your natural preferences. The AI Strengths Portrait adds a third view built from your own stories — your top five strengths, their blind spots and what energizes you.',
+      'Not sure where to begin? If you want the most research-backed read, start with the Big Five personality test. If you prefer an intuitive, shareable profile with clear strengths and growth edges, take the 16-type MBTI test. If you want to name what you do best — for a career decision, an interview or a new leadership role — get your free AI Strengths Portrait. Each is free, takes only a few minutes, and ends with a personalized result you can act on.',
     ],
     faq: [
       {
@@ -31,8 +30,12 @@ export const personalDevelopmentCoaching: CategoryFile = {
         a: 'The Big Five (OCEAN) rates you on five independent traits, each on a spectrum, and is the model most widely used in academic personality research. The MBTI sorts you into one of 16 types based on four either/or preferences and is prized for being intuitive and easy to remember. The Big Five is more precise for measurement; the MBTI is more approachable for reflection and conversation.',
       },
       {
+        q: 'How can I find my strengths?',
+        a: 'Look for evidence: moments when you felt energized and absorbed, the things people repeatedly thank you for, and tasks that come easily to you but seem hard for others. The AI Strengths Portrait on this page asks about exactly those moments and turns your answers into your top five strengths, with the blind spots that come from overusing them.',
+      },
+      {
         q: 'Are these personality tests scientifically accurate?',
-        a: 'The Big Five model has strong empirical support in psychology. The MBTI is popular and useful for self-reflection but is considered less rigorous by researchers. Treat both as tools for insight and conversation, not as fixed labels or clinical diagnoses.',
+        a: 'The Big Five model has strong empirical support in psychology. The MBTI is popular and useful for self-reflection but is considered less rigorous by researchers, and the AI Strengths Portrait is a reflection tool rather than a validated psychometric instrument. Treat all of them as tools for insight and conversation, not as fixed labels or clinical diagnoses.',
       },
       {
         q: 'Are these assessments free?',
@@ -131,6 +134,59 @@ export const personalDevelopmentCoaching: CategoryFile = {
           {
             q: 'How long does it take, and is it free?',
             a: 'About three minutes for the 22 questions, and it is free with a full personalized type profile — no signup required to start.',
+          },
+        ],
+      },
+    },
+    {
+      publicToken: 'er8mdg5d',
+      slug: 'ai-strengths-portrait',
+      order: 3,
+      alsoIn: ['career-coaching', 'leadership-coaching'],
+      seo: {
+        title: 'Free Strengths Test — Get Your AI Strengths Portrait',
+        description:
+          'A free strengths finder built from your own stories: answer 12 questions and get your top 5 strengths, blind spots, an energy map and a 30-day plan.',
+        overview:
+          'Put words to what makes you great. Instead of rating yourself on generic statements, this free strengths test asks about real moments — when you felt at your best, what people thank you for, what comes easily to you — and an AI turns your stories into a personal Strengths Portrait: your top five strengths named and explained in plain language, how each shows up at work and in life, the blind spots that appear when a strength is overused, an energy map of what fuels and drains you, and a 30-day experiment to use your strengths more.',
+        whoFor:
+          'Anyone who finds it easier to list weaknesses than strengths — people choosing a career direction, preparing for interviews or reviews, or stepping into leadership — plus career coaches, leadership coaches and team leads who want a quick strengths conversation starter.',
+        whatYouLearn: [
+          'Your top 5 strengths, named and explained in plain language',
+          'How each strength shows up at work and in everyday life',
+          'Blind spots: what happens when a strength is overused',
+          'Your energy map — the activities that fuel you and the ones that drain you',
+          'A 30-day experiment to use your strengths more each day',
+        ],
+        sampleQuestions: [
+          'Describe a time you felt at your best — energized, absorbed and proud. What were you doing?',
+          'What do people most often thank you for or compliment you on?',
+          'What comes easily to you that other people seem to find hard?',
+          'In a team, do you naturally become the ideas person, the organizer, the connector, the finisher, the analyst, the motivator or the mediator?',
+          'Which values matter most to you: achievement, connection, creativity, security, freedom, learning, impact, recognition or harmony?',
+        ],
+        howItWorks:
+          'Three short parts — you at your best, how you work, and your values and direction — take about six minutes. An AI coach reads your real examples alongside your choices and writes a strengths profile in your own language rather than assigning you a fixed type. Specific stories produce a sharper portrait. Why it is worth doing: Gallup reports that people who use their strengths every day are six times more likely to be engaged at work. It is free and needs no signup to start. This is a reflection tool, not a clinical or validated psychometric assessment.',
+        faq: [
+          {
+            q: 'How is this different from CliftonStrengths or other strengths tests?',
+            a: 'Traditional strengths assessments score you against a fixed list of themes using rating-scale questions. This free strengths portrait works from your own stories and examples, so the strengths it names are described in your words and context. It is a reflection tool rather than a validated psychometric instrument, and it pairs well with formal assessments.',
+          },
+          {
+            q: 'How do I find my strengths if I am not sure what they are?',
+            a: 'Look at evidence rather than opinions: moments when you felt energized and absorbed, the things people repeatedly ask you for help with, and tasks that feel easy to you but hard for others. The questions in this test are designed to surface exactly that evidence.',
+          },
+          {
+            q: 'Can a strength become a weakness?',
+            a: 'Yes. Overused strengths often turn into blind spots — decisiveness can become impatience, empathy can become people-pleasing, and thoroughness can become perfectionism. Your portrait flags the overuse risk for each of your top strengths.',
+          },
+          {
+            q: 'How can I use my strengths portrait at work?',
+            a: 'Use it to describe yourself in interviews and reviews, to shape your role toward the work that energizes you, and to start a conversation with your manager or team about who does what. The 30-day experiment gives you a simple way to start.',
+          },
+          {
+            q: 'Is the strengths test free?',
+            a: 'Yes. It is free, takes about six minutes, and there is no signup required to start.',
           },
         ],
       },

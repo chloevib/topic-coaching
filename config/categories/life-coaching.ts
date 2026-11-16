@@ -257,5 +257,58 @@ export const lifeCoaching: CategoryFile = {
         ],
       },
     },
+    {
+      publicToken: 'gs9frw8k',
+      slug: 'ai-90-day-goal-plan',
+      order: 6,
+      alsoIn: ['personal-development-coaching', 'life-organization-coaching'],
+      seo: {
+        title: 'Free AI Goal Setting Plan — Your 90-Day Goal & Habit Plan',
+        description:
+          'Turn one goal into a realistic 90-day plan. Answer 13 questions and get an AI goal & habit plan with milestones, keystone habits and a weekly check-in.',
+        overview:
+          'Turn one goal that really matters into a 90-day plan you will actually follow. Answer 13 questions about your goal, your time and energy, and what usually gets in the way, and get a personalized AI Goal & Habit Plan: a Goal Readiness rating from 1 to 10, a breakdown across six areas (clarity, motivation, time, habits, obstacles and accountability), a 3-phase, 12-week roadmap with milestones, two or three keystone habits with if-then plans, and a weekly check-in template.',
+        whoFor:
+          'Anyone setting a New Year’s resolution, a fresh-start goal or a quarterly goal who has watched past goals fade by week three — and life coaches, wellness coaches and creators who want a structured goal-setting starting point for clients.',
+        whatYouLearn: [
+          'Your Goal Readiness rating (1–10) and a clear verdict',
+          'Where your plan is strong and weak across clarity, motivation, time, habits, obstacles and accountability',
+          'Why most goals fade by week three, and the specific safeguard your plan needs',
+          'A 3-phase, 12-week roadmap with weekly milestones',
+          '2–3 keystone habits with if-then plans, plus a weekly check-in template',
+        ],
+        sampleQuestions: [
+          'What do you want to achieve in the next 90 days, and why does it matter to you now?',
+          'How will you know you have succeeded — what does “done” look like?',
+          'How much time can you realistically give this goal each week?',
+          'What usually gets in the way: time, fading motivation, perfectionism, distractions or other people’s demands?',
+          'What kind of accountability works best for you — tracking privately, a friend, a coach, or a group?',
+        ],
+        howItWorks:
+          'Three short parts — your goal, your reality and your support system — take about five minutes. An AI coach reads your answers together, rates how ready your goal is, and builds a 12-week plan around the time, energy and obstacles you described rather than a generic template. The plan leans on what goal research consistently finds works: a study at Dominican University of California found that people who wrote their goals down, committed to action steps and sent weekly progress updates to a friend achieved significantly more than those who only thought about their goals. It is free and needs no signup to start.',
+        faq: [
+          {
+            q: 'Why plan in 90 days instead of a full year?',
+            a: 'Ninety days is long enough to make visible progress and short enough to stay urgent. Breaking a big ambition — or a New Year’s resolution — into a 12-week sprint with weekly milestones makes it much easier to keep going and adjust as you learn.',
+          },
+          {
+            q: 'Why do most New Year’s resolutions fail?',
+            a: 'Usually not from lack of willpower but from vague goals, plans that ignore real time and energy limits, all-or-nothing thinking, and no accountability. Your plan tackles each of these directly with a clear definition of “done”, realistic weekly time, if-then habits and a check-in routine.',
+          },
+          {
+            q: 'What is a keystone habit?',
+            a: 'A small habit that makes other good behaviors easier — for example, a 10-minute planning session every Sunday or a fixed morning block for your goal. Your report suggests two or three keystone habits that fit your schedule and energy.',
+          },
+          {
+            q: 'Can I use this for any kind of goal?',
+            a: 'Yes. It works for career, business, health and fitness, money, relationships, learning a skill, creative projects and wellbeing. Pick the one goal that matters most right now for the sharpest plan.',
+          },
+          {
+            q: 'Is the AI goal plan free?',
+            a: 'Yes. It is free, takes about five minutes, and there is no signup required to start.',
+          },
+        ],
+      },
+    },
   ],
 }

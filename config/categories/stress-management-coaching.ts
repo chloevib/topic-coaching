@@ -181,5 +181,58 @@ export const stressManagementCoaching: CategoryFile = {
         ],
       },
     },
+    {
+      publicToken: 'hxxqyksy',
+      slug: 'holiday-energy-type',
+      order: 16,
+      alsoIn: ['happiness-coaching', 'family-coaching'],
+      seo: {
+        title: 'Holiday Stress Quiz: What’s Your Holiday Energy Type?',
+        description:
+          'A free holiday stress quiz: discover which of five Holiday Energy Types you are, your blind spot, and three steps to enjoy the season without burning out.',
+        overview:
+          'Find out how you naturally spend — and refill — your energy between Thanksgiving and New Year. This free holiday stress quiz matches you to one of five Holiday Energy Types (The Warm Host, The Master Planner, The Peacekeeper, The Quiet Recharger or The Spontaneous Spirit) and gives you your strengths, the blind spot most likely to drain you, three concrete next steps for this season and a simple practice matched to your type.',
+        whoFor:
+          'Anyone who loves the holidays but tends to arrive in January exhausted — busy parents, people-pleasers, introverts juggling invitations, and the person who always ends up hosting — plus life and wellness coaches looking for a timely seasonal check-in for clients.',
+        whatYouLearn: [
+          'Your Holiday Energy Type, one of five',
+          'The strengths you bring to the season, and the blind spot that drains you',
+          'Three practical next steps for this holiday season',
+          'A short practice matched to your type, such as the host reset or the debrief walk',
+          'How to handle tense family moments, packed calendars and January regrets in a way that fits you',
+        ],
+        sampleQuestions: [
+          'It’s a free Saturday in December. Is your ideal plan hosting friends, ticking off errands, visiting relatives, a cozy night in, or a last-minute day trip?',
+          'Your flight is delayed and dinner plans fall apart. How do you react?',
+          'A heated topic comes up at the family table. What do you do?',
+          'By mid-December, do you usually feel you have given more energy to others than you have had for yourself?',
+          'If you could give yourself one gift this season, would it be permission to leave early, help in the kitchen, or letting go of perfect?',
+        ],
+        howItWorks:
+          'Ten quick questions in three rounds — your ideal season, how you react under pressure, and how you refill — each vote for one of five energy types, with the most revealing questions counting double. The type with the most votes becomes your result, complete with strengths, blind spot, three next steps and a matched practice. The timing is not an accident: in the American Psychiatric Association’s Healthy Minds Poll from November 2025, 41% of US adults said they expected more stress over the holidays than the year before, up from 28% in 2024. It takes about three minutes, is free and needs no signup. It is a reflection tool, not a mental health assessment.',
+        faq: [
+          {
+            q: 'What are the five Holiday Energy Types?',
+            a: 'The Warm Host thrives on bringing people together; The Master Planner finds calm in lists and budgets; The Peacekeeper keeps family harmony; The Quiet Recharger loves the coziness but needs solitude to refill; and The Spontaneous Spirit chases new experiences. Each has its own strengths and its own way of burning out.',
+          },
+          {
+            q: 'Why do the holidays feel so draining?',
+            a: 'The season stacks extra social events, travel, spending and family dynamics on top of normal life, often with less sleep. Recent polling shows that rising costs and missing loved ones are among the top worries. Knowing which of these drains you most makes it far easier to protect your energy.',
+          },
+          {
+            q: 'How can I avoid holiday burnout?',
+            a: 'Decide in advance which two or three events matter most, set a spending ceiling, schedule recovery time after big gatherings, and share the load instead of doing everything yourself. Your result gives you three specific steps tailored to your type.',
+          },
+          {
+            q: 'Is this a test for seasonal depression?',
+            a: 'No. It is a light, reflective personality-style quiz about how you use your energy during the holidays. If low mood, anxiety or grief feel heavy this season, please reach out to a doctor or mental health professional.',
+          },
+          {
+            q: 'Is the holiday energy quiz free?',
+            a: 'Yes. It is free, takes about three minutes, and there is no signup required to start.',
+          },
+        ],
+      },
+    },
   ],
 }
