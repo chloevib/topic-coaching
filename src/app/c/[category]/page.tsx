@@ -170,14 +170,20 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
 
       {/* Hub 页：先展示旗下分类，供用户下钻 */}
       {hub && children.length ? (
-        <section className="mx-auto max-w-6xl px-4 pt-16">
+        // id 与顶部注入的 ItemList @id（…#areas）对齐，锚点可直达这块子分类网格
+        <section id="areas" className="mx-auto max-w-6xl px-4 pt-16">
           <h2 className="mb-2 text-2xl font-bold tracking-tight sm:text-3xl">Coaching areas</h2>
           <p className="text-base-content/70 mb-8">Explore a focus within {category.name}.</p>
           <CategoryGrid categories={children} />
         </section>
       ) : null}
 
-      <section className="mx-auto max-w-6xl px-4 py-16">
+      {/*
+       * id="quizzes"：CollectionPage 的 mainEntity 与 ItemList 的 @id 都指向 …#quizzes，
+       * 原先页面上并没有这个锚点，结构化数据里的片段标识落在空处。补上之后
+       * 「本页主体就是这份测评清单」从声明变成页面上真实可定位的一块。
+       */}
+      <section id="quizzes" className="mx-auto max-w-6xl px-4 py-16">
         {/*
          * 测评列表一律带 h2：原先只有「Hub 且有子分类」时才给标题，
          * niche 页的测评网格是一段没有标题的裸内容，标题大纲缺一层，
@@ -211,14 +217,20 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
 
       {/* GEO：分类级 FAQ（FAQPage 结构化数据已在顶部注入） */}
       {catFaq.length ? (
-        <section className="mx-auto max-w-6xl px-4 py-16">
+        // id 与 FAQPage 节点的 @id（…#faq）对齐
+        <section id="faq" className="mx-auto max-w-6xl px-4 py-16">
           {/* FAQ 同样收到 3xl：答案是整段散文，横跨整幅容器时行长失控 */}
           <h2 className="mb-5 text-2xl font-bold tracking-tight sm:text-3xl">Frequently asked questions</h2>
           <div className="join join-vertical w-full max-w-3xl">
             {catFaq.map((entry, index) => (
               <div key={index} className="join-item collapse-arrow border-base-300 bg-base-100 collapse border">
                 <input type="checkbox" defaultChecked={index === 0} />
-                <div className="collapse-title font-medium">{entry.q}</div>
+                {/*
+                 * FAQ 行原先整行可点却没有任何 hover 反馈——只有右侧箭头暗示可展开，
+                 * 鼠标掠过问题文字时页面毫无回应，看着像静态文本。补一层淡底 hover，
+                 * 与站内卡片/导航项同一套 transition-colors 语言。
+                 */}
+                <div className="collapse-title hover:bg-base-200/60 font-medium transition-colors">{entry.q}</div>
                 <div className="collapse-content text-base-content/70 leading-relaxed">
                   <p>{entry.a}</p>
                 </div>

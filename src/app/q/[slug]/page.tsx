@@ -269,13 +269,15 @@ export default async function QuizPage({ params }: QuizPageProps) {
 
           {/* FAQ */}
           {faq.length ? (
-            <section className="mt-14">
+            // id 与 FAQPage 节点的 @id（…#faq）对齐，锚点可直达问答块
+            <section id="faq" className="mt-14">
               <h2 className="mb-5 text-xl font-bold tracking-tight sm:text-2xl">Frequently asked questions</h2>
               <div className="join join-vertical w-full">
                 {faq.map((entry, index) => (
                   <div key={index} className="join-item collapse-arrow border-base-300 bg-base-100 collapse border">
                     <input type="checkbox" defaultChecked={index === 0} />
-                    <div className="collapse-title font-medium">{entry.q}</div>
+                    {/* 与分类页 FAQ 一致：整行可点就要有 hover 反馈，别让它看着像静态文本 */}
+                    <div className="collapse-title hover:bg-base-200/60 font-medium transition-colors">{entry.q}</div>
                     <div className="collapse-content text-base-content/70 leading-relaxed">
                       <p>{entry.a}</p>
                     </div>

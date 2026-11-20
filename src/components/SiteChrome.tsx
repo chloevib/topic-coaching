@@ -64,7 +64,14 @@ export function SiteHeader() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="m6 9 6 6 6-6" />
               </svg>
             </Link>
-            <div className="invisible absolute inset-x-0 top-full z-50 opacity-0 transition group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
+            {/*
+             * 展开动效：原先只是 opacity 0→1，面板像凭空闪出来，与站内其他
+             * hover 抬升/位移的微交互不是一种语言。补 1 格（4px）下滑：
+             * 收起时上提 -translate-y-1，展开时归位，配合已有的 transition
+             * 变成「向下展开」的方向感。reduced-motion 下被全局规则接管，
+             * 过渡时长清到 0.01ms，等于直接到位，不会残留位移。
+             */}
+            <div className="invisible absolute inset-x-0 top-full z-50 -translate-y-1 opacity-0 transition group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
               {/* 3 列起步（面板本身 md 才出现）：2 列会把 7 个 Hub 摞成 4 行、面板高过 700px */}
               <div className="border-base-300 bg-base-100 max-h-[75vh] overflow-y-auto border-b shadow-lg">
                 <div className="mx-auto grid max-w-6xl grid-cols-3 gap-x-6 gap-y-5 px-4 py-6 xl:grid-cols-4">

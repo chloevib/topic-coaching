@@ -42,10 +42,19 @@ export function QuizCard({ item, priority = false }: { item: HydratedQuiz; prior
           </div>
         )}
       </figure>
+      {/*
+       * 卡片正文：标题 clamp 2 行 + 「Take the quiz →」用 mt-auto 压到卡底。
+       * 原先标题不限行数（站内标题 30–65 字符，同一行里常常是 1 行 / 2 行 / 3 行混排），
+       * CTA 紧跟正文往上浮，于是一排卡片的收尾行高高低低、底边参差不齐。
+       * 固定「最多 2 行标题 + 2 行描述 + 贴底 CTA」后，每行卡片的基线对齐，
+       * 网格终于读得出是一组同类对象，而不是三张各自为政的卡。
+       */}
       <div className="card-body gap-2 p-5">
-        <h3 className="card-title group-hover:text-primary text-base leading-snug transition-colors">{item.title}</h3>
+        <h3 className="card-title group-hover:text-primary line-clamp-2 text-base leading-snug transition-colors">
+          {item.title}
+        </h3>
         {item.description ? <p className="text-base-content/70 line-clamp-2 text-sm">{item.description}</p> : null}
-        <span className="text-primary mt-1 text-sm font-medium">
+        <span className="text-primary mt-auto pt-1 text-sm font-medium">
           Take the quiz{' '}
           <span aria-hidden className="inline-block transition-transform duration-200 group-hover:translate-x-0.5">
             →
